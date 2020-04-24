@@ -5,3 +5,7 @@
  */
 
 // You can delete this file if you're not using it
+import "./src/styles/components.css"
+import "./src/styles/normalize.css"
+import "./src/styles/vessel-dev.css"
+import "./src/styles/global.css"	
