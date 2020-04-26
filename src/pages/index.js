@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import $ from 'jquery'
 
 import Layout from "../components/layout"
 import Image from "../components/image"
@@ -36,6 +37,10 @@ import prev from "../images/prev.png"
 import next from "../images/next.png"
 import Image_4 from "../images/Image-4.png"
 import vit_ang_ps from "../images/vit-ang_ps.png"
+
+$(".word-change").click(function(){
+    console.log('test');
+});
 
 const IndexPage = () => (
   <Layout>
@@ -622,37 +627,37 @@ const IndexPage = () => (
             <a data-w-tab="Vitamin B7" className="tab-link-tab-1 w-inline-block w-tab-link w--current" id="w-tabs-0-data-w-tab-0" href="#w-tabs-0-data-w-pane-0" role="tab" aria-controls="w-tabs-0-data-w-pane-0" aria-selected="true">
               <div className="text-block-19">Vitamin B7</div>
             </a>
-            <a data-w-tab="Zinc" className="tab-link-tab-1 w-inline-block w-tab-link" tabindex="-1" id="w-tabs-0-data-w-tab-1" href="#w-tabs-0-data-w-pane-1" role="tab" aria-controls="w-tabs-0-data-w-pane-1" aria-selected="false">
+            <a data-w-tab="Zinc" className="tab-link-tab-1 w-inline-block w-tab-link" tabIndex="-1" id="w-tabs-0-data-w-tab-1" href="#w-tabs-0-data-w-pane-1" role="tab" aria-controls="w-tabs-0-data-w-pane-1" aria-selected="false">
               <div className="text-block-19">Zinc</div>
             </a>
-            <a data-w-tab="Vitamin B9" className="tab-link-tab-1 w-inline-block w-tab-link" tabindex="-1" id="w-tabs-0-data-w-tab-2" href="#w-tabs-0-data-w-pane-2" role="tab" aria-controls="w-tabs-0-data-w-pane-2" aria-selected="false">
+            <a data-w-tab="Vitamin B9" className="tab-link-tab-1 w-inline-block w-tab-link" tabIndex="-1" id="w-tabs-0-data-w-tab-2" href="#w-tabs-0-data-w-pane-2" role="tab" aria-controls="w-tabs-0-data-w-pane-2" aria-selected="false">
               <div className="text-block-19">Vitamin B9</div>
             </a>
-            <a data-w-tab="Hydration" className="tab-link-tab-1 w-inline-block w-tab-link" tabindex="-1" id="w-tabs-0-data-w-tab-3" href="#w-tabs-0-data-w-pane-3" role="tab" aria-controls="w-tabs-0-data-w-pane-3" aria-selected="false">
+            <a data-w-tab="Hydration" className="tab-link-tab-1 w-inline-block w-tab-link" tabIndex="-1" id="w-tabs-0-data-w-tab-3" href="#w-tabs-0-data-w-pane-3" role="tab" aria-controls="w-tabs-0-data-w-pane-3" aria-selected="false">
               <div className="text-block-19">Hydration</div>
             </a>
-            <a data-w-tab="Vitamin C" className="tab-link-tab-1 w-inline-block w-tab-link" tabindex="-1" id="w-tabs-0-data-w-tab-4" href="#w-tabs-0-data-w-pane-4" role="tab" aria-controls="w-tabs-0-data-w-pane-4" aria-selected="false">
+            <a data-w-tab="Vitamin C" className="tab-link-tab-1 w-inline-block w-tab-link" tabIndex="-1" id="w-tabs-0-data-w-tab-4" href="#w-tabs-0-data-w-pane-4" role="tab" aria-controls="w-tabs-0-data-w-pane-4" aria-selected="false">
               <div className="text-block-19">Vitamin C</div>
             </a>
-            <a data-w-tab="Cortisol" className="tab-link-tab-1 w-inline-block w-tab-link" tabindex="-1" id="w-tabs-0-data-w-tab-5" href="#w-tabs-0-data-w-pane-5" role="tab" aria-controls="w-tabs-0-data-w-pane-5" aria-selected="false">
+            <a data-w-tab="Cortisol" className="tab-link-tab-1 w-inline-block w-tab-link" tabIndex="-1" id="w-tabs-0-data-w-tab-5" href="#w-tabs-0-data-w-pane-5" role="tab" aria-controls="w-tabs-0-data-w-pane-5" aria-selected="false">
               <div className="text-block-19">Cortisol</div>
             </a>
-            <a data-w-tab="Magnesium" className="tab-link-tab-1 w-inline-block w-tab-link" tabindex="-1" id="w-tabs-0-data-w-tab-6" href="#w-tabs-0-data-w-pane-6" role="tab" aria-controls="w-tabs-0-data-w-pane-6" aria-selected="false">
+            <a data-w-tab="Magnesium" className="tab-link-tab-1 w-inline-block w-tab-link" tabIndex="-1" id="w-tabs-0-data-w-tab-6" href="#w-tabs-0-data-w-pane-6" role="tab" aria-controls="w-tabs-0-data-w-pane-6" aria-selected="false">
               <div className="text-block-19">Magnesium</div>
             </a>
-            <a data-w-tab="Ketones A&amp;B" className="tab-link-tab-1 w-inline-block w-tab-link" tabindex="-1" id="w-tabs-0-data-w-tab-7" href="#w-tabs-0-data-w-pane-7" role="tab" aria-controls="w-tabs-0-data-w-pane-7" aria-selected="false">
+            <a data-w-tab="Ketones A&amp;B" className="tab-link-tab-1 w-inline-block w-tab-link" tabIndex="-1" id="w-tabs-0-data-w-tab-7" href="#w-tabs-0-data-w-pane-7" role="tab" aria-controls="w-tabs-0-data-w-pane-7" aria-selected="false">
               <div className="text-block-19">Ketones A&amp;B</div>
             </a>
-            <a data-w-tab="PH" className="tab-link-tab-1 w-inline-block w-tab-link" tabindex="-1" id="w-tabs-0-data-w-tab-8" href="#w-tabs-0-data-w-pane-8" role="tab" aria-controls="w-tabs-0-data-w-pane-8" aria-selected="false">
+            <a data-w-tab="PH" className="tab-link-tab-1 w-inline-block w-tab-link" tabIndex="-1" id="w-tabs-0-data-w-tab-8" href="#w-tabs-0-data-w-pane-8" role="tab" aria-controls="w-tabs-0-data-w-pane-8" aria-selected="false">
               <div className="text-block-19">pH</div>
             </a>
-            <a data-w-tab="Mercury" className="tab-link-tab-1 w-inline-block w-tab-link" tabindex="-1" id="w-tabs-0-data-w-tab-9" href="#w-tabs-0-data-w-pane-9" role="tab" aria-controls="w-tabs-0-data-w-pane-9" aria-selected="false">
+            <a data-w-tab="Mercury" className="tab-link-tab-1 w-inline-block w-tab-link" tabIndex="-1" id="w-tabs-0-data-w-tab-9" href="#w-tabs-0-data-w-pane-9" role="tab" aria-controls="w-tabs-0-data-w-pane-9" aria-selected="false">
               <div className="text-block-19">Mercury</div>
             </a>
-            <a data-w-tab="Iron" className="tab-link-tab-1 w-inline-block w-tab-link" tabindex="-1" id="w-tabs-0-data-w-tab-10" href="#w-tabs-0-data-w-pane-10" role="tab" aria-controls="w-tabs-0-data-w-pane-10" aria-selected="false">
+            <a data-w-tab="Iron" className="tab-link-tab-1 w-inline-block w-tab-link" tabIndex="-1" id="w-tabs-0-data-w-tab-10" href="#w-tabs-0-data-w-pane-10" role="tab" aria-controls="w-tabs-0-data-w-pane-10" aria-selected="false">
               <div className="text-block-19">Iron</div>
             </a>
-            <a data-w-tab="Lead" className="tab-link-tab-1 w-inline-block w-tab-link" tabindex="-1" id="w-tabs-0-data-w-tab-11" href="#w-tabs-0-data-w-pane-11" role="tab" aria-controls="w-tabs-0-data-w-pane-11" aria-selected="false">
+            <a data-w-tab="Lead" className="tab-link-tab-1 w-inline-block w-tab-link" tabIndex="-1" id="w-tabs-0-data-w-tab-11" href="#w-tabs-0-data-w-pane-11" role="tab" aria-controls="w-tabs-0-data-w-pane-11" aria-selected="false">
               <div className="text-block-19">Lead</div>
             </a>
           </div>
@@ -1218,22 +1223,22 @@ const IndexPage = () => (
         <div className="w-embed">
           <div className="klaviyo-form-LBcxWV klaviyo-form form-version-cid-1">
           <div className="ResetElements__Div-sc-8e6zl9-0 gUoYgx needsclick undefined">
-          <form className="ResetElements__Form-sc-8e6zl9-1 View__FormView-sc-1ou3cq2-0 brebrf klaviyo-form-version-cid_1 needsclick klaviyo-form-version-cid_1" novalidate="" tabindex="-1">
+          <form className="ResetElements__Form-sc-8e6zl9-1 View__FormView-sc-1ou3cq2-0 brebrf klaviyo-form-version-cid_1 needsclick klaviyo-form-version-cid_1" noValidate="" tabIndex="-1">
           <div className="ResetElements__Div-sc-8e6zl9-0 Column__FormColumn-z5j99u-0 Ndwyt needsclick undefined">
           <div className="ResetElements__Div-sc-8e6zl9-0 Row__FormRow-sc-17nghml-0 kgtZaW needsclick undefined">
           <div className="ResetElements__Div-sc-8e6zl9-0 FormComponent__StyledFormComponentWrapper-e0xun6-0 fjdFDR needsclick undefined">
           <div className="ResetElements__Div-sc-8e6zl9-0 TextInput__StyledInputContainer-sc-1o6de9f-1 bQDdTc needsclick undefined">
-          <input type="email" name="email" tabindex="0" placeholder="Enter email address" aria-label="Enter email address" aria-invalid="false" className="ResetElements__Input-sc-8e6zl9-8 FUXqS TextInput__FormStyledTextInput-sc-1o6de9f-0 fsIKy needsclick TextInput__FormStyledTextInput-sc-1o6de9f-0 fsIKy" value="" />
+          <input type="email" name="email" tabIndex="0" placeholder="Enter email address" aria-label="Enter email address" aria-invalid="false" className="ResetElements__Input-sc-8e6zl9-8 FUXqS TextInput__FormStyledTextInput-sc-1o6de9f-0 fsIKy needsclick TextInput__FormStyledTextInput-sc-1o6de9f-0 fsIKy" value="" />
           <div className="ResetElements__Div-sc-8e6zl9-0 ValidationMessage__Container-sc-1agouhi-0 kKQEmZ needsclick undefined">
           </div>
           </div>
           </div>
           <div className="ResetElements__Div-sc-8e6zl9-0 FormComponent__StyledFormComponentWrapper-e0xun6-0 cGEpIm needsclick undefined">
-          <button type="button" tabindex="0" className="ResetElements__Button-sc-8e6zl9-2 Button__FormStyledButton-p2mbjt-0 lgRuVD needsclick undefined">Join the Waitlist</button>
+          <button type="button" tabIndex="0" className="ResetElements__Button-sc-8e6zl9-2 Button__FormStyledButton-p2mbjt-0 lgRuVD needsclick undefined">Join the Waitlist</button>
           </div>
           </div>
           </div>
-          <input type="submit" tabindex="-1" className="ResetElements__Input-sc-8e6zl9-8 FUXqS View__HiddenSubmit-sc-1ou3cq2-1 dSnrYQ needsclick View__HiddenSubmit-sc-1ou3cq2-1 dSnrYQ" value="Submit" />
+          <input type="submit" tabIndex="-1" className="ResetElements__Input-sc-8e6zl9-8 FUXqS View__HiddenSubmit-sc-1ou3cq2-1 dSnrYQ needsclick View__HiddenSubmit-sc-1ou3cq2-1 dSnrYQ" value="Submit" />
           </form>
           </div>
           </div>
