@@ -38,10 +38,6 @@ import next from "../images/next.png"
 import Image_4 from "../images/Image-4.png"
 import vit_ang_ps from "../images/vit-ang_ps.png"
 
-$(".word-change").click(function(){
-    console.log('test');
-});
-
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
