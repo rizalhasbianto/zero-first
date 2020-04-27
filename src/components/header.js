@@ -57,7 +57,7 @@ render() {
         </div>
       </div>
     </div>
-    <div className={ this.state.isToggleOn ? 'menu-content hiding' : 'menu-content showing'}>
+    <div className={ this.state.isToggleOn ? 'menu-content hiding asup' : 'menu-content showing kaluar'}>
       <div className={ this.state.isToggleOn ? 'div-block-40 hiding' : 'div-block-40 showing'}>
         <div className="div-block-120">
           <div className="div-block-119">
