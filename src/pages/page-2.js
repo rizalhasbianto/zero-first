@@ -1,7 +1,5 @@
 import React, { Component} from "react"
-import { render } from "react-dom"
 import { Link } from "gatsby"
-import $ from "jquery"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -41,11 +39,6 @@ import Image_4 from "../images/Image-4.png"
 import vit_ang_ps from "../images/vit-ang_ps.png"
 
 class secondPage extends Component {
-	componentDidMount() {
-	$(".word-change").click(function(){
-    console.log('test');
-});
-	}
 	render() {
 	var lastScrollTop ='0'
 function handleScroll() {
