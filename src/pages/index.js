@@ -44,7 +44,6 @@ class homePage extends Component {
       var scanHeight = scan[0].offsetHeight;
       container[0].style.height = scanHeight+"px";  
       
-      var learn = document.getElementById("learn").getBoundingClientRect().top + window.scrollY + 952;
       var food = document.getElementById("food").getBoundingClientRect().top + 952;
       var sup = document.getElementById("sup").getBoundingClientRect().top + window.scrollY + 952;
       var life = document.getElementById("life").getBoundingClientRect().top + window.scrollY + 952;
@@ -52,6 +51,7 @@ class homePage extends Component {
       var learnContent = document.getElementsByClassName("learn");
       function handleScrollBody() {
         var scroll = window.pageYOffset;
+        var learn = document.getElementById("learn").getBoundingClientRect().top + scroll;
         if (scroll > learn) {
           learnContent[0].style.display = "block";
         }
