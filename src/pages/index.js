@@ -44,20 +44,28 @@ class homePage extends Component {
       var scanHeight = scan[0].offsetHeight;
       container[0].style.height = scanHeight+"px";  
       
-      var food = document.getElementById("food").getBoundingClientRect().top + 952;
-      var sup = document.getElementById("sup").getBoundingClientRect().top + window.scrollY + 952;
-      var life = document.getElementById("life").getBoundingClientRect().top + window.scrollY + 952;
-      var plan = document.getElementById("plan").getBoundingClientRect().top + window.scrollY + 952;
       var learnContent = document.getElementsByClassName("learn");
+      var foodContent = document.getElementsByClassName("food");
+      var supContent = document.getElementsByClassName("sup");
+      var lifeContent = document.getElementsByClassName("life");
+      var planContent = document.getElementsByClassName("plan");
       function handleScrollBody() {
         var scroll = window.pageYOffset;
         var learn = document.getElementById("learn").getBoundingClientRect().top + scroll;
-        if (scroll > learn) {
-          learnContent[0].style.display = "block";
-        }
-        else {
-          learnContent[0].style.display = "none"; 
-        }
+        var food = document.getElementById("food").getBoundingClientRect().top + scroll;
+      var sup = document.getElementById("sup").getBoundingClientRect().top + scroll;
+      var life = document.getElementById("life").getBoundingClientRect().top + scroll;
+      var plan = document.getElementById("plan").getBoundingClientRect().top + scroll;
+        if (scroll > learn) { learnContent[0].style.display = "block";}
+        else {learnContent[0].style.display = "none";}
+        if (scroll > food) { foodContent[0].style.display = "block";}
+        else {foodContent[0].style.display = "none";}
+        if (scroll > sup) { supContent[0].style.display = "block";}
+        else {supContent[0].style.display = "none";}
+        if (scroll > life) { lifeContent[0].style.display = "block";}
+        else {lifeContent[0].style.display = "none";}
+        if (scroll > plan) { planContent[0].style.display = "block";}
+        else {planContent[0].style.display = "none";}
       }
       window.addEventListener('scroll', handleScrollBody);
   }
