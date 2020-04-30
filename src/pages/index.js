@@ -1,11 +1,11 @@
-import React from "react"
+import React, { Component} from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+
+import Image from "../components/image"
 import close from "../images/close.png"
-import Logo from "../images/Logo.png"
 import close_Icon from "../images/close-Icon.png"
 import white_logo from "../images/white-logo.png"
 import main_top_mob from "../images/main-top_mob.png"
@@ -37,8 +37,33 @@ import next from "../images/next.png"
 import Image_4 from "../images/Image-4.png"
 import vit_ang_ps from "../images/vit-ang_ps.png"
 
-const IndexPage = () => (
-  <Layout>
+class homePage extends Component {
+  componentDidMount() {
+    var scan = document.getElementsByClassName("scan");
+      var container = document.getElementsByClassName("container-6");
+      var scanHeight = scan[0].offsetHeight;
+      container[0].style.height = scanHeight+"px";  
+      
+      var learn = document.getElementById("learn").getBoundingClientRect().top + window.scrollY + 952;
+      var food = document.getElementById("food").getBoundingClientRect().top + 952;
+      var sup = document.getElementById("sup").getBoundingClientRect().top + window.scrollY + 952;
+      var life = document.getElementById("life").getBoundingClientRect().top + window.scrollY + 952;
+      var plan = document.getElementById("plan").getBoundingClientRect().top + window.scrollY + 952;
+      var learnContent = document.getElementsByClassName("learn");
+      function handleScrollBody() {
+        var scroll = window.pageYOffset;
+        if (scroll > learn) {
+          learnContent[0].style.display = "block";
+        }
+        else {
+          learnContent[0].style.display = "none"; 
+        }
+      }
+      window.addEventListener('scroll', handleScrollBody);
+  }
+	render() {
+	return (
+	<Layout>
     <SEO title="Home" />
   <div className="main-section">
     <div className="top"><img src={main_top_mob} alt="" className="image-16"/>
@@ -59,7 +84,7 @@ const IndexPage = () => (
   <div className="works"><img src={testcard} height="244" alt="" className="image-17"/>
     <div className="cream-bg home works"></div>
     <div className="container w-container">
-      <div className="div-block-4">
+      <div className="div-block-4" id="div-block-4">
         <h2 className="heading h-works">How it works</h2>
         <p className="paragraph h-works">Your personal lab and nutrition coach all in your pocket.&nbsp; Finally, an app that answers why we feel the way we feel. <br/></p>
       </div>
@@ -1280,6 +1305,8 @@ const IndexPage = () => (
     </div>
   </div>
   </Layout>
-)
+	)
+	}
+}
 
-export default IndexPage
+export default homePage

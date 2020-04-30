@@ -2319,6 +2319,8 @@ a {
   bottom: 0px;
   z-index: 1;
   overflow: hidden;
+  position: -webkit-sticky !important;
+  position: sticky !important;
 }
 
 .wrap__sticky.sticky {

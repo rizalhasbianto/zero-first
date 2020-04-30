@@ -39,22 +39,6 @@ import Image_4 from "../images/Image-4.png"
 import vit_ang_ps from "../images/vit-ang_ps.png"
 
 class secondPage extends Component {
-	componentDidMount() {
-	var lastScrollTop ='0'
-function handleScroll() {
-	var st = window.pageYOffset || document.documentElement.scrollTop; 
-	var x = document.getElementsByClassName("menu-navigation");
-   if (st > lastScrollTop){
-   x[0].classList.remove("supm");
-     x[0].classList.add("sdownm");
-   } else {
-   x[0].classList.remove("sdownm");
-      x[0].classList.add("supm");
-   }
-   lastScrollTop = st <= 0 ? 0 : st;
-  }
-  window.addEventListener('scroll', handleScroll);
-	}
 	render() {
 	return (
 	<Layout>

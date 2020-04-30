@@ -1,30 +1,64 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, { Component} from "react"
-import { render } from "react-dom"
 import { Helmet } from "react-helmet"
 
+import Logo from "../images/Logo.png"
+
 class Header extends React.Component {
+componentDidMount() {
+	var lastScrollTop ='0'
+    function handleScroll() {
+	    var st = window.pageYOffset || document.documentElement.scrollTop; 
+      var x = document.getElementsByClassName("menu-navigation");
+      var scroll = window.pageYOffset;
+      var elem = document.getElementsByClassName("notification-bar-container");
+      var faded = document.getElementsByClassName("faded");
+      var elemTop = elem[0].offsetHeight;
+      if (st > lastScrollTop){
+        if ( scroll > elemTop) {
+        x[0].classList.remove("supm");
+        x[0].classList.add("sdownm");
+        }
+      } else {
+        if ( scroll > elemTop) {
+        x[0].classList.remove("sdownm");
+        x[0].classList.add("supm");
+        }
+      }
+    lastScrollTop = st <= 0 ? 0 : st;
+    
+      if ( scroll > elemTop) {
+        faded[0].classList.remove("toping");
+        faded[0].classList.add("scrolling");
+      }
+      else {
+        faded[0].classList.remove("scrolling");
+        faded[0].classList.add("toping");
+      }
+    }
+    window.addEventListener('scroll', handleScroll);
+}
 constructor(props) {
     super(props);
     this.state = {isToggleOn: true};
 
     // This binding is necessary to make `this` work in the callback
     this.handleClick = this.handleClick.bind(this);
-  }
+}
 
-  handleClick() {
-    this.setState(state => ({
-      isToggleOn: !state.isToggleOn
-    }));
-  }
+handleClick() {
+  this.setState(state => ({
+    isToggleOn: !state.isToggleOn
+  }));
+}
 render() {
-    return (
+  return (
 <>
 <Helmet>
   <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
   <link href="images/webclip.png" rel="apple-touch-icon" />
-        </Helmet>
+</Helmet>
   <div className="notification-bar-wrapper">
     <div className="notification-bar">
       <div className="notification-bar-container w-container">
@@ -37,7 +71,7 @@ render() {
         </div>
       </div><img src="images/close.png" data-w-id="55a9ad55-4615-3891-1a1a-7e4f45bda160" alt="" className="image-25" /></div>
   </div>
-  <div className="menu-navigation">
+  <div className="menu-navigation" id="menu_nav">
     <div className="menu-nav">
       <div className="faded toping"></div>
       <div className="container-12 w-container">
@@ -49,7 +83,7 @@ render() {
               <div className="first-burger"></div>
             </div>
           </div>
-          <div className="logo"><a href="index.html" aria-current="page" className="w-inline-block w--current"><img src="images/Logo.png" height="32" alt="" className="image-19" /></a></div>
+          <div className="logo"><a href="index.html" aria-current="page" className="w-inline-block w--current"><img src={Logo} height="32" alt="" className="image-19" /></a></div>
           <div className="w-clearfix">
           <Link className="dark-bt nav-bt w-button" to="/page-2/">Pre-order</Link>
           <a href="wellness-test-cards.html" className="dark-bt nav-bt mobile w-button">Pre-order</a>
@@ -94,8 +128,8 @@ render() {
     </div>
   </div>
   </>
-)
-}
+  )
+  }
 }
 
 Header.propTypes = {
