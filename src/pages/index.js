@@ -49,13 +49,21 @@ class homePage extends Component {
       var supContent = document.getElementsByClassName("sup");
       var lifeContent = document.getElementsByClassName("life");
       var planContent = document.getElementsByClassName("plan");
+      var improveContent = document.getElementsByClassName("improve");
       function handleScrollBody() {
         var scroll = window.pageYOffset;
+        var winHeight = window.screen.height / 2;
+        var scrollMiddle  = window.pageYOffset + winHeight;
+        var posLab = document.getElementById("labpos").getBoundingClientRect().top + scroll;
+        var posLabLast = document.getElementById("labposlast").getBoundingClientRect().top + scroll;
+        var line = scrollMiddle - posLab;
+        var lineElem = document.getElementsByClassName("line-vertical");
         var learn = document.getElementById("learn").getBoundingClientRect().top + scroll;
         var food = document.getElementById("food").getBoundingClientRect().top + scroll;
-      var sup = document.getElementById("sup").getBoundingClientRect().top + scroll;
-      var life = document.getElementById("life").getBoundingClientRect().top + scroll;
-      var plan = document.getElementById("plan").getBoundingClientRect().top + scroll;
+        var sup = document.getElementById("sup").getBoundingClientRect().top + scroll;
+        var life = document.getElementById("life").getBoundingClientRect().top + scroll;
+        var plan = document.getElementById("plan").getBoundingClientRect().top + scroll;
+        var improve = document.getElementById("improve").getBoundingClientRect().top + scroll;
         if (scroll > learn) { learnContent[0].style.display = "block";}
         else {learnContent[0].style.display = "none";}
         if (scroll > food) { foodContent[0].style.display = "block";}
@@ -66,6 +74,13 @@ class homePage extends Component {
         else {lifeContent[0].style.display = "none";}
         if (scroll > plan) { planContent[0].style.display = "block";}
         else {planContent[0].style.display = "none";}
+        if (scroll > improve) { improveContent[0].style.display = "block";}
+        else {improveContent[0].style.display = "none";}
+        if (scrollMiddle > posLab && scrollMiddle < posLabLast) {
+          
+          console.log(posLab+" "+posLabLast);
+          lineElem[0].style.height = line+'px';
+        }
       }
       window.addEventListener('scroll', handleScrollBody);
   }
@@ -534,7 +549,7 @@ class homePage extends Component {
       <div className="div-block-53">
         <h2 className="heading lab">Skip the lab,<br/>not the <span className="white">accuracy.</span></h2>
       </div>
-      <div data-w-id="0b256824-679c-69a0-3a68-f19aebe297bd" className="div-block-39 home">
+      <div data-w-id="0b256824-679c-69a0-3a68-f19aebe297bd" className="div-block-39 home" id="labpos">
         <div className="line-vertical" ></div>
         <div className="line-vertical-s shadow"></div>
         <div className="div-block-11 top-line home">
@@ -549,14 +564,14 @@ class homePage extends Component {
             <h2 className="heading-4 lab left">Vessel</h2>
           </div>
         </div>
-        <div className="div-block-11 lab-child _1 home" >
+        <div className="div-block-11 lab-child _1 home">
           <div className="div-block-12">
             <h4 className="lab-child">Pricing</h4>
             <h2 className="heading-4 lab child">$100+</h2>
             <p className="paragraph lab-child">with insurance, $1300 without.</p>
           </div>
           <div className="div-block-10 child">
-            <div className="div-block-14 pertama" ></div>
+            <div className="div-block-14 pertama"></div>
           </div>
           <div className="div-block-13">
             <h4 className="lab-child right">Pricing</h4>
@@ -632,7 +647,7 @@ class homePage extends Component {
           </div>
           <div className="div-block-10 child">
             <div className="bullet-wrap">
-              <div className="div-block-14 keenam"></div>
+              <div className="div-block-14 keenam" id="labposlast"></div>
             </div>
           </div>
           <div className="div-block-13">
