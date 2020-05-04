@@ -64,6 +64,18 @@ class homePage extends Component {
         var life = document.getElementById("life").getBoundingClientRect().top + scroll;
         var plan = document.getElementById("plan").getBoundingClientRect().top + scroll;
         var improve = document.getElementById("improve").getBoundingClientRect().top + scroll;
+        var pricing = document.getElementById("pricing").getBoundingClientRect().top + scroll;
+        var pricingElem = document.getElementsByClassName("_1");
+        var accuracy = document.getElementById("accuracy").getBoundingClientRect().top + scroll;
+        var accuracyElem = document.getElementsByClassName("_2");
+        var results = document.getElementById("results").getBoundingClientRect().top + scroll;
+        var resultsElem = document.getElementsByClassName("_3");
+        var chemistry = document.getElementById("chemistry").getBoundingClientRect().top + scroll;
+        var chemistryElem = document.getElementsByClassName("_4");
+        var equipment = document.getElementById("equipment").getBoundingClientRect().top + scroll;
+        var equipmentElem = document.getElementsByClassName("_5");
+        var process = document.getElementById("process").getBoundingClientRect().top + scroll;
+        var processElem = document.getElementsByClassName("_6");
         if (scroll > learn) { learnContent[0].style.display = "block";}
         else {learnContent[0].style.display = "none";}
         if (scroll > food) { foodContent[0].style.display = "block";}
@@ -77,9 +89,43 @@ class homePage extends Component {
         if (scroll > improve) { improveContent[0].style.display = "block";}
         else {improveContent[0].style.display = "none";}
         if (scrollMiddle > posLab && scrollMiddle < posLabLast) {
-          
-          console.log(posLab+" "+posLabLast);
           lineElem[0].style.height = line+'px';
+        }
+        if (scrollMiddle > pricing) {
+          pricingElem[0].classList.add('active')
+        }
+        else {
+          pricingElem[0].classList.remove('active')
+        }
+        if (scrollMiddle > accuracy) {
+          accuracyElem[0].classList.add('active')
+        }
+        else {
+          accuracyElem[0].classList.remove('active')
+        }
+        if (scrollMiddle > results) {
+          resultsElem[0].classList.add('active')
+        }
+        else {
+          resultsElem[0].classList.remove('active')
+        }
+        if (scrollMiddle > chemistry) {
+          chemistryElem[0].classList.add('active')
+        }
+        else {
+          chemistryElem[0].classList.remove('active')
+        }
+        if (scrollMiddle > equipment) {
+          equipmentElem[0].classList.add('active')
+        }
+        else {
+          equipmentElem[0].classList.remove('active')
+        }
+        if (scrollMiddle > process) {
+          processElem[0].classList.add('active')
+        }
+        else {
+          processElem[0].classList.remove('active')
         }
       }
       window.addEventListener('scroll', handleScrollBody);
@@ -571,7 +617,7 @@ class homePage extends Component {
             <p className="paragraph lab-child">with insurance, $1300 without.</p>
           </div>
           <div className="div-block-10 child">
-            <div className="div-block-14 pertama"></div>
+            <div className="div-block-14 pertama" id="pricing"></div>
           </div>
           <div className="div-block-13">
             <h4 className="lab-child right">Pricing</h4>
@@ -585,7 +631,7 @@ class homePage extends Component {
             <p className="paragraph lab-child">When you measure a standard control solution in many different labs and calculate the average test result, repeated test results stay within 5-10% of that average. (Relative standard deviation between 5-10%)</p>
           </div>
           <div className="div-block-10 child">
-            <div className="bullet-wrap">
+            <div className="bullet-wrap" id="accuracy">
               <div className="div-block-14 kedua" ></div>
             </div>
           </div>
@@ -600,7 +646,7 @@ class homePage extends Component {
             <p className="paragraph lab-child">See if your levels are improving every 3 months - 1 year.</p>
           </div>
           <div className="div-block-10 child">
-            <div className="bullet-wrap">
+            <div className="bullet-wrap" id="results">
               <div className="div-block-14 ketiga" ></div>
             </div>
           </div>
@@ -616,7 +662,7 @@ class homePage extends Component {
             <p className="paragraph lab-child">Uses reagents that change color (Colorimetric), Ion Selective Electrodes, and Spectrometry</p>
           </div>
           <div className="div-block-10 child">
-            <div className="bullet-wrap">
+            <div className="bullet-wrap" id="chemistry">
               <div className="div-block-14 keempat" ></div>
             </div>
           </div>
@@ -631,7 +677,7 @@ class homePage extends Component {
             <p className="paragraph lab-child">Expensive equipment such as plate readers, mass spectrometers, chemistry analyzers, etc</p>
           </div>
           <div className="div-block-10 child">
-            <div className="bullet-wrap">
+            <div className="bullet-wrap" id="equipment">
               <div className="div-block-14 kelima" ></div>
             </div>
           </div>
@@ -646,7 +692,7 @@ class homePage extends Component {
             <p className="paragraph lab-child">Doctor's visit, driving, and waiting rooms</p>
           </div>
           <div className="div-block-10 child">
-            <div className="bullet-wrap">
+            <div className="bullet-wrap" id="process">
               <div className="div-block-14 keenam" id="labposlast"></div>
             </div>
           </div>
