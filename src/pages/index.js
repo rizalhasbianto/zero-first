@@ -39,11 +39,12 @@ import vit_ang_ps from "../images/vit-ang_ps.png"
 
 class homePage extends Component {
   componentDidMount() {
+    // Add Height for tour section
     var scan = document.getElementsByClassName("scan");
       var container = document.getElementsByClassName("container-6");
       var scanHeight = scan[0].offsetHeight;
-      container[0].style.height = scanHeight+"px";  
-      
+      container[0].style.height = scanHeight+"px";
+      // Tour and Compare animation
       var learnContent = document.getElementsByClassName("learn");
       var foodContent = document.getElementsByClassName("food");
       var supContent = document.getElementsByClassName("sup");
@@ -88,47 +89,51 @@ class homePage extends Component {
         else {planContent[0].style.display = "none";}
         if (scroll > improve) { improveContent[0].style.display = "block";}
         else {improveContent[0].style.display = "none";}
-        if (scrollMiddle > posLab && scrollMiddle < posLabLast) {
-          lineElem[0].style.height = line+'px';
-        }
-        if (scrollMiddle > pricing) {
-          pricingElem[0].classList.add('active')
-        }
-        else {
-          pricingElem[0].classList.remove('active')
-        }
-        if (scrollMiddle > accuracy) {
-          accuracyElem[0].classList.add('active')
-        }
-        else {
-          accuracyElem[0].classList.remove('active')
-        }
-        if (scrollMiddle > results) {
-          resultsElem[0].classList.add('active')
-        }
-        else {
-          resultsElem[0].classList.remove('active')
-        }
-        if (scrollMiddle > chemistry) {
-          chemistryElem[0].classList.add('active')
-        }
-        else {
-          chemistryElem[0].classList.remove('active')
-        }
-        if (scrollMiddle > equipment) {
-          equipmentElem[0].classList.add('active')
-        }
-        else {
-          equipmentElem[0].classList.remove('active')
-        }
-        if (scrollMiddle > process) {
-          processElem[0].classList.add('active')
-        }
-        else {
-          processElem[0].classList.remove('active')
-        }
+        if (scrollMiddle > posLab && scrollMiddle < posLabLast) {lineElem[0].style.height = line+'px';}
+        if (scrollMiddle > pricing) {pricingElem[0].classList.add('active')}
+        else {pricingElem[0].classList.remove('active')}
+        if (scrollMiddle > accuracy) {accuracyElem[0].classList.add('active')}
+        else {accuracyElem[0].classList.remove('active')}
+        if (scrollMiddle > results) {resultsElem[0].classList.add('active')}
+        else {resultsElem[0].classList.remove('active')}
+        if (scrollMiddle > chemistry) {chemistryElem[0].classList.add('active')}
+        else {chemistryElem[0].classList.remove('active')}
+        if (scrollMiddle > equipment) {equipmentElem[0].classList.add('active')}
+        else {equipmentElem[0].classList.remove('active')}
+        if (scrollMiddle > process) {processElem[0].classList.add('active')}
+        else {processElem[0].classList.remove('active')}
       }
       window.addEventListener('scroll', handleScrollBody);
+      // Add heading moving animation
+      var hOne = document.getElementsByClassName("text-change-1");
+      var hTwo = document.getElementsByClassName("text-change-2");  
+      var hThree = document.getElementsByClassName("text-change-3");
+      var hFour = document.getElementsByClassName("text-change-4");
+      var hFive = document.getElementsByClassName("text-change-5");
+      var hSix = document.getElementsByClassName("text-change-6");
+      var hSeven = document.getElementsByClassName("text-change-7");
+      var hEight = document.getElementsByClassName("text-change-8");
+      function step() {
+        hOne[0].classList.add('active');
+        window.setTimeout(function(){ hOne[0].classList.add('down'); }, 1000);
+        window.setTimeout(function(){ hOne[0].classList.remove('down', 'active');hTwo[0].classList.add('active'); }, 2000);
+        window.setTimeout(function(){ hTwo[0].classList.add('down'); }, 3000);
+        window.setTimeout(function(){ hTwo[0].classList.remove('down', 'active');hThree[0].classList.add('active'); }, 4000);
+        window.setTimeout(function(){ hThree[0].classList.add('down'); }, 5000);
+        window.setTimeout(function(){ hThree[0].classList.remove('down', 'active');hFour[0].classList.add('active'); }, 6000);
+        window.setTimeout(function(){ hFour[0].classList.add('down'); }, 7000);
+        window.setTimeout(function(){ hFour[0].classList.remove('down', 'active');hFive[0].classList.add('active'); }, 8000);
+        window.setTimeout(function(){ hFive[0].classList.add('down'); }, 9000);
+        window.setTimeout(function(){ hFive[0].classList.remove('down', 'active');hSix[0].classList.add('active'); }, 10000);
+        window.setTimeout(function(){ hSix[0].classList.add('down'); }, 11000);
+        window.setTimeout(function(){ hSix[0].classList.remove('down', 'active');hSeven[0].classList.add('active'); }, 12000);
+        window.setTimeout(function(){ hSeven[0].classList.add('down'); }, 13000);
+        window.setTimeout(function(){ hSeven[0].classList.remove('down', 'active');hEight[0].classList.add('active'); }, 14000);
+        window.setTimeout(function(){ hEight[0].classList.add('down'); }, 15000);
+        window.setTimeout(function(){ hEight[0].classList.remove('down', 'active'); }, 16000);
+        window.setTimeout(function(){ window.requestAnimationFrame(step); }, 16000);
+      }
+      window.requestAnimationFrame(step);
   }
 	render() {
 	return (
@@ -141,6 +146,16 @@ class homePage extends Component {
           <div className="div-block-3">
             <div className="word-change">
               <h1 className="heading change"> In pursuit<br/>of better</h1>
+              <div class="text-wrap">
+                <div class="text-change-1 heading">focus</div>
+                <div class="text-change-2 heading">energy</div>
+                <div class="text-change-3 heading">immunity</div>
+                <div class="text-change-4 heading">weight</div>
+                <div class="text-change-5 heading">appearance</div>
+                <div class="text-change-6 heading">sleep</div>
+                <div class="text-change-7 heading">fitness</div>
+                <div class="text-change-8 heading">living</div>
+              </div>
             </div>
             <p className="paragraph main home">Meet Vessel, the in-home wellness tracker that instantly and accurately uncovers what your body really needs.</p><a href="wellness-test-cards.html" className="dark-bt main-section-bt w-button">Pre-order</a>
             <p className="paragraph main disclaimer">Looking for the Coronavirus test? <a href="coronavirus.html">Click here</a></p>

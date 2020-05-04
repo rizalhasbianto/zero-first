@@ -260,19 +260,41 @@ opacity: 0;
   background: black;
   width:8px;
   height:8px;
-  -webkit-transition: background 0.2s linear, width 0.2s ease-in-out, height 0.2s ease-in-out;;
-  -moz-transition: background 0.2s linear, width 0.2s ease-in-out, height 0.2s ease-in-out;;
-  -ms-transition: background 0.2s linear, width 0.2s ease-in-out, height 0.2s ease-in-out;;
-  -o-transition: background 0.2s linear, width 0.2s ease-in-out, height 0.2s ease-in-out;;
+  -webkit-transition: background 0.2s linear, width 0.2s ease-in-out, height 0.2s ease-in-out;
+  -moz-transition: background 0.2s linear, width 0.2s ease-in-out, height 0.2s ease-in-out;
+  -ms-transition: background 0.2s linear, width 0.2s ease-in-out, height 0.2s ease-in-out;
+  -o-transition: background 0.2s linear, width 0.2s ease-in-out, height 0.2s ease-in-out;
   transition: background 0.2s linear, width 0.2s ease-in-out, height 0.2s ease-in-out;
 }
 .home.active .div-block-14 {
   background: transparent;
   width:15px;
   height:15px;
-  -webkit-transition: background 0.2s linear, width 0.2s ease-in-out, height 0.2s ease-in-out;;
-  -moz-transition: background 0.2s linear, width 0.2s ease-in-out, height 0.2s ease-in-out;;
-  -ms-transition: background 0.2s linear, width 0.2s ease-in-out, height 0.2s ease-in-out;;
-  -o-transition: background 0.2s linear, width 0.2s ease-in-out, height 0.2s ease-in-out;;
+  -webkit-transition: background 0.2s linear, width 0.2s ease-in-out, height 0.2s ease-in-out;
+  -moz-transition: background 0.2s linear, width 0.2s ease-in-out, height 0.2s ease-in-out;
+  -ms-transition: background 0.2s linear, width 0.2s ease-in-out, height 0.2s ease-in-out;
+  -o-transition: background 0.2s linear, width 0.2s ease-in-out, height 0.2s ease-in-out;
   transition: background 0.2s linear, width 0.2s ease-in-out, height 0.2s ease-in-out;
+}
+.text-wrap .heading {
+  transform:translate3d(0, -85px, 0);
+  opacity:0;
+}
+.text-wrap .heading.active {
+  transform:translate3d(0, 0px, 0);
+  opacity:1;
+  -webkit-transition: transform 0.2s ease-in-out, opacity 0.2 linear;
+  -moz-transition: transform 0.2s ease-in-out, opacity 0.2 linear;
+  -ms-transition: transform 0.2s ease-in-out, opacity 0.2 linear;
+  -o-transition: transform 0.2s ease-in-out, opacity 0.2 linear;
+  transition: transform 0.5s ease-in-out, opacity 0.5s linear;
+}
+.text-wrap .heading.active.down {
+  transform:translate3d(0, 85px, 0);
+  opacity:0;
+  -webkit-transition: transform 0.2s ease-in-out, opacity 0.2 linear;
+  -moz-transition: transform 0.2s ease-in-out, opacity 0.2 linear;
+  -ms-transition: transform 0.2s ease-in-out, opacity 0.2 linear;
+  -o-transition: transform 0.2s ease-in-out, opacity 0.2 linear;
+  transition: transform 0.5s ease-in-out, opacity 0.5s linear;
 }
