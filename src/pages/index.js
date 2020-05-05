@@ -1,5 +1,6 @@
 import React, { Component} from "react"
 import { Link } from "gatsby"
+import Slider from "react-slick";
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -38,6 +39,15 @@ import Image_4 from "../images/Image-4.png"
 import vit_ang_ps from "../images/vit-ang_ps.png"
 
 class homePage extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      nav1: null,
+      nav2: null,
+      nav3: null,
+      nav4: null
+    };
+  }
   componentDidMount() {
     // Add Height for tour section
     var scan = document.getElementsByClassName("scan");
@@ -51,7 +61,9 @@ class homePage extends Component {
       var lifeContent = document.getElementsByClassName("life");
       var planContent = document.getElementsByClassName("plan");
       var improveContent = document.getElementsByClassName("improve");
+      var lastScrollTop = 0;
       function handleScrollBody() {
+        var body = document.body;
         var scroll = window.pageYOffset;
         var winHeight = window.screen.height / 2;
         var scrollMiddle  = window.pageYOffset + winHeight;
@@ -77,17 +89,17 @@ class homePage extends Component {
         var equipmentElem = document.getElementsByClassName("_5");
         var process = document.getElementById("process").getBoundingClientRect().top + scroll;
         var processElem = document.getElementsByClassName("_6");
-        if (scroll > learn) { learnContent[0].style.display = "block";}
+        if (scroll >= Math.floor(learn)) { learnContent[0].style.display = "block";}
         else {learnContent[0].style.display = "none";}
-        if (scroll > food) { foodContent[0].style.display = "block";}
+        if (scroll >= Math.floor(food)) { foodContent[0].style.display = "block";}
         else {foodContent[0].style.display = "none";}
-        if (scroll > sup) { supContent[0].style.display = "block";}
+        if (scroll >= Math.floor(sup)) { supContent[0].style.display = "block";}
         else {supContent[0].style.display = "none";}
-        if (scroll > life) { lifeContent[0].style.display = "block";}
+        if (scroll >= Math.floor(life)) { lifeContent[0].style.display = "block";}
         else {lifeContent[0].style.display = "none";}
-        if (scroll > plan) { planContent[0].style.display = "block";}
+        if (scroll >= Math.floor(plan)) { planContent[0].style.display = "block";}
         else {planContent[0].style.display = "none";}
-        if (scroll > improve) { improveContent[0].style.display = "block";}
+        if (scroll >= Math.floor(improve)) { improveContent[0].style.display = "block";}
         else {improveContent[0].style.display = "none";}
         if (scrollMiddle > posLab && scrollMiddle < posLabLast) {lineElem[0].style.height = line+'px';}
         if (scrollMiddle > pricing) {pricingElem[0].classList.add('active')}
@@ -134,8 +146,64 @@ class homePage extends Component {
         window.setTimeout(function(){ window.requestAnimationFrame(step); }, 16000);
       }
       window.requestAnimationFrame(step);
+      this.setState({
+        nav1: this.slider1,
+        nav2: this.slider2,
+        nav3: this.slider3,
+        nav4: this.slider4
+      });
+      // slick trigger click
+      function nextFunction() {
+        var next = document.getElementsByClassName("slick-prev");
+        var i;
+          for (i = 0; i < next.length; i++) {
+            next[i].click();
+          }
+      }
+      function prevFunction() {
+        var next = document.getElementsByClassName("slick-next");
+        var i;
+          for (i = 0; i < next.length; i++) {
+            next[i].click();
+          }
+      }
+      var nextElem = document.getElementById("next");
+      var prevElem = document.getElementById("prev");
+      nextElem.addEventListener("click", nextFunction);
+      prevElem.addEventListener("click", prevFunction);
+    // Tab function
+      var btnContainer = document.getElementById("tabmenu");
+      var contentContainer = document.getElementById("tabcontent");
+      var btns = btnContainer.getElementsByClassName("w-tab-link");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function(e) {
+          e.preventDefault()
+          var current = btnContainer.getElementsByClassName("w--current");
+          current[0].className = current[0].className.replace(" w--current", "");
+          this.className += " w--current";
+          var tabName = this.getAttribute("data-w-tab");
+          var currentTab = contentContainer.getElementsByClassName("w--tab-active");
+          currentTab[0].className = currentTab[0].className.replace(" w--tab-active", "");
+          var tabContentCl = contentContainer.getElementsByClassName(tabName) ;
+          tabContentCl[0].className += " w--tab-active";
+        });
+      }
   }
 	render() {
+    const settings = {
+      dots: false,
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    };
+    const textSlide = {
+      dots: false,
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      fade: !0
+    };
+
 	return (
 	<Layout>
     <SEO title="Home" />
@@ -146,15 +214,15 @@ class homePage extends Component {
           <div className="div-block-3">
             <div className="word-change">
               <h1 className="heading change"> In pursuit<br/>of better</h1>
-              <div class="text-wrap">
-                <div class="text-change-1 heading">focus</div>
-                <div class="text-change-2 heading">energy</div>
-                <div class="text-change-3 heading">immunity</div>
-                <div class="text-change-4 heading">weight</div>
-                <div class="text-change-5 heading">appearance</div>
-                <div class="text-change-6 heading">sleep</div>
-                <div class="text-change-7 heading">fitness</div>
-                <div class="text-change-8 heading">living</div>
+              <div className="text-wrap">
+                <div className="text-change-1 heading">focus</div>
+                <div className="text-change-2 heading">energy</div>
+                <div className="text-change-3 heading">immunity</div>
+                <div className="text-change-4 heading">weight</div>
+                <div className="text-change-5 heading">appearance</div>
+                <div className="text-change-6 heading">sleep</div>
+                <div className="text-change-7 heading">fitness</div>
+                <div className="text-change-8 heading">living</div>
               </div>
             </div>
             <p className="paragraph main home">Meet Vessel, the in-home wellness tracker that instantly and accurately uncovers what your body really needs.</p><a href="wellness-test-cards.html" className="dark-bt main-section-bt w-button">Pre-order</a>
@@ -727,46 +795,46 @@ class homePage extends Component {
       </div>
       <div className="div-block-42">
         <div data-duration-in="300" data-duration-out="100" className="tabs w-tabs">
-          <div className="tabs-menu w-tab-menu" role="tablist">
-            <a data-w-tab="Vitamin B7" className="tab-link-tab-1 w-inline-block w-tab-link w--current" id="w-tabs-0-data-w-tab-0" href="#w-tabs-0-data-w-pane-0" role="tab" aria-controls="w-tabs-0-data-w-pane-0" aria-selected="true">
+          <div className="tabs-menu w-tab-menu" role="tablist" id="tabmenu">
+            <a data-w-tab="vitamin-b7" className="tab-link-tab-1 w-inline-block w-tab-link w--current" id="w-tabs-0-data-w-tab-0" href="#w-tabs-0-data-w-pane-0" role="tab" aria-controls="w-tabs-0-data-w-pane-0" aria-selected="true">
               <div className="text-block-19">Vitamin B7</div>
             </a>
-            <a data-w-tab="Zinc" className="tab-link-tab-1 w-inline-block w-tab-link" tabIndex="-1" id="w-tabs-0-data-w-tab-1" href="#w-tabs-0-data-w-pane-1" role="tab" aria-controls="w-tabs-0-data-w-pane-1" aria-selected="false">
+            <a data-w-tab="zinc" className="tab-link-tab-1 w-inline-block w-tab-link" tabIndex="-1" id="w-tabs-0-data-w-tab-1" href="#w-tabs-0-data-w-pane-1" role="tab" aria-controls="w-tabs-0-data-w-pane-1" aria-selected="false">
               <div className="text-block-19">Zinc</div>
             </a>
-            <a data-w-tab="Vitamin B9" className="tab-link-tab-1 w-inline-block w-tab-link" tabIndex="-1" id="w-tabs-0-data-w-tab-2" href="#w-tabs-0-data-w-pane-2" role="tab" aria-controls="w-tabs-0-data-w-pane-2" aria-selected="false">
+            <a data-w-tab="vitamin-b9" className="tab-link-tab-1 w-inline-block w-tab-link" tabIndex="-1" id="w-tabs-0-data-w-tab-2" href="#w-tabs-0-data-w-pane-2" role="tab" aria-controls="w-tabs-0-data-w-pane-2" aria-selected="false">
               <div className="text-block-19">Vitamin B9</div>
             </a>
-            <a data-w-tab="Hydration" className="tab-link-tab-1 w-inline-block w-tab-link" tabIndex="-1" id="w-tabs-0-data-w-tab-3" href="#w-tabs-0-data-w-pane-3" role="tab" aria-controls="w-tabs-0-data-w-pane-3" aria-selected="false">
+            <a data-w-tab="hydration" className="tab-link-tab-1 w-inline-block w-tab-link" tabIndex="-1" id="w-tabs-0-data-w-tab-3" href="#w-tabs-0-data-w-pane-3" role="tab" aria-controls="w-tabs-0-data-w-pane-3" aria-selected="false">
               <div className="text-block-19">Hydration</div>
             </a>
-            <a data-w-tab="Vitamin C" className="tab-link-tab-1 w-inline-block w-tab-link" tabIndex="-1" id="w-tabs-0-data-w-tab-4" href="#w-tabs-0-data-w-pane-4" role="tab" aria-controls="w-tabs-0-data-w-pane-4" aria-selected="false">
+            <a data-w-tab="vitamin-c" className="tab-link-tab-1 w-inline-block w-tab-link" tabIndex="-1" id="w-tabs-0-data-w-tab-4" href="#w-tabs-0-data-w-pane-4" role="tab" aria-controls="w-tabs-0-data-w-pane-4" aria-selected="false">
               <div className="text-block-19">Vitamin C</div>
             </a>
-            <a data-w-tab="Cortisol" className="tab-link-tab-1 w-inline-block w-tab-link" tabIndex="-1" id="w-tabs-0-data-w-tab-5" href="#w-tabs-0-data-w-pane-5" role="tab" aria-controls="w-tabs-0-data-w-pane-5" aria-selected="false">
+            <a data-w-tab="cortisol" className="tab-link-tab-1 w-inline-block w-tab-link" tabIndex="-1" id="w-tabs-0-data-w-tab-5" href="#w-tabs-0-data-w-pane-5" role="tab" aria-controls="w-tabs-0-data-w-pane-5" aria-selected="false">
               <div className="text-block-19">Cortisol</div>
             </a>
-            <a data-w-tab="Magnesium" className="tab-link-tab-1 w-inline-block w-tab-link" tabIndex="-1" id="w-tabs-0-data-w-tab-6" href="#w-tabs-0-data-w-pane-6" role="tab" aria-controls="w-tabs-0-data-w-pane-6" aria-selected="false">
+            <a data-w-tab="magnesium" className="tab-link-tab-1 w-inline-block w-tab-link" tabIndex="-1" id="w-tabs-0-data-w-tab-6" href="#w-tabs-0-data-w-pane-6" role="tab" aria-controls="w-tabs-0-data-w-pane-6" aria-selected="false">
               <div className="text-block-19">Magnesium</div>
             </a>
-            <a data-w-tab="Ketones A&amp;B" className="tab-link-tab-1 w-inline-block w-tab-link" tabIndex="-1" id="w-tabs-0-data-w-tab-7" href="#w-tabs-0-data-w-pane-7" role="tab" aria-controls="w-tabs-0-data-w-pane-7" aria-selected="false">
+            <a data-w-tab="ketones-a-b" className="tab-link-tab-1 w-inline-block w-tab-link" tabIndex="-1" id="w-tabs-0-data-w-tab-7" href="#w-tabs-0-data-w-pane-7" role="tab" aria-controls="w-tabs-0-data-w-pane-7" aria-selected="false">
               <div className="text-block-19">Ketones A&amp;B</div>
             </a>
-            <a data-w-tab="PH" className="tab-link-tab-1 w-inline-block w-tab-link" tabIndex="-1" id="w-tabs-0-data-w-tab-8" href="#w-tabs-0-data-w-pane-8" role="tab" aria-controls="w-tabs-0-data-w-pane-8" aria-selected="false">
+            <a data-w-tab="ph" className="tab-link-tab-1 w-inline-block w-tab-link" tabIndex="-1" id="w-tabs-0-data-w-tab-8" href="#w-tabs-0-data-w-pane-8" role="tab" aria-controls="w-tabs-0-data-w-pane-8" aria-selected="false">
               <div className="text-block-19">pH</div>
             </a>
-            <a data-w-tab="Mercury" className="tab-link-tab-1 w-inline-block w-tab-link" tabIndex="-1" id="w-tabs-0-data-w-tab-9" href="#w-tabs-0-data-w-pane-9" role="tab" aria-controls="w-tabs-0-data-w-pane-9" aria-selected="false">
+            <a data-w-tab="mercury" className="tab-link-tab-1 w-inline-block w-tab-link" tabIndex="-1" id="w-tabs-0-data-w-tab-9" href="#w-tabs-0-data-w-pane-9" role="tab" aria-controls="w-tabs-0-data-w-pane-9" aria-selected="false">
               <div className="text-block-19">Mercury</div>
             </a>
-            <a data-w-tab="Iron" className="tab-link-tab-1 w-inline-block w-tab-link" tabIndex="-1" id="w-tabs-0-data-w-tab-10" href="#w-tabs-0-data-w-pane-10" role="tab" aria-controls="w-tabs-0-data-w-pane-10" aria-selected="false">
+            <a data-w-tab="iron" className="tab-link-tab-1 w-inline-block w-tab-link" tabIndex="-1" id="w-tabs-0-data-w-tab-10" href="#w-tabs-0-data-w-pane-10" role="tab" aria-controls="w-tabs-0-data-w-pane-10" aria-selected="false">
               <div className="text-block-19">Iron</div>
             </a>
-            <a data-w-tab="Lead" className="tab-link-tab-1 w-inline-block w-tab-link" tabIndex="-1" id="w-tabs-0-data-w-tab-11" href="#w-tabs-0-data-w-pane-11" role="tab" aria-controls="w-tabs-0-data-w-pane-11" aria-selected="false">
+            <a data-w-tab="lead" className="tab-link-tab-1 w-inline-block w-tab-link" tabIndex="-1" id="w-tabs-0-data-w-tab-11" href="#w-tabs-0-data-w-pane-11" role="tab" aria-controls="w-tabs-0-data-w-pane-11" aria-selected="false">
               <div className="text-block-19">Lead</div>
             </a>
           </div>
-          <div className="tabs-content w-tab-content">
-            <div data-w-tab="Vitamin B7" className="tab-pane-vitamin-b7 w-tab-pane w--tab-active" id="w-tabs-0-data-w-pane-0" role="tabpanel" aria-labelledby="w-tabs-0-data-w-tab-0">
+          <div className="tabs-content w-tab-content" id="tabcontent">
+            <div data-w-tab="Vitamin B7" className="vitamin-b7 w-tab-pane w--tab-active" id="w-tabs-0-data-w-pane-0" role="tabpanel" aria-labelledby="w-tabs-0-data-w-tab-0">
               <h2 className="heading-4">Vitamin B7</h2>
               <p className="vessel">Biotin is an essential vitamin that helps your body turn the carbohydrates, fats, and proteins in the food you eat into the energy you need.</p>
               <ul className="list">
@@ -780,7 +848,7 @@ class homePage extends Component {
                 </div>
               </div>
             </div>
-            <div data-w-tab="Zinc" className="w-tab-pane" id="w-tabs-0-data-w-pane-1" role="tabpanel" aria-labelledby="w-tabs-0-data-w-tab-1">
+            <div data-w-tab="Zinc" className="zinc w-tab-pane" id="w-tabs-0-data-w-pane-1" role="tabpanel" aria-labelledby="w-tabs-0-data-w-tab-1">
               <h2 className="heading-4">Zinc</h2>
               <p className="vessel">Zinc plays an important role in supporting the health to your immune system, brain, and eyes. Zinc also supports healthy pregnancies and the development of children.</p>
               <ul className="list">
@@ -794,7 +862,7 @@ class homePage extends Component {
                 </div>
               </div>
             </div>
-            <div data-w-tab="Vitamin B9" className="w-tab-pane" id="w-tabs-0-data-w-pane-2" role="tabpanel" aria-labelledby="w-tabs-0-data-w-tab-2">
+            <div data-w-tab="Vitamin B9" className="vitamin-b9 w-tab-pane" id="w-tabs-0-data-w-pane-2" role="tabpanel" aria-labelledby="w-tabs-0-data-w-tab-2">
               <h2 className="heading-4">Vitamin B9</h2>
               <p className="vessel">Folate plays a key role in methylation reactions which help to improve brain function, regulate energy levels, and reduce inflammation.</p>
               <ul className="list">
@@ -808,7 +876,7 @@ class homePage extends Component {
                 </div>
               </div>
             </div>
-            <div data-w-tab="Hydration" className="w-tab-pane" id="w-tabs-0-data-w-pane-3" role="tabpanel" aria-labelledby="w-tabs-0-data-w-tab-3">
+            <div data-w-tab="Hydration" className="hydration w-tab-pane" id="w-tabs-0-data-w-pane-3" role="tabpanel" aria-labelledby="w-tabs-0-data-w-tab-3">
               <h2 className="heading-4">Hydration</h2>
               <p className="vessel">Specific gravity is a quick way to get important information about hydration status, which is critical for optimal functioning of nearly all systems in your body.</p>
               <ul className="list">
@@ -822,7 +890,7 @@ class homePage extends Component {
                 </div>
               </div>
             </div>
-            <div data-w-tab="Vitamin C" className="w-tab-pane" id="w-tabs-0-data-w-pane-4" role="tabpanel" aria-labelledby="w-tabs-0-data-w-tab-4">
+            <div data-w-tab="Vitamin C" className="vitamin-c w-tab-pane" id="w-tabs-0-data-w-pane-4" role="tabpanel" aria-labelledby="w-tabs-0-data-w-tab-4">
               <h2 className="heading-4">Vitamin C</h2>
               <p className="vessel">Vitamin C is a powerful antioxidant that fights off free radicals, a common pathway of cellular aging and chronic disease.</p>
               <ul className="list">
@@ -837,7 +905,7 @@ class homePage extends Component {
                 </div>
               </div>
             </div>
-            <div data-w-tab="Cortisol" className="w-tab-pane" id="w-tabs-0-data-w-pane-5" role="tabpanel" aria-labelledby="w-tabs-0-data-w-tab-5">
+            <div data-w-tab="Cortisol" className="cortisol w-tab-pane" id="w-tabs-0-data-w-pane-5" role="tabpanel" aria-labelledby="w-tabs-0-data-w-tab-5">
               <h2 className="heading-4">Cortisol</h2>
               <p className="vessel">Cortisol is an important hormone produced primarily in our adrenal glands in response to stress (physical, physiological, and emotional/mental).</p>
               <ul className="list">
@@ -851,7 +919,7 @@ class homePage extends Component {
                 </div>
               </div>
             </div>
-            <div data-w-tab="Magnesium" className="w-tab-pane" id="w-tabs-0-data-w-pane-6" role="tabpanel" aria-labelledby="w-tabs-0-data-w-tab-6">
+            <div data-w-tab="Magnesium" className="magnesium w-tab-pane" id="w-tabs-0-data-w-pane-6" role="tabpanel" aria-labelledby="w-tabs-0-data-w-tab-6">
               <h2 className="heading-4">Magnesium</h2>
               <p className="vessel">Magnesium is an essential mineral involved in supporting high quality sleep, healthy metabolism, blood pressure regulation, muscle relaxation, and more.</p>
               <ul className="list">
@@ -866,7 +934,7 @@ class homePage extends Component {
                 </div>
               </div>
             </div>
-            <div data-w-tab="Ketones A&amp;B" className="w-tab-pane" id="w-tabs-0-data-w-pane-7" role="tabpanel" aria-labelledby="w-tabs-0-data-w-tab-7">
+            <div data-w-tab="Ketones A&amp;B" className="ketones-a-b w-tab-pane" id="w-tabs-0-data-w-pane-7" role="tabpanel" aria-labelledby="w-tabs-0-data-w-tab-7">
               <h2 className="heading-4">Ketones A &amp; B</h2>
               <p className="vessel">These ketones can help you track how well your body has made the metabolic adaptation of burning ketones instead of sugar, which is the goal of a ketogenic diet.</p>
               <ul className="list">
@@ -881,7 +949,7 @@ class homePage extends Component {
                 </div>
               </div>
             </div>
-            <div data-w-tab="PH" className="w-tab-pane" id="w-tabs-0-data-w-pane-8" role="tabpanel" aria-labelledby="w-tabs-0-data-w-tab-8">
+            <div data-w-tab="PH" className="ph w-tab-pane" id="w-tabs-0-data-w-pane-8" role="tabpanel" aria-labelledby="w-tabs-0-data-w-tab-8">
               <h2 className="heading-4">pH</h2>
               <p className="vessel">pH is how we measure acidity and alkalinity in the body. Having the right pH is critical for the optimal functioning of hundreds of enzymes in our body.</p>
               <ul className="list">
@@ -895,7 +963,7 @@ class homePage extends Component {
                 </div>
               </div>
             </div>
-            <div data-w-tab="Mercury" className="w-tab-pane" id="w-tabs-0-data-w-pane-9" role="tabpanel" aria-labelledby="w-tabs-0-data-w-tab-9">
+            <div data-w-tab="Mercury" className="mercury w-tab-pane" id="w-tabs-0-data-w-pane-9" role="tabpanel" aria-labelledby="w-tabs-0-data-w-tab-9">
               <h2 className="heading-4">Mercury</h2>
               <p className="vessel">Mercury is a toxic heavy metal that accumulates in fish. Once inside our bodies, mercury gets deposited into our tissues and causes widespread damage.</p>
               <ul className="list">
@@ -909,7 +977,7 @@ class homePage extends Component {
                 </div>
               </div>
             </div>
-            <div data-w-tab="Iron" className="w-tab-pane" id="w-tabs-0-data-w-pane-10" role="tabpanel" aria-labelledby="w-tabs-0-data-w-tab-10">
+            <div data-w-tab="Iron" className="iron w-tab-pane" id="w-tabs-0-data-w-pane-10" role="tabpanel" aria-labelledby="w-tabs-0-data-w-tab-10">
               <h2 className="heading-4">Iron</h2>
               <p className="vessel">Iron is an important mineral involved in supporting healthy energy levels, facilitating DNA repair, and creating the neurotransmitter dopamine.</p>
               <ul className="list">
@@ -923,7 +991,7 @@ class homePage extends Component {
                 </div>
               </div>
             </div>
-            <div data-w-tab="Lead" className="w-tab-pane" id="w-tabs-0-data-w-pane-11" role="tabpanel" aria-labelledby="w-tabs-0-data-w-tab-11">
+            <div data-w-tab="Lead" className="lead w-tab-pane" id="w-tabs-0-data-w-pane-11" role="tabpanel" aria-labelledby="w-tabs-0-data-w-tab-11">
               <h2 className="heading-4">Lead</h2>
               <p className="vessel">Lead is a toxic metal that gets deposited into many organs where it leads to a variety of dangerous problems.</p>
               <ul className="list">
@@ -1180,7 +1248,7 @@ class homePage extends Component {
       </div>
       <div className="div-block-45 w-clearfix">
         <div className="div-block-44 w-clearfix">
-          <div id="first-slide" className="div-block-26 slider-a w-clearfix">
+        <Slider {...settings} className="div-block-26 slider-a w-clearfix" asNavFor={this.state.nav2} ref={slider => (this.slider1 = slider)}>
             <div className="div-block-28 grow"><img src={paula} alt="" className="image-8 slide-img"/></div>
             <div className="div-block-28 grow"><img src={Jesus_Gonzalez} alt="" className="image-8 slide-img"/></div>
             <div className="div-block-28 grow"><img src={larson} alt="" className="slide-img"/></div>
@@ -1190,8 +1258,8 @@ class homePage extends Component {
             <div className="div-block-28 grow"><img src={heather} alt="" className="image-8 slide-img"/></div>
             <div className="div-block-28 grow"><img src={mike} alt="" className="image-8 slide-img"/></div>
             <div className="div-block-28 grow"><img src={nadia} alt="" className="image-8 slide-img"/></div>
-          </div>
-          <div id="second-slide" className="div-block-26 slider-b w-clearfix">
+          </Slider>
+          <Slider {...settings} className="div-block-26 slider-b w-clearfix" asNavFor={this.state.nav3} ref={slider => (this.slider2 = slider)}>
             <div className="div-block-28 grow"><img src={Jesus_Gonzalez} alt="" className="image-8 slide-img"/></div>
             <div className="div-block-28 grow"><img src={larson} alt="" className="slide-img"/></div>
             <div className="div-block-28 grow"><img src={maryam} alt="" className="slide-img"/></div>
@@ -1201,8 +1269,8 @@ class homePage extends Component {
             <div className="div-block-28 grow"><img src={mike} alt="" className="slide-img"/></div>
             <div className="div-block-28 grow"><img src={nadia} alt="" className="slide-img"/></div>
             <div className="div-block-28 grow"><img src={paula} alt="" className="slide-img"/></div>
-          </div>
-          <div id="third-slide" className="div-block-26 slider-c w-clearfix">
+            </Slider>
+            <Slider {...settings} className="div-block-26 slider-c w-clearfix" asNavFor={this.state.nav4} ref={slider => (this.slider3 = slider)}>
             <div className="div-block-28 grow"><img src={larson} alt="" className="slide-img"/></div>
             <div className="div-block-28 grow"><img src={maryam} alt="" className="slide-img"/></div>
             <div className="div-block-28 grow"><img src={linda} alt="" className="slide-img"/></div>
@@ -1212,10 +1280,10 @@ class homePage extends Component {
             <div className="div-block-28 grow"><img src={nadia} alt="" className="slide-img"/></div>
             <div className="div-block-28 grow"><img src={paula} alt="" className="slide-img"/></div>
             <div className="div-block-28 grow"><img src={Jesus_Gonzalez} alt="" className="image-8 slide-img"/></div>
-          </div>
+            </Slider>
         </div>
         <div className="div-block-24">
-          <div className="div-block-25">
+        <Slider {...textSlide} className="div-block-25" asNavFor={this.state.nav1} ref={slider => (this.slider4 = slider)}>
             <div id="text-slide" className="slide-content">
               <h2 className="heading-4 backed">Dr. David Larson, MD</h2>
               <p className="paragraph">Integrative medicine physician double board-certified in family medicine and psychiatry.<br/>Chief Medical Officer</p>
@@ -1252,7 +1320,7 @@ class homePage extends Component {
               <h2 className="heading-4 backed">Dr. Jesus Gonzalez</h2>
               <p className="paragraph"><br/>Chief Scientist at Vessel</p>
             </div>
-          </div>
+          </Slider>
           <div className="div-block-46"><img src={prev} id="prev" height="50" alt="" className="image-14"/><img src={next} id="next" height="50" alt=""/></div>
         </div>
       </div>
