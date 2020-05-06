@@ -45,15 +45,19 @@ class homePage extends Component {
       nav1: null,
       nav2: null,
       nav3: null,
-      nav4: null
+      nav4: null,
+      nav5: null,
+      nav6: null
     };
   }
   componentDidMount() {
     // Add Height for tour section
-    var scan = document.getElementsByClassName("scan");
+    window.addEventListener('load', (event) => {
+      var scan = document.getElementsByClassName("scan");
       var container = document.getElementsByClassName("container-6");
       var scanHeight = scan[0].offsetHeight;
       container[0].style.height = scanHeight+"px";
+    });
       // Tour and Compare animation
       var learnContent = document.getElementsByClassName("learn");
       var foodContent = document.getElementsByClassName("food");
@@ -150,7 +154,9 @@ class homePage extends Component {
         nav1: this.slider1,
         nav2: this.slider2,
         nav3: this.slider3,
-        nav4: this.slider4
+        nav4: this.slider4,
+        nav5: this.slider5,
+        nav6: this.slider6
       });
       // slick trigger click
       function nextFunction() {
@@ -202,6 +208,15 @@ class homePage extends Component {
       slidesToShow: 1,
       slidesToScroll: 1,
       fade: !0
+    };
+    const menutab = {
+      dots: false,
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      centerPadding: '10px',
+  focusOnSelect: true,
+  centerMode: false,
     };
 
 	return (
@@ -1013,7 +1028,7 @@ class homePage extends Component {
         </div>
       </div>
       <div className="div-block-55">
-        <div className="slider-tabs home">
+      <Slider {...menutab} className="slider-tabs home" asNavFor={this.state.nav6} ref={slider => (this.slider5 = slider)}>
           <div className="tab-link-tab-1">
             <div className="text-block-19">Vitamin B7</div>
           </div>
@@ -1050,8 +1065,8 @@ class homePage extends Component {
           <div className="tab-link-tab-1">
             <div className="text-block-19">Lead</div>
           </div>
-        </div>
-        <div className="slider-content home">
+        </Slider>
+        <Slider {...settings} className="slider-content home" asNavFor={this.state.nav5} ref={slider => (this.slider6 = slider)}>
           <div className="tab-pane-vitamin-b7">
             <div className="div-block-56"><img src={test_strip} alt="" className="image-15"/>
               <div className="blur-vit vit-7">
@@ -1224,7 +1239,7 @@ class homePage extends Component {
               <li className="list-item">Improved immune system functioning</li>
             </ul>
           </div>
-        </div>
+        </Slider>
         <div className="w-embed w-script">
         </div>
         <div className="div-block-51">
