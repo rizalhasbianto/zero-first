@@ -4,6 +4,7 @@ import React, { Component} from "react"
 import { Helmet } from "react-helmet"
 
 import Logo from "../images/Logo.png"
+import close from "../images/close.png"
 
 class Header extends React.Component {
 componentDidMount() {
@@ -38,6 +39,11 @@ componentDidMount() {
       }
     }
     window.addEventListener('scroll', handleScroll);
+    var topBar = document.getElementsByClassName('image-25')
+    topBar[0].addEventListener('click', (event) => {
+      var covid = document.getElementsByClassName("notification-bar-wrapper");
+      covid[0].style.display = "none";
+    });
 }
 constructor(props) {
     super(props);
@@ -69,7 +75,7 @@ render() {
           </div>
           <div className="div-block-74 w-clearfix"><a href="coronavirus.html" className="dark-bt rose w-button">Learn more</a></div>
         </div>
-      </div><img src="images/close.png" data-w-id="55a9ad55-4615-3891-1a1a-7e4f45bda160" alt="" className="image-25" /></div>
+      </div><img src={close} data-w-id="55a9ad55-4615-3891-1a1a-7e4f45bda160" alt="" className="image-25" /></div>
   </div>
   <div className="menu-navigation" id="menu_nav">
     <div className="menu-nav">

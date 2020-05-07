@@ -5,9 +5,7 @@ import Slider from "react-slick";
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import Image from "../components/image"
 import close from "../images/close.png"
-import close_Icon from "../images/close-Icon.png"
 import white_logo from "../images/white-logo.png"
 import main_top_mob from "../images/main-top_mob.png"
 import vessel_top from "../images/vessel_top.png"
@@ -1066,7 +1064,7 @@ class homePage extends Component {
             <div className="text-block-19">Lead</div>
           </div>
         </Slider>
-        <Slider {...settings} className="slider-content home" asNavFor={this.state.nav5} ref={slider => (this.slider6 = slider)}>
+        <Slider {...textSlide} className="slider-content home" asNavFor={this.state.nav5} ref={slider => (this.slider6 = slider)}>
           <div className="tab-pane-vitamin-b7">
             <div className="div-block-56"><img src={test_strip} alt="" className="image-15"/>
               <div className="blur-vit vit-7">
