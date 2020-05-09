@@ -1,0 +1,1642 @@
+import React, { Component} from "react"
+import { Link } from "gatsby"
+
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+
+import Logo from "../images/Logo.png"
+import close_Icon from "../images/close-Icon.png"
+import white_logo from "../images/white-logo.png"
+import Group_7 from "../images/Group-7.png"
+import quote from "../images/quote.png"
+import drbrownstein from "../images/drbrownstein.png"
+import unvi from "../images/unvi.png"
+import step1 from "../images/step1.png"
+import appstore_bt from "../images/appstore-bt.png"
+import playstore_bt from "../images/playstore-bt.png"
+import step2 from "../images/step2.png"
+import step3 from "../images/step3.png"
+import step4 from "../images/step4.png"
+import step5 from "../images/step5.png"
+import step6 from "../images/step6.png"
+import step7 from "../images/step7.png"
+import step8 from "../images/step8.png"
+import bene_1 from "../images/bene1.png"
+import benefits from "../images/benefits2.png"
+import bene_03 from "../images/bene03.png"
+import Image_2 from "../images/Image_2.png"
+import appstore from "../images/appstore.png"
+import googleplay from "../images/googleplay.png"
+import test_kit from "../images/test-kit.png"
+import how_anti from "../images/how-anti.jpg"
+import anti_ from "../images/anti_1.png"
+import igm from "../images/igm.png"
+import igg from "../images/igg.png"
+import result_igm from "../images/result-igm.png"
+import result_both from "../images/result-both.png"
+import result_igg from "../images/result-igg.png"
+import result_neg from "../images/result-neg.png"
+import invalid from "../images/invalid.png"
+import data_priv from "../images/data-priv.png"
+import cards from "../images/2cards.png"
+import _Ryan_Dranginis from "../images/4-Ryan-Dranginis.jpg"
+import _Jesus_Gonzalez from "../images/3-Jesus-Gonzalez.jpg"
+import _Matt_McCord from "../images/2-Matt-McCord.jpg"
+import _Jon_Carder from "../images/1_Jon-Carder.jpg"
+import _Blake_Jendrusch from "../images/43-Blake-Jendrusch.jpg"
+import _Jeremy_Schumann from "../images/42-Jeremy-Schumann.jpeg"
+import _Jordan_Ames from "../images/41-Jordan-Ames.jpg"
+import _Ghaleb_Hamdan from "../images/39-Ghaleb-Hamdan.jpg"
+import _Eric_Ostrowski from "../images/38-Eric-Ostrowski.jpg"
+import _Anand_Bhatt from "../images/36-Anand-Bhatt.jpg"
+import _Pete_Janda from "../images/35-Pete-Janda.jpg"
+import _Adam_Eidelson from "../images/34-Adam-Eidelson.jpg"
+import _Jonathan_Balleras from "../images/33-Jonathan-Balleras.jpg"
+import _Eric_Weiss from "../images/32-Eric-Weiss.jpg"
+import _Mark_Tholking from "../images/31-Mark-Tholking.jpg"
+import _Ryan_Wojciechowski from "../images/30-Ryan-Wojciechowski.jpg"
+import _Kevin_Martignetti from "../images/29-Kevin-Martignetti.jpg"
+import _Peter_Haist from "../images/28-Peter-Haist.jpg"
+import _Andrea_Giralt from "../images/27-Andrea-Giralt.jpg"
+import _Paul_Williams from "../images/26-Paul-Williams.jpg"
+import _Meredith from "../images/25-Meredith.jpg"
+import _Dr_Lane from "../images/24-Dr.-Lane.jpg"
+import _Dr_Sam_Niedbala from "../images/23-Dr.-Sam-Niedbala.jpg"
+import _mona_update from "../images/22-mona-update.png"
+import _Dr_Sameer_Berry from "../images/21-Dr.-Sameer-Berry.jpg"
+import _mike from "../images/20-mike.png"
+import _larson from "../images/19-larson.png"
+import _paula from "../images/18-paula.png"
+import _Dr_Robert_Buechel from "../images/17-Dr.-Robert-Buechel.jpg"
+import _James_Bausano from "../images/16-James-Bausano.jpg"
+import _John_Norris from "../images/15-John-Norris.jpg"
+import _Trish_Pavlecich from "../images/14-Trish-Pavlecich.jpg"
+import _Lee_O_Donovan from "../images/13-Lee-O_Donovan.jpg"
+import _Kristen_Hlozek from "../images/12-Kristen-Hlozek.jpg"
+import _Matty_Vee from "../images/11-Matty-Vee.jpg"
+import _Dan_Riley from "../images/10-Dan-Riley.jpg"
+import _Bucky_Markus from "../images/9-Bucky-Markus.jpg"
+import _Andrew_Beinbrink from "../images/8-Andrew-Beinbrink.jpg"
+import _Christian_Chasmer from "../images/7-Christian-Chasmer.jpg"
+import _Kyle_Brown from "../images/6-Kyle-Brown.jpg"
+import _Doug_Lorenzen from "../images/5-Doug-Lorenzen.jpg"
+import prev from "../images/prev.png"
+import next from "../images/next.png"
+import Icon from "../images/Icon.png"
+import Icon_checkbox from "../images/Icon-checkbox.png"
+import fb from "../images/fb.png"
+import tw from "../images/tw.png"
+import li from "../images/li.png"
+import em from "../images/em.png"
+import expand from "../images/expand.png"
+import close from "../images/close.png"
+
+class coronaPage extends Component {
+	render() {
+	return (
+	<Layout>
+    <SEO title="corona" />
+    <div className="main-section covid">
+    <div className="top covid"><img src={Group_7} alt="" className="image mobile" />
+      <div className="container-8 top w-container">
+        <div className="div-block-2">
+          <div className="div-block-3 covid19 w-clearfix">
+            <div className="word-change covid19">
+              <h1 className="heading covid19">At-home <br/>testing for <span className="text-span-2">COVID-19 antibodies</span></h1>
+            </div>
+            <p className="paragraph main covid">Vessel’s app and serology test enable accurate at-home detection of antibodies against the novel coronavirus in 15 minutes. At-home antibody testing is a promising new tool with multiple benefits. Antibody tests use the same lateral flow assay (LFA) technology that we spent the last three years developing for our wellness test, enabling us to swiftly deploy an at-home testing solution for COVID-19. A thorough review by the proper regulatory agencies is currently under way.</p><a href="#join-waitlist" className="dark-bt main-section-bt w-button">Join the waitlist</a></div>
+        </div>
+      </div>
+      <div className="div-block"><img src={Group_7}  alt="" className="image" /></div>
+    </div>
+    <div className="overview first">
+      <div className="container-14 universal w-container">
+        <div className="div-block-79">
+          <h3>Affordable and Accurate</h3>
+          <p className="paragraph">Test kits and telemedicine services will be covered by insurance or sold at cost (around $20 for test kits). We will be donating 100% of profits to provide test kits for those in need. We’ve secured manufacturing for hundreds of thousands of test kits per day that are CFDA and CE certified, with sensitivity of 93.8% and specificity of 95.6%. We are working with the team at <a href="https://marsonlab.ucsf.edu/" target="_blank">University of California San Francisco</a> to validate the test cards. We’re working with <a href="http://doc.ai/" target="_blank">Doc.ai</a> on clinical trials to verify the accuracy of at-home testing in order to receive regulatory approval around the world. The study is scheduled to be completed by May 2020. We are also a member of the <a href="https://www.xprize.org/fight-covid19" target="_blank">XPRIZE Pandemic Alliance</a>, being led by <a href="https://www.anthem.com/" target="_blank">Anthem</a>.<br/></p>
+        </div>
+        <div className="div-block-135">
+          <div className="div-block-136"><img src={quote} alt="" className="image-33" /></div>
+          <div className="div-block-131">
+            <p className="paragraph drbrown">In the fight against COVID-19, Vessel&#x27;s at-home antibody test is a promising new tool to help us understand who is likely immune and can return back to work. </p>
+            <div className="div-block-132"><img src={drbrownstein} alt="" className="image-30"/>
+              <div className="div-block-134">
+                <h2 className="heading-4 drbrown">Dr. John Brownstein<br/></h2>
+                <p className="paragraph drbrown">Epidemiologist and Professor of Medicine Harvard Medical School<strong><br/></strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><img src={unvi} alt="" className="image-20"/>
+      <div className="white-bg"></div>
+      <div className="cream-bg covid"></div>
+      <div className="rose-fpo universal"></div>
+    </div>
+    <div className="green-bg top"></div>
+  </div>
+  <div className="instructions">
+    <div className="section-sticky__wrap section-sticky__wrap-progress covid">
+      <div id="step1" className="section-triggers section-triggers__scroll-down">
+        <div id="step2" className="section-trigger section-trigger__0"></div>
+        <div id="step3" data-w-id="03968894-35a4-0c9b-5b20-6970528abfc3" className="section-trigger section-trigger__1"></div>
+        <div id="step4" data-w-id="03968894-35a4-0c9b-5b20-6970528abfc4" className="section-trigger section-trigger__2"></div>
+        <div id="step5" data-w-id="03968894-35a4-0c9b-5b20-6970528abfc5" className="section-trigger section-trigger__3"></div>
+        <div id="step6" data-w-id="03968894-35a4-0c9b-5b20-6970528abfc6" className="section-trigger section-trigger__4"></div>
+        <div id="step7" data-w-id="03968894-35a4-0c9b-5b20-6970528abfc7" className="section-trigger section-trigger__5"></div>
+        <div id="step8" data-w-id="03968894-35a4-0c9b-5b20-6970528abfc8" className="section-trigger section-trigger__6"></div>
+        <div id="step9" data-w-id="0e914f13-60f9-7657-e6e5-ee05f8e33b40" className="section-trigger section-trigger__7"></div>
+      </div>
+      <div className="wrap__sticky sticky sticky-5">
+        <div className="div-block-41">
+          <div className="div-block-47">
+            <div className="container-7 w-container">
+              <div className="div-block-43">
+                <h2 className="heading tour">How Vessel works</h2>
+              </div>
+            </div>
+            <div className="container-6 w-container">
+              <div className="scan">
+                <div className="div-block-9">
+                  <div className="scroll-menu">
+                    <div className="div-block-7">
+                      <a href="#step1" className="w-inline-block">
+                        <div className="text-block active">Step 1</div>
+                      </a>
+                      <div className="div-block-8 active scan-b"></div>
+                    </div>
+                    <div className="div-block-7">
+                      <a href="#step2" className="w-inline-block">
+                        <div className="text-block">Step 2</div>
+                      </a>
+                      <div className="div-block-8"></div>
+                    </div>
+                    <div className="div-block-7">
+                      <a href="#step3" className="w-inline-block">
+                        <div className="text-block">Step 3</div>
+                      </a>
+                      <div className="div-block-8"></div>
+                    </div>
+                    <div className="div-block-7">
+                      <a href="#step4" className="w-inline-block">
+                        <div className="text-block">Step 4</div>
+                      </a>
+                      <div className="div-block-8"></div>
+                    </div>
+                    <div className="div-block-7">
+                      <a href="#step5" className="w-inline-block">
+                        <div className="text-block">Step 5</div>
+                      </a>
+                      <div className="div-block-8"></div>
+                    </div>
+                    <div className="div-block-7">
+                      <a href="#step6" className="w-inline-block">
+                        <div className="text-block">Step 6</div>
+                      </a>
+                      <div className="div-block-8"></div>
+                    </div>
+                    <div className="div-block-7">
+                      <a href="#step7" className="w-inline-block">
+                        <div className="text-block">Step 7</div>
+                      </a>
+                      <div className="div-block-8"></div>
+                    </div>
+                    <div className="div-block-7">
+                      <a href="#step8" className="w-inline-block">
+                        <div className="text-block">Step 8</div>
+                      </a>
+                      <div className="div-block-8"></div>
+                    </div>
+                  </div>
+                  <div className="scroll-img">
+                    <div className="div-block-48"></div>
+                    <div className="div-block-49"></div><img src={step1}  alt="" className="image-5"/></div>
+                  <div className="scroll-text">
+                    <h2 className="heading-30">Step 1</h2>
+                    <p className="paragraph">Download the free Vessel app once it has been approved for use in your country. <a href="#join-waitlist">Join the waitlist</a> to be notified.</p>
+                    <div className="div-block-86 step1"><img src={appstore_bt} alt="" className="image-22"/>
+                    <img src={playstore_bt} alt="" className="image-23"/></div>
+                  </div>
+                </div>
+              </div>
+              <div className="learn">
+                <div className="div-block-9">
+                  <div className="scroll-menu">
+                    <div className="div-block-7">
+                      <a href="#step1" className="w-inline-block">
+                        <div className="text-block">Step 1</div>
+                      </a>
+                      <div className="div-block-8"></div>
+                    </div>
+                    <div className="div-block-7">
+                      <a href="#step2" className="w-inline-block">
+                        <div className="text-block active">Step 2</div>
+                      </a>
+                      <div className="div-block-8 active learn-b"></div>
+                    </div>
+                    <div className="div-block-7">
+                      <a href="#step3" className="w-inline-block">
+                        <div className="text-block">Step 3</div>
+                      </a>
+                      <div className="div-block-8"></div>
+                    </div>
+                    <div className="div-block-7">
+                      <a href="#step4" className="w-inline-block">
+                        <div className="text-block">Step 4</div>
+                      </a>
+                      <div className="div-block-8"></div>
+                    </div>
+                    <div className="div-block-7">
+                      <a href="#step5" className="w-inline-block">
+                        <div className="text-block">Step 5</div>
+                      </a>
+                      <div className="div-block-8"></div>
+                    </div>
+                    <div className="div-block-7">
+                      <a href="#step6" className="w-inline-block">
+                        <div className="text-block">Step 6</div>
+                      </a>
+                      <div className="div-block-8"></div>
+                    </div>
+                    <div className="div-block-7">
+                      <a href="#step7" className="w-inline-block">
+                        <div className="text-block">Step 7</div>
+                      </a>
+                      <div className="div-block-8"></div>
+                    </div>
+                    <div className="div-block-7">
+                      <a href="#step8" className="w-inline-block">
+                        <div className="text-block">Step 8</div>
+                      </a>
+                      <div className="div-block-8"></div>
+                    </div>
+                  </div>
+                  <div className="scroll-img">
+                    <div className="div-block-48"></div>
+                    <div className="div-block-49"></div><img src={step2} alt="" className="image-5"/></div>
+                  <div className="scroll-text">
+                    <h2 className="heading-30">Step 2</h2>
+                    <p className="paragraph">Complete the questionnaire .<br/></p>
+                  </div>
+                </div>
+              </div>
+              <div className="food">
+                <div className="div-block-9">
+                  <div className="scroll-menu">
+                    <div className="div-block-7">
+                      <a href="#step1" className="w-inline-block">
+                        <div className="text-block">Step 1</div>
+                      </a>
+                      <div className="div-block-8"></div>
+                    </div>
+                    <div className="div-block-7">
+                      <a href="#step2" className="w-inline-block">
+                        <div className="text-block">Step 2</div>
+                      </a>
+                      <div className="div-block-8"></div>
+                    </div>
+                    <div className="div-block-7">
+                      <a href="#step3" className="w-inline-block">
+                        <div className="text-block active">Step 3</div>
+                      </a>
+                      <div className="div-block-8 active food-b"></div>
+                    </div>
+                    <div className="div-block-7">
+                      <a href="#step4" className="w-inline-block">
+                        <div className="text-block">Step 4</div>
+                      </a>
+                      <div className="div-block-8"></div>
+                    </div>
+                    <div className="div-block-7">
+                      <a href="#step5" className="w-inline-block">
+                        <div className="text-block">Step 5</div>
+                      </a>
+                      <div className="div-block-8"></div>
+                    </div>
+                    <div className="div-block-7">
+                      <a href="#step6" className="w-inline-block">
+                        <div className="text-block">Step 6</div>
+                      </a>
+                      <div className="div-block-8"></div>
+                    </div>
+                    <div className="div-block-7">
+                      <a href="#step7" className="w-inline-block">
+                        <div className="text-block">Step 7</div>
+                      </a>
+                      <div className="div-block-8"></div>
+                    </div>
+                    <div className="div-block-7">
+                      <a href="#step8" className="w-inline-block">
+                        <div className="text-block">Step 8</div>
+                      </a>
+                      <div className="div-block-8"></div>
+                    </div>
+                  </div>
+                  <div className="scroll-img">
+                    <div className="div-block-48"></div>
+                    <div className="div-block-49"></div><img src={step3} srcset="images/step3-p-500.png 500w, images/step3-p-800.png 800w, images/step3-p-1080.png 1080w, images/step3.png 1122w" sizes="100vw" alt="" className="image-5"/></div>
+                  <div className="scroll-text">
+                    <h2 className="heading-30">Step 3</h2>
+                    <p className="paragraph">Select the test card you have. Our technology is compatible with test cards purchased directly from Vessel as well as those from other regulatory approved sources.</p>
+                  </div>
+                </div>
+              </div>
+              <div className="sup">
+                <div className="div-block-9">
+                  <div className="scroll-menu">
+                    <div className="div-block-7">
+                      <a href="#step1" className="w-inline-block">
+                        <div className="text-block">Step 1</div>
+                      </a>
+                      <div className="div-block-8"></div>
+                    </div>
+                    <div className="div-block-7">
+                      <a href="#step2" className="w-inline-block">
+                        <div className="text-block">Step 2</div>
+                      </a>
+                      <div className="div-block-8"></div>
+                    </div>
+                    <div className="div-block-7">
+                      <a href="#step3" className="w-inline-block">
+                        <div className="text-block">Step 3</div>
+                      </a>
+                      <div className="div-block-8"></div>
+                    </div>
+                    <div className="div-block-7">
+                      <a href="#step4" className="w-inline-block">
+                        <div className="text-block active">Step 4</div>
+                      </a>
+                      <div className="div-block-8 active sup-b"></div>
+                    </div>
+                    <div className="div-block-7">
+                      <a href="#step5" className="w-inline-block">
+                        <div className="text-block">Step 5</div>
+                      </a>
+                      <div className="div-block-8"></div>
+                    </div>
+                    <div className="div-block-7">
+                      <a href="#step6" className="w-inline-block">
+                        <div className="text-block">Step 6</div>
+                      </a>
+                      <div className="div-block-8"></div>
+                    </div>
+                    <div className="div-block-7">
+                      <a href="#step7" className="w-inline-block">
+                        <div className="text-block">Step 7</div>
+                      </a>
+                      <div className="div-block-8"></div>
+                    </div>
+                    <div className="div-block-7">
+                      <a href="#step8" className="w-inline-block">
+                        <div className="text-block">Step 8</div>
+                      </a>
+                      <div className="div-block-8"></div>
+                    </div>
+                  </div>
+                  <div className="scroll-img">
+                    <div className="div-block-48"></div>
+                    <div className="div-block-49"></div><img src={step4} srcset="images/step4-p-500.png 500w, images/step4-p-800.png 800w, images/step4-p-1080.png 1080w, images/step4.png 1122w" sizes="100vw" alt="" className="image-5"/></div>
+                  <div className="scroll-text">
+                    <h2 className="heading-30">Step 4</h2>
+                    <p className="paragraph">Watch the instructional video and apply one (1) drop of blood to the test card. An alcohol swab, lancet and pipette is provided in the test kit.</p>
+                  </div>
+                </div>
+              </div>
+              <div className="life">
+                <div className="div-block-9">
+                  <div className="scroll-menu">
+                    <div className="div-block-7">
+                      <a href="#step1" className="w-inline-block">
+                        <div className="text-block">Step 1</div>
+                      </a>
+                      <div className="div-block-8"></div>
+                    </div>
+                    <div className="div-block-7">
+                      <a href="#step2" className="w-inline-block">
+                        <div className="text-block">Step 2</div>
+                      </a>
+                      <div className="div-block-8"></div>
+                    </div>
+                    <div className="div-block-7">
+                      <a href="#step3" className="w-inline-block">
+                        <div className="text-block">Step 3</div>
+                      </a>
+                      <div className="div-block-8"></div>
+                    </div>
+                    <div className="div-block-7">
+                      <a href="#step4" className="w-inline-block">
+                        <div className="text-block">Step 4</div>
+                      </a>
+                      <div className="div-block-8"></div>
+                    </div>
+                    <div className="div-block-7">
+                      <a href="#step5" className="w-inline-block">
+                        <div className="text-block active">Step 5</div>
+                      </a>
+                      <div className="div-block-8 active sup-p"></div>
+                    </div>
+                    <div className="div-block-7">
+                      <a href="#step6" className="w-inline-block">
+                        <div className="text-block">Step 6</div>
+                      </a>
+                      <div className="div-block-8"></div>
+                    </div>
+                    <div className="div-block-7">
+                      <a href="#step7" className="w-inline-block">
+                        <div className="text-block">Step 7</div>
+                      </a>
+                      <div className="div-block-8"></div>
+                    </div>
+                    <div className="div-block-7">
+                      <a href="#step8" className="w-inline-block">
+                        <div className="text-block">Step 8</div>
+                      </a>
+                      <div className="div-block-8"></div>
+                    </div>
+                  </div>
+                  <div className="scroll-img">
+                    <div className="div-block-48"></div><img src={step5} alt="" className="image-5"/></div>
+                  <div className="scroll-text">
+                    <h2 className="heading-30">Step 5</h2>
+                    <p className="paragraph">Watch the video instructions and apply two (2) drops of buffer solution, which is provided in the test kit.</p>
+                  </div>
+                </div>
+              </div>
+              <div className="plan">
+                <div className="div-block-9">
+                  <div className="scroll-menu">
+                    <div className="div-block-7">
+                      <a href="#step1" className="w-inline-block">
+                        <div className="text-block">Step 1</div>
+                      </a>
+                      <div className="div-block-8"></div>
+                    </div>
+                    <div className="div-block-7">
+                      <a href="#step2" className="w-inline-block">
+                        <div className="text-block">Step 2</div>
+                      </a>
+                      <div className="div-block-8"></div>
+                    </div>
+                    <div className="div-block-7">
+                      <a href="#step3" className="w-inline-block">
+                        <div className="text-block">Step 3</div>
+                      </a>
+                      <div className="div-block-8"></div>
+                    </div>
+                    <div className="div-block-7">
+                      <a href="#step4" className="w-inline-block">
+                        <div className="text-block">Step 4</div>
+                      </a>
+                      <div className="div-block-8"></div>
+                    </div>
+                    <div className="div-block-7">
+                      <a href="#step5" className="w-inline-block">
+                        <div className="text-block">Step 5</div>
+                      </a>
+                      <div className="div-block-8"></div>
+                    </div>
+                    <div className="div-block-7">
+                      <a href="#step6" className="w-inline-block">
+                        <div className="text-block active">Step 6</div>
+                      </a>
+                      <div className="div-block-8 active plan-b"></div>
+                    </div>
+                    <div className="div-block-7">
+                      <a href="#step7" className="w-inline-block">
+                        <div className="text-block">Step 7</div>
+                      </a>
+                      <div className="div-block-8"></div>
+                    </div>
+                    <div className="div-block-7">
+                      <a href="#step8" className="w-inline-block">
+                        <div className="text-block">Step 8</div>
+                      </a>
+                      <div className="div-block-8"></div>
+                    </div>
+                  </div>
+                  <div className="scroll-img">
+                    <div className="div-block-48"></div>
+                    <div className="div-block-49"></div><img src={step6}  alt="" className="image-5"/></div>
+                  <div className="scroll-text">
+                    <h2 className="heading-30">Step 6</h2>
+                    <p className="paragraph">Use the in-app timer and wait ten minutes.</p>
+                  </div>
+                </div>
+              </div>
+              <div className="improve">
+                <div className="div-block-9">
+                  <div className="scroll-menu">
+                    <div className="div-block-7">
+                      <a href="#step1" className="w-inline-block">
+                        <div className="text-block">Step 1</div>
+                      </a>
+                      <div className="div-block-8"></div>
+                    </div>
+                    <div className="div-block-7">
+                      <a href="#step2" className="w-inline-block">
+                        <div className="text-block">Step 2</div>
+                      </a>
+                      <div className="div-block-8"></div>
+                    </div>
+                    <div className="div-block-7">
+                      <a href="#step3" className="w-inline-block">
+                        <div className="text-block">Step 3</div>
+                      </a>
+                      <div className="div-block-8"></div>
+                    </div>
+                    <div className="div-block-7">
+                      <a href="#step4" className="w-inline-block">
+                        <div className="text-block">Step 4</div>
+                      </a>
+                      <div className="div-block-8"></div>
+                    </div>
+                    <div className="div-block-7">
+                      <a href="#step5" className="w-inline-block">
+                        <div className="text-block">Step 5</div>
+                      </a>
+                      <div className="div-block-8"></div>
+                    </div>
+                    <div className="div-block-7">
+                      <a href="#step6" className="w-inline-block">
+                        <div className="text-block">Step 6</div>
+                      </a>
+                      <div className="div-block-8"></div>
+                    </div>
+                    <div className="div-block-7">
+                      <a href="#step7" className="w-inline-block">
+                        <div className="text-block active">Step 7</div>
+                      </a>
+                      <div className="div-block-8 active improve-b"></div>
+                    </div>
+                    <div className="div-block-7">
+                      <a href="#step8" className="w-inline-block">
+                        <div className="text-block">Step 8</div>
+                      </a>
+                      <div className="div-block-8"></div>
+                    </div>
+                  </div>
+                  <div className="scroll-img">
+                    <div className="div-block-48"></div>
+                    <div className="div-block-49"></div><img src={step7} alt="" className="image-5"/></div>
+                  <div className="scroll-text">
+                    <h2 className="heading-30">Step 7</h2>
+                    <p className="paragraph">Scan the test card in the app. Vessel&#x27;s image capture feature will help you get the perfectly fit image without glare or shadows and with proper lighting. Next, Vessel&#x27;s proprietary image analysis algorithm will then analyze the test card and determines the likely diagnosis.</p>
+                  </div>
+                </div>
+              </div>
+              <div className="step-8">
+                <div className="div-block-9">
+                  <div className="scroll-menu">
+                    <div className="div-block-7">
+                      <a href="#step1" className="w-inline-block">
+                        <div className="text-block">Step 1</div>
+                      </a>
+                      <div className="div-block-8"></div>
+                    </div>
+                    <div className="div-block-7">
+                      <a href="#step2" className="w-inline-block">
+                        <div className="text-block">Step 2</div>
+                      </a>
+                      <div className="div-block-8"></div>
+                    </div>
+                    <div className="div-block-7">
+                      <a href="#step3" className="w-inline-block">
+                        <div className="text-block">Step 3</div>
+                      </a>
+                      <div className="div-block-8"></div>
+                    </div>
+                    <div className="div-block-7">
+                      <a href="#step4" className="w-inline-block">
+                        <div className="text-block">Step 4</div>
+                      </a>
+                      <div className="div-block-8"></div>
+                    </div>
+                    <div className="div-block-7">
+                      <a href="#step5" className="w-inline-block">
+                        <div className="text-block">Step 5</div>
+                      </a>
+                      <div className="div-block-8"></div>
+                    </div>
+                    <div className="div-block-7">
+                      <a href="#step6" className="w-inline-block">
+                        <div className="text-block">Step 6</div>
+                      </a>
+                      <div className="div-block-8"></div>
+                    </div>
+                    <div className="div-block-7">
+                      <a href="#step7" className="w-inline-block">
+                        <div className="text-block">Step 7</div>
+                      </a>
+                      <div className="div-block-8"></div>
+                    </div>
+                    <div className="div-block-7">
+                      <a href="#step8" className="w-inline-block">
+                        <div className="text-block active">Step 8</div>
+                      </a>
+                      <div className="div-block-8 active improve-b"></div>
+                    </div>
+                  </div>
+                  <div className="scroll-img">
+                    <div className="div-block-48"></div>
+                    <div className="div-block-49"></div><img src={step8} alt="" className="image-5"/></div>
+                  <div className="scroll-text">
+                    <h2 className="heading-30">Step 8</h2>
+                    <p className="paragraph">The image and diagnosis are then shared with a medical professional, who will confirm the final diagnosis and review the results with you via Vessel&#x27;s telehealth platform.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="html-embed w-embed w-script">
+      </div>
+    </div>
+  </div>
+  <div data-w-id="d06e55a3-b60e-4e0d-99d3-78371f544e9b" className="instruction-trap"></div>
+  <div id="benefits" className="benefits">
+    <div className="cream-bg test-kit-access second"></div>
+    <div className="container-19 w-container">
+      <h2 className="heading">At-home Antibody testing benefits<br/></h2>
+      <div className="div-block-81"><img src={bene_1}  alt="" className="image-27"/>
+        <div className="div-block-82">
+          <p className="paragraph-12 number">01</p>
+          <div className="div-block-83">
+            <h3 className="heading-39"><strong className="bold-text">Reduce the burden on our healthcare system</strong></h3>
+            <p className="paragraph">Vessel could help lighten the load on the healthcare system by testing people at home who have mild symptoms or believe they have been exposed. For people with severe symptoms, contacting your doctor and getting lab-based PCR (polymerise chain reaction) testing is still recommended. Antibody (serology) tests are being used around the world to help in the fight against COVID-19. Public Health England (PHE) just purchased<a href="https://www.theguardian.com/world/2020/mar/25/uk-coronavirus-mass-home-testing-to-be-made-available-within-days" target="_blank"> 3.5M antibody test cards</a> and other countries are quickly following suit. They are even being used <a href="https://abcnews.go.com/Health/antibody-testing-colorado-town-provide-forward/story?id=69856623" target="_blank"> in Telluride, Colorado</a>.</p>
+          </div>
+        </div>
+      </div>
+      <div className="div-block-81 benefits">
+        <div className="div-block-82 left">
+          <p className="paragraph-12 number">02</p>
+          <div className="div-block-84">
+            <h3 className="heading-39"><strong className="bold-text">Protect essential workers and get people back to work</strong></h3>
+            <p className="paragraph">While we still need more data on how long infected individuals are infectious, we know that for similar coronaviruses such as SARS, people are presumed to be infectious for approximately 10 days after fever and respiratory symptoms have started to improve.<span className="cit-number">[1]</span> Our test kits and app enable medical professionals to diagnose who is <a href="#igg">IgG positive</a> and <a href="#igm">IgM negative</a>, and whether they are likely no longer infectious, possibly immune, and could return to work with certain precautions. Read the FDA’s view on serology testing <a href="https://www.fda.gov/news-events/press-announcements/coronavirus-covid-19-update-serological-tests">here</a>.<span className="cit-number">[2]</span> For information on antibody testing limitations <a href="#limitations-of-antibody-test">read here</a>.</p>
+            <div className="citation">1. <a href="https://www.ncbi.nlm.nih.gov/pubmed?term=20463105" target="_blank">https://www.cdc.gov/sars/about/faq.html<br/><br/></a>2. <a href="https://www.fda.gov/news-events/press-announcements/coronavirus-covid-19-update-serological-tests" target="_blank">https://www.fda.gov/news-events/press-announcements/coronavirus-covid-19-update-serological-tests</a><br/></div>
+          </div>
+        </div><img src={benefits} alt="" className="image-27"/></div>
+      <div className="div-block-81"><img src={bene_03} alt="" className="image-27"/>
+        <div className="div-block-82 right">
+          <p className="paragraph-12 number">03</p>
+          <div className="div-block-83">
+            <h3 className="heading-39"><strong className="bold-text">Data gives us a better understanding of COVID-19 epidemiology</strong></h3>
+            <p className="paragraph">Enabling at-home testing will get more people tested faster. Many people have been asymptomatic or showing mild symptoms and are therefore not being tested. This additional data can provide insights to help slow the spread and better understand the virus.<span className="cit-number">[1]</span> We adhere to an open standard to CDC/PHE/WHO in a universal effort to understand the sero-epidemiology of COVID-19. See our <a href="#data-policy">Data Policy</a>.</p>
+            <div className="citation">1. <a href="https://www.ncbi.nlm.nih.gov/pubmed/32243608" target="_blank">https://www.ncbi.nlm.nih.gov/pubmed/32243608</a><br/></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div className="accessbility">
+    <div className="green-bg"></div><img src={Image_2} alt="" className="image-21"/>
+    <div className="container-15 w-container">
+      <h1>App<br/>Accessibility</h1>
+      <div className="div-block-85">
+        <p className="paragraph">The Vessel app will be offered for free on the Apple App Store and Google Play Store where we get government regulatory agency approval. We are working closely with regulatory agencies around the world to get approval as quickly as possible. We have started a clinical trial in partnership with Anthem and Doc.ai in an effort to validate that at-home COVID-19 antibody testing produces consistent results as accurate as in-clinic testing. The clinical trial will be complete before the end of April. Not all regulatory bodies require the clinical trial to be completed for approval, so we may have some approvals shortly.  If you work for a regulatory agency and would like to review Vessel for at-home antibody testing in your country please contact us <a href="mailto:regulatory@vesselhealth.com?subject=Regulatory%20agency%20review" className="link-7">here.</a></p>
+        <div className="div-block-86"><img src={appstore} alt="" className="image-22"/><img src={googleplay} alt="" className="image-23"/></div>
+      </div>
+    </div>
+  </div>
+  <div className="test-kit">
+    <div className="container-22 w-container">
+      <h1>Test Kit<br/>Accessibility</h1>
+    </div>
+    <div className="div-block-87">
+      <div className="container-15 test-access w-container">
+        <div className="div-block-100">
+          <div className="div-block-85">
+            <p className="paragraph">In order to help get test kits out to as many people as possible we will offer test cards for purchase, at cost, directly from our website vesselhealth.com. All test cards are CFDA and CE approval and have a sensitivity of 91.5% or better, see accuracy studies. These test cards will be made available as so as we get regulatory approval. <a href="#" className="link-8">Join our Waitlist</a> to be notified as soon as they become available. Furthermore, we have created a “buy one, give one” program whereby we donate one test card to a person in need for each test card sold. You should receive your test within 1-5 business days, depending on the shipping option you select. Each package comes with a test card and all the materials you need to complete the tests, such as a lancet, alcohol swabs, buffer solution, and pipette.</p>
+          </div>
+        </div>
+      </div><img src={test_kit} alt="" className="image-24"/></div>
+    <div className="cream-bg test-kit-access"></div>
+  </div>
+  <div className="antibody">
+    <div className="green-bg anti"></div>
+    <div className="overview how-antibody">
+      <div className="container-14 w-container">
+        <div className="div-block-79 ab-test">
+          <h2 className="heading">Antibody testing</h2>
+          <p className="paragraph">Above is a plot showing a typical immune response to an infection. The Vessel app works by reading immunoassay test cards. These tests typically measure two different types of antibodies (IgM and IgG), which are immunoglobulins that your immune system generates in response to an infection. Antibodies are unique and specific to each pathogen, enabling us to specifically detect COVID-19 antibodies rather than antibodies against the flu virus or a common cold virus.<span className="cit-number">[1]</span></p>
+          <div className="citation">1. <a href="https://www.ncbi.nlm.nih.gov/pubmed/32251798" target="_blank">https://www.ncbi.nlm.nih.gov/pubmed/32251798</a><br/></div>
+        </div>
+      </div><img src={how_anti} className="image-20 how-anti"/></div>
+  </div>
+  <div className="antibody-list">
+    <div className="cream-bg anti"></div>
+    <div className="container-16 w-container">
+      <div className="div-block-81 antibodies first">
+        <div className="div-block-82">
+          <p className="paragraph-12 number">01</p>
+          <div className="div-block-83">
+            <h3 className="heading-39"><strong className="bold-text">Antybodies</strong></h3>
+            <p className="paragraph">Our adaptive immune system makes several different classes of antibodies which differ in their function as well as the timing of when they are produced. The tests we are working with now measure both IgM and IgG isotypes. At present, there is not enough research to know the exact details of COVID-19 antibody production, so we are extrapolating from what we already know about how our immune system responds to similar viruses.</p>
+          </div>
+        </div><img src={anti_} alt="" className="image-28"/></div>
+      <div id="igm" className="div-block-81 antibodies">
+        <div className="div-block-82">
+          <p className="paragraph-12 number">01</p>
+          <div className="div-block-83">
+            <h3 className="heading-39"><strong className="bold-text-2">IgM Antibodies</strong></h3>
+            <p className="paragraph">IgM antibodies are created first and typically take a week after infection to reach detectable levels in your bloodstream; they typically disappear two weeks after the infection resolves. Because of this timing, they usually signify an acute (recent) infection.<span className="cit-number">[1,2,3,4]</span></p>
+            <div className="citation">1. <a href="https://www.ncbi.nlm.nih.gov/pubmed?term=20463105" target="_blank">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2194144/</a><br/><br/>2. <a href="https://www.ncbi.nlm.nih.gov/pubmed/3103734" target="_blank">https://www.ncbi.nlm.nih.gov/pubmed/3103734</a><br/><br/>3. <a href="https://www.ncbi.nlm.nih.gov/pubmed/3319367" target="_blank">https://www.ncbi.nlm.nih.gov/pubmed/3319367<br/><br/></a>4. <a href="https://www.ncbi.nlm.nih.gov/pubmed/31081745" target="_blank">https://www.ncbi.nlm.nih.gov/pubmed/31081745</a></div>
+          </div>
+        </div><img src={igm} alt="" className="image-28"/></div>
+      <div id="igg" className="div-block-81 antibodies">
+        <div className="div-block-82">
+          <p className="paragraph-12 number">02</p>
+          <div className="div-block-83">
+            <h3 className="heading-39"><strong className="bold-text">IgG Antibodies</strong></h3>
+            <p className="paragraph">IgG antibodies are created later and generally don&#x27;t reach detectable levels until 3-6 weeks after initial infection. IgG antibodies typically remain at detectable levels in your blood for months or even years. IgG is usually the antibody signaling immunity from the associated pathogen.<span className="cit-number">[1]</span> For example, after getting a series of vaccinations against the Hepatitis B virus <span className="cit-number">[2]</span>, the body continues to make IgG antibodies for years to continue to protect us against infection. The same type of immunity can often be acquired through an actual infection. For example, after getting chickenpox (varicella), the body creates long-term IgG antibodies to protect us against the varicella virus. For those who never had chickenpox, there are varicella vaccines that can also lead to immunity through triggering the production of IgG antibodies.<span className="cit-number">[3]</span></p>
+            <div className="citation">1.<a href="https://www.ncbi.nlm.nih.gov/pubmed?term=20463105" target="_blank"> https://www.ncbi.nlm.nih.gov/pubmedterm=20463105</a> <br/>‍<br/>2. <a href="https://www.ncbi.nlm.nih.gov/pubmed/29405329" target="_blank">Terrault NA, Lok ASF, McMahon BJ, et al. Update on prevention, diagnosis, and treatment of chronic hepatitis B: AASLD 2018 hepatitis B guidance. Hepatology 2018; 67:1560.</a><br/><br/>3. <a href="https://www.google.com/url?q=https://www.ncbi.nlm.nih.gov/pubmed/18419415&amp;sa=D&amp;ust=1587443477412000&amp;usg=AFQjCNGRW7bIj0pR9WYTeeiHLMkB6nw-GA" target="_blank">Seward JF, Marin M, Vázquez M. Varicella vaccine effectiveness in the US vaccination program: a review. J Infect Dis 2008; 197 Suppl 2:S82.</a><br/><br/>4. <a href="https://www.ncbi.nlm.nih.gov/pubmed/32251798" target="_blank">https://www.ncbi.nlm.nih.gov/pubmed/32251798</a><br/><br/>5. <a href="https://www.ncbi.nlm.nih.gov/pubmed/32243608" target="_blank">https://www.ncbi.nlm.nih.gov/pubmed/32243608</a></div>
+          </div>
+        </div><img src={igg} alt="" className="image-28"/></div>
+    </div>
+  </div>
+  <div className="result-meaning result">
+    <div className="container-20 w-container">
+      <div className="div-block-99">
+        <h2 className="heading">Possible results<br/></h2>
+        <p className="paragraph">Here’s an example of different possible results and what they likely mean. We know this can be a little confusing, which is why we will have a medical professional available to answer any questions you might have, all from within the app.<br/></p>
+      </div>
+      <div className="div-block-42">
+        <div data-duration-in="300" data-duration-out="100" className="tabs w-tabs">
+          <div className="tabs-menu covid w-tab-menu">
+            <a data-w-tab="Only IgM" className="tab-link-tab-1 w-inline-block w-tab-link">
+              <div className="text-block-19">Only IgM antibodies are detected<br/></div>
+            </a>
+            <a data-w-tab="IgM and IgG" className="tab-link-tab-1 w-inline-block w-tab-link">
+              <div className="text-block-19">IgM and IgG antibodies are detected<br/></div>
+            </a>
+            <a data-w-tab="Only IgG" className="tab-link-tab-1 w-inline-block w-tab-link">
+              <div className="text-block-19">Only IgG antibodies are detected<br/></div>
+            </a>
+            <a data-w-tab="No anti" className="tab-link-tab-1 w-inline-block w-tab-link">
+              <div className="text-block-19">No antibodies are detected<br/></div>
+            </a>
+            <a data-w-tab="Invalid test" className="tab-link-tab-1 w-inline-block w-tab-link w--current">
+              <div className="text-block-19">Invalid test<br/></div>
+            </a>
+          </div>
+          <div className="tabs-content covid w-tab-content">
+            <div data-w-tab="Only IgM" className="tab-pane-vitamin-b7 w-tab-pane">
+              <h2 className="heading-4">Only IgM antibodies are detected<br/></h2>
+              <p className="vessel">If only IgM antibodies are detected, this suggests a new infection from the virus in the past few weeks.<br/></p>
+              <div className="div-block-56"><img src={result_igm} height="" alt="" className="image-29"/></div>
+            </div>
+            <div data-w-tab="IgM and IgG" className="w-tab-pane">
+              <h2 className="heading-4">IgM and IgG antibodies are detected</h2>
+              <p className="vessel">If IgM and IgG antibodies are detected, this signifies both an acute infection from the virus in the past 3-6 weeks, and the development of IgG antibodies, the body’s form of long-term protection.</p>
+              <div className="div-block-56"><img src={result_both} height="" alt="" className="image-29"/></div>
+            </div>
+            <div data-w-tab="Only IgG" className="w-tab-pane">
+              <h2 className="heading-4">Only IgG antibodies are detected</h2>
+              <p className="vessel">If IgM antibodies are not detected and only IgG antibodies are detected, this signifies a previous infection more than four weeks ago and possible long-term immunity.</p>
+              <div className="div-block-56"><img src={result_igg} height="" alt="" className="image-29"/></div>
+            </div>
+            <div data-w-tab="No anti" className="w-tab-pane">
+              <h2 className="heading-4">No antibodies are detected</h2>
+              <p className="vessel">If no antibodies are detected, this signifies that you probably have not had an infection with the virus, or that you were exposed recently and are in the incubation period of 1-2 weeks when you have the virus but have not yet produced antibodies, or that your immune system might be unable to produce antibodies.</p>
+              <div className="div-block-56"><img src={result_neg} height="" alt="" className="image-29"/></div>
+            </div>
+            <div data-w-tab="Invalid test" className="w-tab-pane w--tab-active">
+              <h2 className="heading-4">Invalid test</h2>
+              <p className="vessel">Invalid test. The test cards we work with are able to determine if the blood sample was enough to make a valid test. If not, it will produce an invalid result.</p>
+              <div className="div-block-56"><img src={invalid} height="" alt="" className="image-29"/></div>
+            </div>
+          </div>
+        </div>
+        <div className="div-block-51">
+          <div className="div-block-50"></div>
+          <div className="div-block-52"></div>
+        </div>
+      </div>
+      <div className="div-block-55">
+        <div className="slider-tabs covid">
+          <div className="tab-link-tab-1 covid">
+            <div className="text-block-19">Only IgM antibodies</div>
+          </div>
+          <div className="tab-link-tab-1 covid">
+            <div className="text-block-19">IgM and IgG antibodies</div>
+          </div>
+          <div className="tab-link-tab-1 covid">
+            <div className="text-block-19">Only IgG antibodies<br/></div>
+          </div>
+          <div className="tab-link-tab-1 covid">
+            <div className="text-block-19">No antibodies<br/></div>
+          </div>
+          <div className="tab-link-tab-1 covid">
+            <div className="text-block-19">Invalid test<br/></div>
+          </div>
+        </div>
+        <div className="slider-content covid">
+          <div className="tab-pane-vitamin-b7">
+            <div className="div-block-56 covid"><img src={result_igm} height="" alt="" className="image-29"/></div>
+            <h2 className="heading-4 covid">Only IgM antibodies are detected</h2>
+            <p className="vessel covid">If only IgM antibodies are detected, this suggests a new infection from the virus in the past few weeks.</p>
+          </div>
+          <div className="tab-pane-vitamin-b7">
+            <div className="div-block-56 covid"><img src={result_both} height="" alt="" className="image-29"/></div>
+            <h2 className="heading-4 covid">IgM and IgG antibodies are detected</h2>
+            <p className="vessel covid">If IgM and IgG antibodies are detected, this signifies both an acute infection from the virus in the past 3-6 weeks, and the development of IgG antibodies, the body’s form of long-term protection.</p>
+          </div>
+          <div className="tab-pane-vitamin-b7">
+            <div className="div-block-56 covid"><img src={result_igg} height="" alt="" className="image-29"/></div>
+            <h2 className="heading-4 covid">Only IgG antibodies are detected</h2>
+            <p className="vessel covid">If IgM antibodies are not detected and only IgG antibodies are detected, this signifies a previous infection more than four weeks ago and possible long-term immunity.</p>
+          </div>
+          <div className="tab-pane-vitamin-b7">
+            <div className="div-block-56 covid"><img src={result_neg} height="" alt="" className="image-29"/></div>
+            <h2 className="heading-4 covid">No antibodies are detected</h2>
+            <p className="vessel covid">If no antibodies are detected, this signifies that you probably have not had an infection with the virus, or that you were exposed recently and are in the incubation period of 1-2 weeks when you have the virus but have not yet produced antibodies, or that your immune system might be unable to produce antibodies.</p>
+          </div>
+          <div className="tab-pane-vitamin-b7">
+            <div className="div-block-56 covid"><img src={invalid} height="" alt="" className="image-29"/></div>
+            <h2 className="heading-4 covid">Invalid test</h2>
+            <p className="vessel covid">Invalid test. The test cards we work with also are able to determine if the sample was enough to make a valid test. If not, it will show a result suggesting an invalid result.</p>
+          </div>
+        </div>
+        <div className="div-block-46 covid"><img src={prev} height="50" alt="" className="image-14 prev"/><img src={next} height="50" alt="" className="next"/></div>
+        <div className="w-embed w-script">
+        </div>
+      </div>
+      <div className="rose-bg covid"></div>
+    </div>
+  </div>
+  <div className="skip-the-lab">
+    <div data-w-id="301d1548-03d5-d866-0943-324df16ca2f0" className="inorive-trap"></div>
+    <div className="green-bg lab"></div>
+    <div className="container-2 covid w-container">
+      <div className="div-block-53">
+        <h2 className="heading lab covid">Comparing PCR Testing to <span className="text-span-5">Antibody Testing</span><br/></h2>
+        <p className="paragraph-14 paragraph">Below is a side-by-side comparison of the antibody test card vs typical lab-based PCR testing. Both can play a critical role in the fight against COVID-19. PCR is better at detecting the virus even in the incubation period.  Antibody testing can assess your immune response quickly and tell you if you&#x27;ve had an infection in the past that you&#x27;ve recovered from.<br/></p>
+      </div>
+      <div data-w-id="301d1548-03d5-d866-0943-324df16ca2fa" className="div-block-39">
+        <div className="line-vertical"></div>
+        <div className="line-vertical-s-compare shadow"></div>
+        <div className="div-block-11 top-line">
+          <div className="div-block-12">
+            <h2 className="heading-4 lab mobile">PCR Testing</h2>
+            <h2 className="heading-4 lab desk">PCR testing<br/></h2>
+          </div>
+          <div className="div-block-10 vs">
+            <h2 className="heading-4 lab vs covid">VS.</h2>
+          </div>
+          <div className="div-block-13">
+            <h2 className="heading-4 lab left">Antibody<br/>Testing<br/></h2>
+          </div>
+        </div>
+        <div className="div-block-11 lab-child _1">
+          <div className="div-block-12">
+            <h4 className="lab-child">Cost<br/></h4>
+            <h2 className="heading-4 lab child cost">Hundreds <br/></h2>
+            <p>This varies but generally speaking medicare is about $50 for the test, $25 for the collection, fee for the office visit.</p>
+          </div>
+          <div className="div-block-10 child">
+            <div className="div-block-14 pertama pcr"></div>
+          </div>
+          <div className="div-block-13">
+            <h4 className="lab-child right">Cost<br/></h4>
+            <h2 className="heading-4 lab child right cost">$ 50</h2>
+            <p className="paragraph pcr right">The Vessel app is free. The test card and telemedicine service will be sold at cost (less than $20 for the test card) and most likely will be eligible for insurance reimbursement.<br/></p>
+          </div>
+        </div>
+        <div className="div-block-11 lab-child _2">
+          <div className="div-block-12">
+            <h4 className="lab-child">Collection method<br/></h4>
+            <h2 className="heading-4 lab child">Uncomfortable nasal swab<br/></h2>
+            <p className="paragraph pcr">collected by a medical professional</p>
+          </div>
+          <div className="div-block-10 child">
+            <div className="bullet-wrap">
+              <div className="div-block-14 kedua"></div>
+            </div>
+          </div>
+          <div className="div-block-13">
+            <h4 className="lab-child right">Collection method<br/></h4>
+            <h2 className="heading-4 lab child right">One drop of blood<br/></h2>
+            <p className="paragraph pcr right">collected at home<br/></p>
+          </div>
+        </div>
+        <div className="div-block-11 lab-child _3">
+          <div className="div-block-12">
+            <h4 className="lab-child">Time for results<br/></h4>
+            <h2 className="heading-4 lab child">3-5 business days<br/></h2>
+          </div>
+          <div className="div-block-10 child">
+            <div className="bullet-wrap">
+              <div className="div-block-14 ketiga"></div>
+            </div>
+          </div>
+          <div className="div-block-13">
+            <h4 className="lab-child right">Time for results<br/></h4>
+            <h2 className="heading-4 lab child right">15 minutes<br/></h2>
+          </div>
+        </div>
+        <div className="div-block-11 lab-child _4">
+          <div className="div-block-12">
+            <h4 className="lab-child">Accuracy<br/></h4>
+            <p className="paragraph pcr">The current gold standard, accuracy depends on <a href="https://www.youtube.com/watch?v=DVJNWefmHjE" target="_blank">the quality of specimen obtained</a> and manufacturer.<br/></p>
+          </div>
+          <div className="div-block-10 child">
+            <div className="bullet-wrap">
+              <div className="div-block-14 keempat"></div>
+            </div>
+          </div>
+          <div className="div-block-13">
+            <h4 className="lab-child right">Accuracy<br/></h4>
+            <p className="paragraph pcr right">Varies with manufacturer. Current FDA approved Cellex test card shows that 93.8% of people who are PCR positive are also antibody positive, and 95.6% of people who are PCR negative will be antibody negative.<br/></p>
+          </div>
+        </div>
+        <div className="div-block-11 lab-child _5">
+          <div className="div-block-12">
+            <h4 className="lab-child">Interpreted by a medical professional<br/></h4>
+            <p className="paragraph pcr"> Yes, in-person<br/></p>
+          </div>
+          <div className="div-block-10 child">
+            <div className="bullet-wrap">
+              <div className="div-block-14 kelima"></div>
+            </div>
+          </div>
+          <div className="div-block-13">
+            <h4 className="lab-child right">Interpreted by a medical professional<br/></h4>
+            <p className="paragraph pcr right">Yes, via telehealth<br/></p>
+          </div>
+        </div>
+        <div className="div-block-11 lab-child _6">
+          <div className="div-block-12">
+            <h4 className="lab-child">Easy to do without breaking quarantine<br/></h4>
+            <p className="paragraph pcr">No<br/></p>
+          </div>
+          <div className="div-block-10 child">
+            <div className="bullet-wrap">
+              <div className="div-block-14 keenam"></div>
+            </div>
+          </div>
+          <div className="div-block-13">
+            <h4 className="lab-child right">Easy to do without breaking quarantine<br/></h4>
+            <p className="paragraph pcr right">Yes, if done at home with a solution like Vessel&#x27;s<br/></p>
+          </div>
+        </div>
+        <div className="div-block-11 lab-child _7">
+          <div className="div-block-12">
+            <h4 className="lab-child">Tests for<br/></h4>
+            <p className="paragraph pcr">Virus particles (nucleic acid)<br/></p>
+          </div>
+          <div className="div-block-10 child">
+            <div className="bullet-wrap">
+              <div className="div-block-14 ketujuh"></div>
+            </div>
+          </div>
+          <div className="div-block-13">
+            <h4 className="lab-child right">Tests for<br/></h4>
+            <p className="paragraph pcr right">Antibodies against the virus<br/></p>
+          </div>
+        </div>
+        <div className="div-block-11 lab-child _8">
+          <div className="div-block-12">
+            <h4 className="lab-child _2-line">Can detect infection during the <br/>incubation period<br/></h4>
+            <p className="paragraph pcr">Yes<br/></p>
+          </div>
+          <div className="div-block-10 child">
+            <div className="bullet-wrap">
+              <div className="div-block-14 kedelapan"></div>
+            </div>
+          </div>
+          <div className="div-block-13">
+            <h4 className="lab-child _2-line right">Can detect infection during the <br/>incubation period<br/></h4>
+            <p className="paragraph pcr right">Possible but unlikely<br/></p>
+          </div>
+        </div>
+        <div className="div-block-11 lab-child _9">
+          <div className="div-block-12">
+            <h4 className="lab-child _2-line">Can detect infection after the incubation period (when symptoms start)<br/></h4>
+            <p className="paragraph pcr">Yes<br/></p>
+          </div>
+          <div className="div-block-10 child">
+            <div className="bullet-wrap">
+              <div className="div-block-14 kesembilan"></div>
+            </div>
+          </div>
+          <div className="div-block-13">
+            <h4 className="lab-child _2-line right">Can detect infection after the incubation period (when symptoms start)<br/></h4>
+            <p className="paragraph pcr right">Yes<br/></p>
+          </div>
+        </div>
+        <div className="div-block-11 lab-child _10">
+          <div className="div-block-12">
+            <h4 className="lab-child _2-line">Can detect a past infection that you <br/>have recovered from<br/></h4>
+            <p className="paragraph pcr">No<br/></p>
+          </div>
+          <div className="div-block-10 child">
+            <div className="bullet-wrap">
+              <div className="div-block-14 kesepuluh"></div>
+            </div>
+          </div>
+          <div className="div-block-13">
+            <h4 className="lab-child _2-line right">Can detect a past infection that you <br/>have recovered from<br/></h4>
+            <p className="paragraph pcr right">Yes<br/></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div className="container-30 w-container">
+      <div className="div-block-11 lab-child _10 source">
+        <div className="div-block-12 source">
+          <p className="paragraph pcr citation source">Source: CDC 2019-Novel Coronavirus (2019-nCoV) Real-Time RT-PCR Diagnostic Panel IFU<br/>‍<a href="https://www.fda.gov/media/134922/download" target="_blank">https://www.fda.gov/media/134922/download</a><br/></p>
+        </div>
+        <div className="div-block-10 child"></div>
+        <div className="div-block-13 source">
+          <p className="paragraph pcr right citation">Source: Cellex qSARS-CoV-2 IgG/IgM Rapid Test FDA Approval <a href="https://www.fda.gov/media/136625/download" target="_blank">https://www.fda.gov/media/136625/download<br/><br/>http://www.centerforhealthsecurity.org/resources/<br/>COVID-19/Serology-based-tests-for-COVID-19.html</a><br/></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="limitations-of-antibody-test" className="limitations">
+    <div className="container-21 w-container">
+      <div className="div-block-91">
+        <h2 className="heading">Antibody testing limitations<br/></h2>
+        <p className="paragraph-31">Unfortunately, there is no test that is 100% accurate at telling you whether or not you are infected with COVID-19. Currently, RT-qPCR testing using a properly connected nasopharyngeal swab is the gold standard. However, the accuracy and predictive value of this type of testing has not been systematically evaluated, and results can vary. For example, different test companies can have different levels of accuracy, with accuracy varying based on the type of sample obtained.  For the highest accuracy, a nasopharyngeal swab is required, which can be rather difficult and painful to obtain.<br/><br/>Antibody tests using blood or serum also have limitations, such as the following:</p>
+      </div>
+      <div className="div-block-92">
+        <div className="div-block-93">
+          <div className="list-limitations">
+            <p className="number">01</p>
+            <p className="paragraph-16 paragraph">Because these tests detect antibodies made in response to the virus, they often lag behind RT-qPCR tests which detect actual viral particles. Most people take around seven days after exposure before initial IgM antibodies are at detectable levels.<br/></p>
+          </div>
+          <div className="list-limitations">
+            <p className="number">02</p>
+            <p className="paragraph-16 paragraph">The accuracy with a finger-prick sample is lower than using serum or intravenous blood, but it is also less painful.<br/></p>
+          </div>
+          <div className="list-limitations">
+            <p className="number">03</p>
+            <p className="paragraph-16 paragraph">We don’t know enough yet to confirm that, when your body makes IgG antibodies, you are immune from future infection. Preliminary evidence suggests that these antibodies are protective, but this remains to be definitively established. Moreover, it is unknown whether all infected patients mount a protective immune response and how long any protective effect will last.<br/><br/>Research on protective immunity following COVID-19 is growing. For example, a case series showed that when IgG antibodies from the blood of patients who recovered from COVID-19 was transferred to other patients, it protected those patients from viral infection <span className="cit-number">[1]</span>. Another study showed that when antibody levels rose, these were correlated with neutralizing activity against the virus <span className="cit-number">[2]</span>.<br/></p>
+          </div>
+        </div>
+        <div className="div-block-94">
+          <div className="div-block-101">
+            <p className="number">04</p>
+            <p className="paragraph-16 paragraph">Furthermore, a recent study reported that rhesus macaques infected with COVID-19 did not develop reinfection after they recovered and were exposed again to COVID-19.<span className="cit-number">[3]</span><br/></p>
+          </div>
+          <div className="list-limitations">
+            <p className="number">05</p>
+            <p className="paragraph-16 paragraph">Certain people have impaired immune systems from conditions such as inherited or acquired immunodeficiency syndromes, or surgical removal of their spleens (the spleen is the main site of IgM antibody production). Furthermore, many people are on immunosuppressive medications that can block or blunt a normal immune response to the COVID-19 virus. Such situations would make test results less reliable.<br/></p>
+            <div className="citation indent">1.<a href="https://www.uptodate.com/contents/coronavirus-disease-2019-covid-19/abstract-text/32219428/pubmed" target="_blank"> https://www.uptodate.com/contents/coronavirus-disease-2019-covid-19/abstract-text/32219428/pubmed</a><br/><br/>2.<a href="https://www.uptodate.com/contents/coronavirus-disease-2019-covid-19/abstract-text/32213337/pubmed"> https://www.uptodate.com/contents/coronavirus-disease-2019-covid-19/abstract-text/32213337/pubmed<br/><br/></a>3. Bao L, Deng W, Gao H, et al. Reinfection could not occur in SARS-CoV-2-infected rhesus macaques. Pre-print.<a href="https://www.biorxiv.org/content/10.1101/2020.03.13.990226v1.full.pdf" target="_blank">https://www.biorxiv.org/content/10.1101/<br/>2020.03.13.990226v1.full.pdf </a>(Accessed on March 26, 2020).<br/></div>
+          </div>
+          <div className="div-block-102">
+            <p className="number">06</p>
+            <p className="paragraph-16 paragraph">Certain people have impaired immune systems from conditions such as inherited or acquired immunodeficiency syndromes, or surgical removal of their spleen (the spleen is the main site of IgM antibody production).  Furthermore, many people are on immunosuppressive medications that can block or blunt a normal immune response to the COVID-19 virus. These situations would make test results less reliable.<br/></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="data-policy" className="data-privacy">
+    <div className="container-17 w-container">
+      <div className="div-block-95">
+        <h2 className="heading-45">Data and privacy<br/></h2>
+        <p className="paragraph">The Vessel COVID-19 app has been launched in an effort to help our world’s public health authorities, governments, and researchers fight the COVID-19 epidemic. Your personal, identifiable information will never be shared, sold, or passed onto anyone else without your explicit permission. <br/><br/>All survey responses will be stripped of any personally identifiable information (specifically e-mails and full postcodes if submitted) and openly shared for research purposes to accelerate our collective understanding of COVID-19 and study immunity.<br/><br/>We adhere to an open standard to CDC/PHE/WHO in a universal effort to understand the sero-epidemiology of this disease. We align with the <a href="https://cov-clear.com/" target="_blank">COV-CLEAR</a> standards of data sharing. Read our full <a href="privacy-policy.html">privacy policy</a>.<br/><br/><br/></p>
+      </div>
+    </div><img src={data_priv} alt="" className="image-20 data-priv"/>
+    <div className="green-bg data"></div>
+  </div>
+  <div id="why-vessel" className="why-vessel">
+    <div className="container-4 w-container">
+      <div className="div-block-22">
+        <h2 className="heading data">Why Vessel?<br/></h2>
+      </div>
+      <div className="div-block-21 why-vessel-mobile">
+        <div className="div-block-138">
+          <p className="paragraph why">The world has changed rapidly in the last few weeks, and like many others, we are compelled to step in and help. Fortunately, we’re in a unique position to adapt our product development to meaningfully contribute to this growing crisis. Over the past three years, we’ve been developing an app and image analysis algorithm that can read lateral flow tests - these lateral flow immunoassay tests are currently being used around the world to test for COVID-19 antibodies. With a few tweaks to our algorithm and app, we now have the capabilities to make it easy and accurate to test for COVID-19 at home and connect patients with medical practitioners via telehealth services.<br/><br/></p>
+        </div>
+        <div className="div-block-137"><img src={cards} alt="" className="image-34"/>
+          <p className="paragraph why image">Vessel&#x27;s at-home wellness test card and the COVID-19 antibody test card use lateral flow immunoassays.<br/></p>
+        </div>
+      </div>
+      <div className="div-block-22">
+        <div className="div-block-147">
+          <h2 className="heading">Meet the team<br/></h2>
+          <p className="paragraph-30">Below are the entrepreneurs, doctors, engineers and scientists behind Vessel.<br/></p>
+        </div>
+      </div>
+      <div className="div-block-45 w-clearfix">
+        <div className="div-block-44 w-clearfix">
+          <div id="first-slide" className="div-block-26 slider-a w-clearfix">
+            <div className="div-block-28 grow"><img src={_Jesus_Gonzalez} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Matt_McCord} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Jon_Carder} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Blake_Jendrusch} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Jeremy_Schumann} alt="" className="image-12 slide-img"/></div>
+            <div className="div-block-28 grow jordan"><img src={_Jordan_Ames} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Ghaleb_Hamdan} alt="" className="slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Eric_Ostrowski} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Anand_Bhatt} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Pete_Janda} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Adam_Eidelson} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Jonathan_Balleras} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Eric_Weiss} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Mark_Tholking} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Ryan_Wojciechowski} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Kevin_Martignetti} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Peter_Haist} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Andrea_Giralt} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Paul_Williams} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Meredith} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Dr_Lane} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Dr_Sam_Niedbala} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_mona_update} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Dr_Sameer_Berry} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_mike} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_larson} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_paula} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Dr_Robert_Buechel} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_James_Bausano} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_John_Norris} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Trish_Pavlecich} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Lee_O_Donovan} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Kristen_Hlozek} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Matty_Vee} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Dan_Riley} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Bucky_Markus} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Andrew_Beinbrink} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Christian_Chasmer} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Kyle_Brown} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Doug_Lorenzen} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Ryan_Dranginis} alt="" className="image-8 slide-img"/></div>
+          </div>
+          <div id="first-slide" className="div-block-26 slider-b w-clearfix">
+            <div className="div-block-28 grow"><img src={_Matt_McCord} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Jon_Carder} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Blake_Jendrusch} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Jeremy_Schumann} alt="" className="image-12 slide-img"/></div>
+            <div className="div-block-28 grow jordan"><img src={_Jordan_Ames} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Ghaleb_Hamdan} alt="" className="slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Eric_Ostrowski} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Anand_Bhatt} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Pete_Janda} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Adam_Eidelson} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Jonathan_Balleras} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Eric_Weiss} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Mark_Tholking} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Ryan_Wojciechowski} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Kevin_Martignetti} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Peter_Haist} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Andrea_Giralt} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Paul_Williams} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Meredith} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Dr_Lane} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Dr_Sam_Niedbala} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_mona_update} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Dr_Sameer_Berry} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_mike} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_larson} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_paula} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Dr_Robert_Buechel} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_James_Bausano} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_John_Norris} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Trish_Pavlecich} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Lee_O_Donovan} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Kristen_Hlozek} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Matty_Vee} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Dan_Riley} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Bucky_Markus} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Andrew_Beinbrink} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Christian_Chasmer} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Kyle_Brown} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Doug_Lorenzen} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Ryan_Dranginis} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Jesus_Gonzalez} alt="" className="image-8 slide-img"/></div>
+          </div>
+          <div id="first-slide" className="div-block-26 slider-c w-clearfix">
+            <div className="div-block-28 grow"><img src={_Jon_Carder} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Blake_Jendrusch} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Jeremy_Schumann} alt="" className="image-12 slide-img"/></div>
+            <div className="div-block-28 grow jordan"><img src={_Jordan_Ames} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Ghaleb_Hamdan} alt="" className="slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Eric_Ostrowski} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Anand_Bhatt} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Pete_Janda} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Adam_Eidelson} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Jonathan_Balleras} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Eric_Weiss} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Mark_Tholking} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Ryan_Wojciechowski} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Kevin_Martignetti} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Peter_Haist} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Andrea_Giralt} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Paul_Williams} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Meredith} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Dr_Lane} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Dr_Sam_Niedbala} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_mona_update} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Dr_Sameer_Berry} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_mike} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_larson} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_paula} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Dr_Robert_Buechel} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_James_Bausano} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_John_Norris} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Trish_Pavlecich} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Lee_O_Donovan} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Kristen_Hlozek} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Matty_Vee} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Dan_Riley} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Bucky_Markus} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Andrew_Beinbrink} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Christian_Chasmer} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Kyle_Brown} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Doug_Lorenzen} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Ryan_Dranginis} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Jesus_Gonzalez} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Matt_McCord} alt="" className="image-8 slide-img"/></div>
+          </div>
+        </div>
+        <div className="div-block-24">
+          <div className="div-block-25">
+            <div id="text-slide" className="slide-content">
+              <h2 className="heading-4 backed">Jon Carder<br/></h2>
+              <p className="paragraph">Co-Founder / CEO <br/></p>
+            </div>
+            <div id="text-slide" className="slide-content">
+              <h2 className="heading-4 backed">Blake Jendrusch<br/></h2>
+              <p className="paragraph">Supply Chain Manager<br/></p>
+            </div>
+            <div id="text-slide" className="slide-content">
+              <h2 className="heading-4 backed">Jeremy Schumann</h2>
+              <p className="paragraph">Head of Brand</p>
+            </div>
+            <div id="text-slide" className="slide-content jordan">
+              <h2 className="heading-4 backed">Jordan Ames</h2>
+              <p className="paragraph">GM of Ambassador Program</p>
+            </div>
+            <div id="text-slide" className="slide-content">
+              <h2 className="heading-4 backed">Ghaleb Hamdan<br/></h2>
+              <p className="paragraph">Director of Quality Assurance/Manufacturing Engineer</p>
+            </div>
+            <div id="text-slide" className="slide-content">
+              <h2 className="heading-4 backed">Eric Ostrowski</h2>
+              <p className="paragraph">VP of Hardware Engineering and Science</p>
+            </div>
+            <div id="text-slide" className="slide-content">
+              <h2 className="heading-4 backed">Anand Bhatt</h2>
+              <p className="paragraph">Data Analytics Advisor</p>
+            </div>
+            <div id="text-slide" className="slide-content">
+              <h2 className="heading-4 backed">Pete Janda</h2>
+              <p className="paragraph">Fractional CFO</p>
+            </div>
+            <div id="text-slide" className="slide-content">
+              <h2 className="heading-4 backed">Adam Eidelson</h2>
+              <p className="paragraph">Product Associate</p>
+            </div>
+            <div id="text-slide" className="slide-content">
+              <h2 className="heading-4 backed">Jonathan Balleras<br/></h2>
+              <p className="paragraph">Front End Developer</p>
+            </div>
+            <div id="text-slide" className="slide-content">
+              <h2 className="heading-4 backed">Eric Weiss</h2>
+              <p className="paragraph">Product Advisor<br/></p>
+            </div>
+            <div id="text-slide" className="slide-content">
+              <h2 className="heading-4 backed">Mark Tholking</h2>
+              <p className="paragraph">CTO</p>
+            </div>
+            <div id="text-slide" className="slide-content">
+              <h2 className="heading-4 backed">Ryan Wojciechowski</h2>
+              <p className="paragraph">Research Assistant</p>
+            </div>
+            <div id="text-slide" className="slide-content">
+              <h2 className="heading-4 backed">Kevin Martignetti</h2>
+              <p className="paragraph">Director of Talent</p>
+            </div>
+            <div id="text-slide" className="slide-content">
+              <h2 className="heading-4 backed">Peter Haist</h2>
+              <p className="paragraph">Mechanical Engineer</p>
+            </div>
+            <div id="text-slide" className="slide-content">
+              <h2 className="heading-4 backed">Andrea Giralt</h2>
+              <p className="paragraph">VP of Manufacturing &amp; Supply Chain</p>
+            </div>
+            <div id="text-slide" className="slide-content">
+              <h2 className="heading-4 backed">Paul Williams</h2>
+              <p className="paragraph">R&amp;D Advisor</p>
+            </div>
+            <div id="text-slide" className="slide-content">
+              <h2 className="heading-4 backed">Meredith Corbett</h2>
+              <p className="paragraph">Executive Assistant</p>
+            </div>
+            <div id="text-slide" className="slide-content">
+              <h2 className="heading-4 backed">Dr. Lane</h2>
+              <p className="paragraph">LFA Dev/Mfg. Advisor</p>
+            </div>
+            <div id="text-slide" className="slide-content">
+              <h2 className="heading-4 backed">Dr. Sam Niedbala</h2>
+              <p className="paragraph">LFA Dev/Mfg. Advisor</p>
+            </div>
+            <div id="text-slide" className="slide-content">
+              <h2 className="heading-4 backed">Dr. Mona Ezzat-Velinov, M.D.</h2>
+              <p className="paragraph">Medical Advisor</p>
+            </div>
+            <div id="text-slide" className="slide-content">
+              <h2 className="heading-4 backed">Dr. Sameer Berry</h2>
+              <p className="paragraph">Medical Advisor</p>
+            </div>
+            <div id="text-slide" className="slide-content">
+              <h2 className="heading-4 backed">Dr. Mike Moreno, M.D.</h2>
+              <p className="paragraph">Medical Advisor</p>
+            </div>
+            <div id="text-slide" className="slide-content">
+              <h2 className="heading-4 backed">Dr. David Larson, M.D.</h2>
+              <p className="paragraph">Chief Medical Officer</p>
+            </div>
+            <div id="text-slide" className="slide-content">
+              <h2 className="heading-4 backed">Dr. Paula Sturm</h2>
+              <p className="paragraph">Medical and Nutritional Advisor</p>
+            </div>
+            <div id="text-slide" className="slide-content">
+              <h2 className="heading-4 backed">Dr. Robert Buechel</h2>
+              <p className="paragraph">BD Advisor - Chiropractor channel</p>
+            </div>
+            <div id="text-slide" className="slide-content">
+              <h2 className="heading-4 backed">James Bausano</h2>
+              <p className="paragraph">Research Assistant</p>
+            </div>
+            <div id="text-slide" className="slide-content">
+              <h2 className="heading-4 backed">John Norris</h2>
+              <p className="paragraph">FDA Advisor</p>
+            </div>
+            <div id="text-slide" className="slide-content">
+              <h2 className="heading-4 backed">Trish Pavlecich</h2>
+              <p className="paragraph">Copy Writer</p>
+            </div>
+            <div id="text-slide" className="slide-content">
+              <h2 className="heading-4 backed">Lee O&#x27;Donovan</h2>
+              <p className="paragraph">VP of Marketing</p>
+            </div>
+            <div id="text-slide" className="slide-content">
+              <h2 className="heading-4 backed">Kristen Hlozek<br/></h2>
+              <p className="paragraph">Medical Advisor / Clinical Trial Advisor<br/></p>
+            </div>
+            <div id="text-slide" className="slide-content">
+              <h2 className="heading-4 backed">Matty Vee</h2>
+              <p className="paragraph">Business Development - Keto</p>
+            </div>
+            <div id="text-slide" className="slide-content">
+              <h2 className="heading-4 backed">Dan Riley</h2>
+              <p className="paragraph">Business Development (Doctors, Med Spas)</p>
+            </div>
+            <div id="text-slide" className="slide-content">
+              <h2 className="heading-4 backed">Bucky Markus<br/></h2>
+              <p className="paragraph">Business Development - Corporate Wellness <br/></p>
+            </div>
+            <div id="text-slide" className="slide-content">
+              <h2 className="heading-4 backed">Andrew Beinbrink<br/></h2>
+              <p className="paragraph">Business Development - Athletes, schools<br/></p>
+            </div>
+            <div id="text-slide" className="slide-content">
+              <h2 className="heading-4 backed">Christian Chasmer<br/></h2>
+              <p className="paragraph">Partner / COO<br/></p>
+            </div>
+            <div id="text-slide" className="slide-content">
+              <h2 className="heading-4 backed">Kyle Brown<br/></h2>
+              <p className="paragraph">Director of BD (Gyms, Nutritionists, Trainers)<br/></p>
+            </div>
+            <div id="text-slide" className="slide-content">
+              <h2 className="heading-4 backed">Doug Lorenzen<br/></h2>
+              <p className="paragraph">Finance &amp; Investor Relations<br/></p>
+            </div>
+            <div id="text-slide" className="slide-content">
+              <h2 className="heading-4 backed">Ryan Dranginis<br/></h2>
+              <p className="paragraph">Growth / Analytics<br/></p>
+            </div>
+            <div id="text-slide" className="slide-content">
+              <h2 className="heading-4 backed">Dr. Jesus Gonzalez</h2>
+              <p className="paragraph">Chief Scientist<br/></p>
+            </div>
+            <div id="text-slide" className="slide-content">
+              <h2 className="heading-4 backed">Matt McCord</h2>
+              <p className="paragraph">Co-founder / Innovation Director<br/></p>
+            </div>
+          </div>
+          <div className="div-block-46"><img src={prev} id="prev" height="50" alt="" className="image-14"/><img src={next} id="next" height="50" alt=""/></div>
+        </div>
+      </div>
+    </div>
+    <div className="w-embed w-script">
+    </div>
+    <div id="data-policy" className="cream-bg data"></div>
+  </div>
+  <div id="join-waitlist" className="join-waitlist">
+    <div className="container-29 w-container">
+      <div className="div-block-53 covid">
+        <h2 className="heading">Join the <span className="text-span-6">waitlist</span><br/></h2>
+        <img src={Icon} alt="" className="selec-bg"/><img src={Icon_checkbox} alt="" className="img-check"/>
+        <div className="form-block w-form">
+          <form id="email-form" name="email-form" data-name="Email Form" className="form-3 w-clearfix">
+            <input type="email" className="text-field-3 w-input" maxlength="256" name="email-2" data-name="Email 2" placeholder="Email Address" id="email-2" required=""/>
+            <input type="submit" value="Join Waitlist" data-wait="Please wait..." className="dark-bt join-bt w-button"/></form>
+          <div className="w-form-done">
+            <div>Thank you! Your submission has been received!</div>
+          </div>
+          <div className="w-form-fail">
+            <div>Oops! Something went wrong while submitting the form.</div>
+          </div>
+        </div>
+        <h4 className="heading-60 subs-number">We’ll notify you as soon as test kits become available in your country.<span className="subs-first">‍</span></h4>
+      </div>
+      <div className="div-block-139">
+        <div className="html-embed-4 sub-form w-embed w-script">
+          <form id="email_signup" className="klaviyo_styling klaviyo_gdpr_embed_MXegL8" action="//manage.kmail-lists.com/subscriptions/subscribe" data-ajax-submit="//manage.kmail-lists.com/ajax/subscriptions/subscribe" method="GET" target="_blank" novalidate="novalidate">
+            <input type="hidden" name="g" value="MXegL8"/>
+            <input type="hidden" name="$fields" value="country,cards"/>
+            <input type="hidden" name="$list_fields" value="$consent"/>
+            <div className="klaviyo_field_group">
+              <input className="" type="email" value="" name="email" id="k_id_email" placeholder="Enter Your Email Address"/>
+              <select id="consent-country" className="rounded" name="country">
+      </select>
+              <input type="number" id="consent-card" name="cards" min="1" className="rounded" placeholder="How many test kits would you like?"/>
+              <div className="agee-check">
+                <label className="agree-label">
+      	<input checked="" type="checkbox" name="agree" className="agree"/><p className="subsc subsca">By submitting this form you agree to our <a href="terms-of-service.html">terms of service</a> and <a href="privacy-policy.html">privacy policy</a></p>
+      </label>
+              </div>
+            </div>
+            <div className="klaviyo_messages">
+              <div className="success_message"></div>
+              <div className="error_message"></div>
+            </div>
+            <div className="klaviyo_form_actions">
+              <div className="cover"></div>
+              <button type="submit" className="dark-bt klaviyo_submit_button">Join waitlist</button> </div>
+          </form>
+          
+          
+        </div>
+        <div className="w-embed w-script">
+        </div>
+        <div className="sub-thank">
+          <h3 className="heading-66">You are officially on the waitlist, which is growing quickly.</h3>
+          <p className="paragraph-27">Give your family and friends a heads up to reserve their place in line:</p>
+          <div className="div-block-140">
+            <a href="http://www.facebook.com/share.php?u=https://vesselhealth.com/coronavirus" target="_blank" className="w-inline-block w-clearfix">
+              <img src={fb} width="48" height="48" alt="" className="image-36"/></a>
+              <a href="https://twitter.com/intent/tweet?text=I%20just%20joined%20the%20waitlist%20for%20Vessel&#x27;s%20new%20at-home COVID-19%20antibody%20test.%20They&#x27;re%20in%20clinical%20trials,%20with approval%20coming%20soon%20(knock%20on%20wood).%20Reserve%20your%20spot%20on%20the%20waitlist.%20https%3A%2F%2Fwww.vesselhealth.com/coronavirus" target="_blank" className="w-inline-block w-clearfix">
+                <img src={tw} width="48" height="48" alt="" className="image-36"/></a>
+                <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://vesselhealth.com/coronavirus" target="_blank" className="w-inline-block w-clearfix">
+                  <img src={li} width="48" height="48" alt="" className="image-36"/></a>
+                  <a href="mailto:?subject=Vessel%20Health%20Coronavirus%20Testing&amp;body=I%20just%20joined%20the%20waitlist%20for%20Vessel&#x27;s%20new%20at-home COVID-19%20antibody%20test.%20They&#x27;re%20in%20clinical%20trials,%20with approval%20coming%20soon%20(knock%20on%20wood).%20Reserve%20your%20spot%20on%20the%20waitlist.%20https%3A%2F%2Fwww.vesselhealth.com/coronavirus" target="_blank" className="w-inline-block w-clearfix">
+                <img src={em} width="48" height="48" alt="" className="image-36"/>
+                </a>
+                </div>
+        </div>
+        <div className="w-embed w-script">
+        </div>
+      </div>
+    </div>
+    <div className="green-bg data"></div>
+  </div>
+  <div className="question">
+    <div className="container-18 w-container">
+      <div className="faq-testing">
+        <h2 className="heading">Questions</h2>
+        <div className="qs-list">
+          <div className="div-block-98">
+            <p className="paragraph-18 number">01</p>
+            <div className="div-block-97">
+              <div data-w-id="7bdee994-d2e3-da14-351f-66dc8d39cfca" className="accordion-trigger w-clearfix">
+                <h3 className="heading-46">How do I take the test?<br/></h3>
+                <img src={expand} alt="" className="expand-icon"/></div>
+              <p className="p-qs paragraph">Simply follow these steps:<br/>• Step 1 - Download the Vessel app.<br/>• Step 2 - Complete the brief questionnaire. <br/>• Step 3 - Watch the one-minute video explaining how the test works.<br/>• Step 4 - Apply one (1) drop of blood to the test card. A lancet is provided to prick your finger.<br/>• Step 5 - Apply two (2) drops of buffer solution, which is provided in the test kit.<br/>• Step 6 - Wait 10 minutes; a timer is provided in the Vessel app.<br/>• Step 7 - Scan the test card with the Vessel app.<br/>• Step 8 - Once you scan the test card, you will be connected with a medical professional who will review your results and provide you with next steps via Vessel’s telehealth platform.</p>
+            </div>
+          </div>
+          <div className="div-block-98">
+            <p className="paragraph-18 number">02</p>
+            <div className="div-block-97">
+              <div data-w-id="7949ae46-7442-91e4-03a4-61d9bd09c3ab" className="accordion-trigger w-clearfix">
+                <h3 className="heading-46">How does the antibody (serology) test work?<br/></h3>
+                <img src={expand} alt="" className="expand-icon"/></div>
+              <p className="p-qs paragraph">Our test works by measuring two different types of antibodies (IgM and IgG), which are immunoglobulins (proteins) that your immune system creates in response to an infection. Antibodies are unique and specific to each pathogen, and they are able to bind to specific parts of the COVID-19 virus activating our immune system to neutralize and destroy the virus and infected cells.<br/>‍<br/>IgM antibodies are created first. They take about 7 days after infection to show up at detectable levels in your bloodstream, and they become undetectable about 2 weeks after symptoms resolve.  Because of this timing, they signify an acute (recent) infection, and healthcare professionals often use blood IgM levels to detect an acute infection.<br/>‍<br/>IgG antibodies are created later, with detectable levels about 3-6 weeks after infection,, and typically remain at detectable levels in your blood for years. IgG is typically the antibody signaling immunity from the associated pathogen. For example, after getting a vaccination, the body continues to make IgG antibodies for years to continue to protect us against that infectious disease. Furthermore, with repeat infections, IgG rather than IgM is the predominant antibody created by our immune system.<br/>‍<br/>The same type of immunity can be acquired through an actual infection. For example, after getting chickenpox, the immune system creates IgM antibodies during the acute infection, and then long term IgG antibodies to protect us against the varicella virus in the future.  There are also varicella vaccines that can also lead to long-term immunity through triggering the production of IgG antibodies. <br/>One way we measure immunity is by measuring blood titers of IgG antibody levels. However keep in mind that we don’t yet know for sure if IgG antibodies against COVID-19 signifies immunity. Initial research is promising, but more research is still needed to validate this assumption.<br/></p>
+            </div>
+          </div>
+          <div className="div-block-98">
+            <p className="paragraph-18 number">03</p>
+            <div className="div-block-97">
+              <div data-w-id="d00ece62-cc1a-23a9-1351-94cd52442fb6" className="accordion-trigger w-clearfix">
+                <h3 className="heading-46">What are the different results I could get and what do they mean?<br/></h3><img src={expand} alt="" className="expand-icon"/></div>
+              <p className="p-qs paragraph">On your test, there are several types of results you can get:<br/>• If only IgM antibodies are detected, this suggests a new infection from the virus in the past few weeks.<br/>•  If IgM and IgG antibodies are detected, this signifies both an acute infection from the virus in the past 3-6 weeks, and the development of IgG antibodies, the body’s form of long-term protection.<br/>• If IgM antibodies are not detected, and only IgG antibodies are detected, this signifies a previous infection more than four weeks ago and possible long-term immunity.<br/>• If no antibodies are detected, this signifies that you do probably have not had an infection with the virus, or that you were exposed recently and are in the incubation period of 1-2 weeks when you have the virus but have not yet produced antibodies, or that you may have a problem with your immune system producing antibodies.<br/></p>
+            </div>
+          </div>
+          <div className="div-block-98">
+            <p className="paragraph-18 number">04</p>
+            <div className="div-block-97">
+              <div data-w-id="a706febf-3ec6-6da9-b4ae-030a6edee7cc" className="accordion-trigger w-clearfix">
+                <h3 className="heading-46">What supplies do I need to take this test?<br/></h3><img src={expand} alt="" className="expand-icon"/></div>
+              <p className="p-qs paragraph">We provide everything you need to test from home. You clean your finger with an alcohol swab, prick it with a sterile lancet (just like diabetics do), and collect 1 - 2 drops of blood with the plastic pipette. You then 1 full drop of blood and 2 drops of buffer solution to the designated area of the test card, wait 10 minutes, scan the test card with the Vessel app, and get instant results and recommendations from one of our telehealth providers. The Vessel app has easy to follow step by step video and text instructions to help guide you through each step of the process.<br/></p>
+            </div>
+          </div>
+          <div className="div-block-98">
+            <p className="paragraph-18 number">05</p>
+            <div className="div-block-97">
+              <div data-w-id="6c9fcfeb-1f8c-4846-c91f-2a3b83dec362" className="accordion-trigger w-clearfix">
+                <h3 className="heading-46">How quickly will I get my results?<br/></h3><img src={expand} alt="" className="expand-icon"/></div>
+              <p className="p-qs paragraph">The test results will be ready in 10 minutes, however you may need to wait slightly longer before you are connected to one of our telehealth providers to go over your results.<br/></p>
+            </div>
+          </div>
+          <div className="div-block-98">
+            <p className="paragraph-18 number">06</p>
+            <div className="div-block-97">
+              <div data-w-id="39906395-5593-2ad4-9458-f6394457021d" className="accordion-trigger w-clearfix">
+                <h3 className="heading-46">Can this test tell me if I am immune to Coronavirus?<br/></h3><img src={expand} alt="" className="expand-icon"/></div>
+              <p className="p-qs paragraph">Likely. While this hasn’t been proven yet with COVID-19, the finding of detectable IgG antibodies and no detectable IgM antibodies is what clinicians use to detect immunity. For example, your doctor might check Hepatitis A IgG antibodies to confirm that you are immune to Hepatitis A from either a prior infection or prior vaccination. <br/>‍<br/>If you were to have a test result showing positive IgG antibodies and negative IgM antibodies, you are likely protected against re-infection. Again this has not yet been proven and more research is needed to fully answer this question.<br/>‍<br/>It is also possible that in the future COVID-19 could mutate (slightly change its structure) in such a way that the IgG antibodies your body created initially no longer work.<br/></p>
+            </div>
+          </div>
+          <div className="div-block-98">
+            <p className="paragraph-18 number">07</p>
+            <div className="div-block-97">
+              <div data-w-id="fe53188d-5375-6460-0420-0202993f153b" className="accordion-trigger w-clearfix">
+                <h3 className="heading-46">If I test negative, can I go back to work?<br/></h3><img src={expand} alt="" className="expand-icon"/></div>
+              <p className="p-qs paragraph">If you test negative, it means that you probably have not yet been exposed to the virus, were infected in the past 7 days, or that there is a problem with your immune system from a pre-existing disease process or medication.  Therefore if you test negative, it’s best to assume you are still at risk and should continue social isolation to protect yourself and others.<br/>‍<br/>If you test IgG positive, IgM negative you can likely ease up on social distancing and go back to work however we still need more research to confirm this (as explained above).  As always, follow the guidance of your healthcare professional who will stay up to date on CDC guidelines.<br/></p>
+            </div>
+          </div>
+          <div className="div-block-98">
+            <p className="paragraph-18 number">08</p>
+            <div className="div-block-97">
+              <div data-w-id="b8431ea8-2a23-3795-1df8-5bef9cbf9a26" className="accordion-trigger w-clearfix">
+                <h3 className="heading-46">Is the test accurate compared to clinical lab testing?<br/></h3><img src={expand} alt="" className="expand-icon"/></div>
+              <p className="p-qs paragraph">The accuracy of tests is described through the terms sensitivity and specificity. <br/>‍<br/>Sensitivity measures the proportion of actual positives that are correctly identified as such by the test in question (e.g. the percentage of COVID-19 infected people who are currently testing positive).<br/>‍<br/>Specificity measures the proportion of actual negatives that are correctly identified as such by the test in question (e.g., the percentage of healthy people who are correctly identified by the test result as not having COVID-19).<br/>‍<br/>Currently, RT-qPCR testing using a <a href="https://www.youtube.com/watch?v=DVJNWefmHjE" target="_blank">properly connected nasopharyngeal swab<span className="cit-number">[1]</span></a> is the gold standard, however the accuracy and predictive value of this type of testing has not been systematically evaluated, and the sensitivity of testing likely depends on the precise test being used as well as the type and quality of specimen obtained.  However until we have a more accurate way of detecting true positives and true negatives, we will use RT-qPCR testing as the “gold standard” to which to compare other tests.<br/>‍<br/>Now, onto the question of the accuracy of the newer serologic tests that can be read through the Vessel app.<br/>‍<br/>While each test card is slightly different, the test card that we ship directly to our users had a sensitivity of 93.8% and specificity of 95.6%, when tested at 2 Chinese hospitals in a total of 128 COVID19 positive patients, and 250 COVID19 negative patients (as detected by RT-qPCR).<br/>‍<br/>This means that 93.8% of the people who had a positive IgM antibody test result also had a positive RT-qPCR result), and that 95.6% of people who had a negative IgM antibody test also had a negative RT-qPCR test result.<br/><br/><span className="citation">1. https://www.youtube.com/watch?v=DVJNWefmHjE</span><br/><br/></p>
+            </div>
+          </div>
+          <div className="div-block-98">
+            <p className="paragraph-18 number">09</p>
+            <div className="div-block-97">
+              <div data-w-id="f4563d7e-1749-14c9-2e87-2ac4a510988d" className="accordion-trigger w-clearfix">
+                <h3 className="heading-46">How much does the app and antibody test cost?<br/></h3><img src={expand} alt="" className="expand-icon"/></div>
+              <p className="p-qs paragraph">The Vessel app is free. The test card will be sold at cost and most likely will be eligible for insurance reimbursement.  There is also a telemedicine service to review your results which is also most likely covered by your insurance.  When you create an account on our website or inside the app we will check that for you.  If your insurance does not cover it you will be billed directly from the telemedicine provider and shown the cash pay price upfront.<br/></p>
+            </div>
+          </div>
+          <div className="div-block-98">
+            <p className="paragraph-18 number">10</p>
+            <div className="div-block-97">
+              <div data-w-id="6c89c47e-8a60-64f6-8ac0-85167777d35c" className="accordion-trigger w-clearfix">
+                <h3 className="heading-46">Who should take this test?<br/></h3><img src={expand} alt="" className="expand-icon"/></div>
+              <p className="p-qs paragraph">We recommend you take this test if you:<br/>• Currently show any symptoms of COVID-19 such as a fever, cough, fatigue, muscle pains, or reduced appetite.<br/>• Previously had symptoms and think you may have had an infection with COVID-19 in the past.<br/>• Are curious to know if you&#x27;re one of the people who had a prior infection but no symptoms.<br/><br/>Because there are so many potential benefits of testing, perhaps a better way to phrase this question is who shouldn&#x27;t take this test.  If you’re experiencing severe symptoms such as difficulty breathing or light-headedness, skip this test and seek medical attention right away to evaluate if you need hospitalization.<br/></p>
+            </div>
+          </div>
+          <div className="div-block-98">
+            <p className="paragraph-18 number">11</p>
+            <div className="div-block-97">
+              <div data-w-id="d9742a7a-84d6-168a-f4da-0f67bd875a39" className="accordion-trigger w-clearfix">
+                <h3 className="heading-46">I was in contact with someone who is now showing symptoms. Should I take this test?<br/></h3><img src={expand} alt="" className="expand-icon"/></div>
+              <p className="p-qs paragraph">Yes, because the symptoms and severity of COVID-19 infection vary greatly ranging from no symptoms to severe symptoms, testing can help identify if you have been infected in the past.  Keep in mind that if your results are IgM and IgG negative, you may need to test again in 7-14 days as you may get a negative result if you are in the beginning of the incubation period (the period after infection but before you develop symptoms).<br/></p>
+            </div>
+          </div>
+          <div className="div-block-98">
+            <p className="paragraph-18 number">12</p>
+            <div className="div-block-97">
+              <div data-w-id="e64ae21d-8444-02a9-73b4-d48e82ee582e" className="accordion-trigger w-clearfix">
+                <h3 className="heading-46">Who will have access to my test results?<br/></h3><img src={expand} alt="" className="expand-icon"/></div>
+              <p className="p-qs paragraph">We are required to report positive cases to local, state, and federal public health agencies. We will not report to your insurance company or healthcare provider, aside from the independent telehealth doctor that will review your results.<br/>‍<br/>We adhere to an open standard to CDC/PHE/WHO in a universal effort to understand the sero-epidemiology of COVID-19. See our <a href="#data-policy">Data Policy</a> here.<br/></p>
+            </div>
+          </div>
+          <div className="div-block-98">
+            <p className="paragraph-18 number">13</p>
+            <div className="div-block-97">
+              <div data-w-id="843efc21-9c85-3ec4-1e10-94fc16c3cbf4" className="accordion-trigger w-clearfix">
+                <h3 className="heading-46">How many tests are going to be available?<br/></h3><img src={expand} alt="" className="expand-icon"/></div>
+              <p className="p-qs paragraph">This is a worldwide pandemic, which is why we’ve secured manufacturing for hundreds of thousands of test kits per day and are now seeking regulatory approval around the world. We have partnered with the xPrize Pandemic Alliance, Anthem Blue Cross Blue Shield, and Doc.ai on clinical trials to verify that antibody tests can be safely and accurately administered at home. We’re also working with UCSF to validate the accuracy of various different test cards, which should be completed by the end of April 2020. Once approved we will be offering test cards for sale on VesselHealth.com. To be notified when Vessel is available in your country <a href="#join-waitlist">join our waitlist here</a>.<br/></p>
+            </div>
+          </div>
+          <div className="div-block-98">
+            <p className="paragraph-18 number">14</p>
+            <div className="div-block-97">
+              <div data-w-id="052cbc40-5d64-40fd-e43f-f98cacd1c2b7" className="accordion-trigger w-clearfix">
+                <h3 className="heading-46">Will this test be available in all 50 states?<br/></h3><img src={expand} alt="" className="expand-icon"/></div>
+              <p className="p-qs paragraph">Once we receive the appropriate regulatory approvals we will update this information.<br/></p>
+            </div>
+          </div>
+          <div className="div-block-98">
+            <p className="paragraph-18 number">15</p>
+            <div className="div-block-97">
+              <div data-w-id="b5c37e55-e4dd-2db4-11c8-2492d8f4e34b" className="accordion-trigger w-clearfix">
+                <h3 className="heading-46">Is the app available outside the US?<br/></h3><img src={expand} alt="" className="expand-icon"/></div>
+              <p className="p-qs paragraph">Once we receive the appropriate regulatory approvals, yes.<br/></p>
+            </div>
+          </div>
+          <div className="div-block-98">
+            <p className="paragraph-18 number">16</p>
+            <div className="div-block-97">
+              <div data-w-id="f84c907f-8f88-3df5-64a8-eaf0f0833322" className="accordion-trigger w-clearfix">
+                <h3 className="heading-46">Where can I find general COVID-19 (novel coronavirus) information?<br/></h3><img src={expand} alt="" className="expand-icon"/></div>
+              <p className="p-qs paragraph">CDC webpages:<br/> <br/>General: <a href="https://www.cdc.gov/COVID19" target="_blank">https://www.cdc.gov/COVID19</a> <br/>Healthcare Professionals: <a href="https://www.cdc.gov/coronavirus/2019-nCoV/guidance-hcp.html" target="_blank">https://www.cdc.gov/coronavirus/2019-nCoV/guidance-hcp.html</a> <br/>Information for Laboratories: <a href="https://www.cdc.gov/coronavirus/2019-nCoV/guidance-laboratories.html" target="_blank">https://www.cdc.gov/coronavirus/2019- nCoV/guidance-laboratories.html</a> Laboratory Biosafety: <a href="https://www.cdc.gov/coronavirus/2019-nCoV/lab-biosafety-guidelines.html" target="_blank">https://www.cdc.gov/coronavirus/2019- nCoV/lab-biosafety-guidelines.html</a> <br/>Isolation Precautions in Healthcare Settings: <a href="https://www.cdc.gov/coronavirus/2019-ncov/infection-control/controlrecommendations.html" target="_blank">https://www.cdc.gov/coronavirus/2019-ncov/infection-control/controlrecommendations.html</a> <br/>Specimen Collection: <a href="https://www.cdc.gov/coronavirus/2019-nCoV/guidelines-clinical-specimens.html" target="_blank">https://www.cdc.gov/coronavirus/2019- nCoV/guidelines-clinical-specimens.html</a> Infection Control: <a href="https://www.cdc.gov/coronavirus/2019-ncov/infection-control/index.html" target="_blank">https://www.cdc.gov/coronavirus/2019- ncov/infection-control/index.html</a> <br/><br/>FDA webpages:<br/> <br/>General: <a href="http://www.fda.gov/novelcoronavirus" target="_blank">www.fda.gov/novelcoronavirus</a> <br/>EUAs: <a href="https://www.fda.gov/medical-devices/emergencysituations-medical-devices/emergency-use-authorizations" target="_blank">https://www.fda.gov/medical-devices/emergencysituations-medical-devices/emergency-use-authorizations</a><br/></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </Layout>
+	)
+	}
+}
+
+export default coronaPage

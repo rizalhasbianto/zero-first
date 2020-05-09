@@ -49,13 +49,6 @@ class homePage extends Component {
     };
   }
   componentDidMount() {
-    // Add Height for tour section
-    window.addEventListener('load', (event) => {
-      var scan = document.getElementsByClassName("scan");
-      var container = document.getElementsByClassName("container-6");
-      var scanHeight = scan[0].offsetHeight;
-      container[0].style.height = scanHeight+"px";
-    });
       // Tour and Compare animation
       var learnContent = document.getElementsByClassName("learn");
       var foodContent = document.getElementsByClassName("food");
@@ -65,7 +58,12 @@ class homePage extends Component {
       var improveContent = document.getElementsByClassName("improve");
       var lastScrollTop = 0;
       function handleScrollBody() {
-        var body = document.body;
+        // Add Height for tour section
+        var scan = document.getElementsByClassName("scan");
+        var container = document.getElementsByClassName("container-6");
+        var scanHeight = scan[0].offsetHeight;
+        container[0].style.height = scanHeight+"px";
+
         var scroll = window.pageYOffset;
         var winHeight = window.screen.height / 2;
         var scrollMiddle  = window.pageYOffset + winHeight;

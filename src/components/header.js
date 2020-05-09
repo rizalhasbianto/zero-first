@@ -105,9 +105,15 @@ render() {
               <div data-w-id="f5ccf9f4-a3e9-20be-34c3-4c2e866f771d" className="close" onClick={this.handleClick}><img src="images/close-Icon.png" alt="" className="image-32" /></div><a href="#" className="w-inline-block"><img src="images/white-logo.png" height="32" alt="" className="image-18" /></a></div>
             <div data-collapse="none" data-animation="default" data-duration="400" className="navbar w-nav">
               <nav role="navigation" className="nav-menu w-nav-menu">
-                <div className="nav-li"><a href="index.html" aria-current="page" className="nav-link-2 w-nav-link w--current">Wellness Test Card</a></div>
-                <div className="nav-li"><a href="coronavirus.html" className="nav-link-2 w-nav-link">Coronavirus Test Card</a></div>
-                <div className="nav-li"><a href="about.html" className="nav-link-2 w-nav-link">About</a></div>
+                <div className="nav-li">
+                <Link className="nav-link-2 w-nav-link w--current" to="/">Wellness Test Card</Link>
+                </div>
+                <div className="nav-li">
+                <Link className="nav-link-2 w-nav-link" to="/coronavirus-test-card/">Coronavirus Test Card</Link>
+                  </div>
+                <div className="nav-li">
+                <Link className="nav-link-2 w-nav-link" to="/page-2/">About</Link>
+                  </div>
                 <div className="nav-li"><a href="careers.html" className="nav-link-2 w-nav-link">Careers</a></div>
                 <div className="nav-li"><a href="#" data-w-id="f5ccf9f4-a3e9-20be-34c3-4c2e866f7730" className="nav-link-2 expand w-nav-link">Partner</a>
                   <div className="p-qs nav">
