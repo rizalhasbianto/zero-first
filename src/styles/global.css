@@ -233,7 +233,7 @@ opacity: 0;
   transition: opacity 0.5s ease-in-out;
   transition-delay: 0.5s;
 }
-.lab-child.home {
+.lab-child {
   opacity: 0.25;
 -webkit-transition: opacity 0.2s linear;
   -moz-transition: opacity 0.2s linear;
@@ -242,7 +242,7 @@ opacity: 0;
   transition: opacity 0.2s linear;
   transition-delay: 0s;
 }
-.home.active {
+.lab-child.active {
   opacity: 1;
 -webkit-transition: opacity 0.2s linear;
   -moz-transition: opacity 0.2s linear;
@@ -256,7 +256,7 @@ opacity: 0;
   width: 20px!important;
     height: 20px!important;
 }
-.home .div-block-14 {
+.div-block-14 {
   background: black;
   width:8px;
   height:8px;
@@ -266,7 +266,7 @@ opacity: 0;
   -o-transition: background 0.2s linear, width 0.2s ease-in-out, height 0.2s ease-in-out;
   transition: background 0.2s linear, width 0.2s ease-in-out, height 0.2s ease-in-out;
 }
-.home.active .div-block-14 {
+.lab-child.active .div-block-14 {
   background: transparent;
   width:15px;
   height:15px;
@@ -378,3 +378,37 @@ opacity: 0;
     .food {
       height: 100%;
     }
+
+  /* ACCORDION */
+  .p-qs {
+    max-height: 0;
+    -webkit-transition: max-height 0.5s ease-in-out;
+  -moz-transition: max-height 0.5s ease-in-out;
+  -ms-transition: max-height 0.5s ease-in-out;
+  -o-transition: max-height 0.5s ease-in-out;
+  transition: max-height 0.5s ease-in-out;
+  }
+  .w--active .p-qs {
+    max-height: 700px;
+    -webkit-transition: max-height 0.5s ease-in-out;
+  -moz-transition: max-height 0.5s ease-in-out;
+  -ms-transition: max-height 0.5s ease-in-out;
+  -o-transition: max-height 0.5s ease-in-out;
+  transition: max-height 0.5s ease-in-out;
+  }
+  .expand-icon {
+    transform: rotate(0deg);
+    -webkit-transition: transform 0.5s ease-in-out;
+  -moz-transition: transform 0.5s ease-in-out;
+  -ms-transition: transform 0.5s ease-in-out;
+  -o-transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  }
+  .w--active .expand-icon {
+    transform: rotate(45deg);
+    -webkit-transition: transform 0.5s ease-in-out;
+  -moz-transition: transform 0.5s ease-in-out;
+  -ms-transition: transform 0.5s ease-in-out;
+  -o-transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  }

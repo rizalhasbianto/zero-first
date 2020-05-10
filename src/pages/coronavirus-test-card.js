@@ -4,9 +4,6 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import Logo from "../images/Logo.png"
-import close_Icon from "../images/close-Icon.png"
-import white_logo from "../images/white-logo.png"
 import Group_7 from "../images/Group-7.png"
 import quote from "../images/quote.png"
 import drbrownstein from "../images/drbrownstein.png"
@@ -89,9 +86,127 @@ import tw from "../images/tw.png"
 import li from "../images/li.png"
 import em from "../images/em.png"
 import expand from "../images/expand.png"
-import close from "../images/close.png"
 
 class coronaPage extends Component {
+  componentDidMount() {
+    var learnContent = document.getElementsByClassName("learn");
+      var foodContent = document.getElementsByClassName("food");
+      var supContent = document.getElementsByClassName("sup");
+      var lifeContent = document.getElementsByClassName("life");
+      var planContent = document.getElementsByClassName("plan");
+      var improveContent = document.getElementsByClassName("improve");
+      var stepEightContent = document.getElementsByClassName("step-8");
+    function handleScrollBody() {
+      // tour section
+      var scan = document.getElementsByClassName("scan");
+      var container = document.getElementsByClassName("container-6");
+      var scanHeight = scan[0].offsetHeight;
+      container[0].style.height = scanHeight+"px";
+      var scroll = window.pageYOffset;
+      var learn = document.getElementById("step2").getBoundingClientRect().top + scroll;
+      var food = document.getElementById("step3").getBoundingClientRect().top + scroll;
+      var sup = document.getElementById("step4").getBoundingClientRect().top + scroll;
+      var life = document.getElementById("step5").getBoundingClientRect().top + scroll;
+      var plan = document.getElementById("step6").getBoundingClientRect().top + scroll;
+      var improve = document.getElementById("step7").getBoundingClientRect().top + scroll;
+      var stepEight = document.getElementById("step8").getBoundingClientRect().top + scroll;
+      if (scroll >= Math.floor(learn)) { learnContent[0].style.display = "block";}
+      else {learnContent[0].style.display = "none";}
+      if (scroll >= Math.floor(food)) { foodContent[0].style.display = "block";}
+      else {foodContent[0].style.display = "none";}
+      if (scroll >= Math.floor(sup)) { supContent[0].style.display = "block";}
+      else {supContent[0].style.display = "none";}
+      if (scroll >= Math.floor(life)) { lifeContent[0].style.display = "block";}
+      else {lifeContent[0].style.display = "none";}
+      if (scroll >= Math.floor(plan)) { planContent[0].style.display = "block";}
+      else {planContent[0].style.display = "none";}
+      if (scroll >= Math.floor(improve)) { improveContent[0].style.display = "block";}
+      else {improveContent[0].style.display = "none";}
+      if (scroll >= Math.floor(stepEight)) { stepEightContent[0].style.display = "block";}
+      else {stepEightContent[0].style.display = "none";}
+
+      // Compare Section
+      var winHeight = window.screen.height / 2;
+      var scrollMiddle  = window.pageYOffset + winHeight;
+      var posLab = document.getElementById("labpos").getBoundingClientRect().top + scroll;
+      var posLabLast = document.getElementById("labposlast").getBoundingClientRect().top + scroll;
+      var line = scrollMiddle - posLab;
+      var lineElem = document.getElementsByClassName("line-vertical");
+      if (scrollMiddle > posLab && scrollMiddle < posLabLast) {lineElem[0].style.height = line+'px';}
+      var pertama = document.getElementsByClassName("pertama")[0].getBoundingClientRect().top + scroll;
+      var pertamaElem = document.getElementsByClassName("_1");
+      var kedua = document.getElementsByClassName("kedua")[0].getBoundingClientRect().top + scroll;
+      var keduaElem = document.getElementsByClassName("_2");
+      var ketiga = document.getElementsByClassName("ketiga")[0].getBoundingClientRect().top + scroll;
+      var ketigaElem = document.getElementsByClassName("_3");
+      var keempat = document.getElementsByClassName("keempat")[0].getBoundingClientRect().top + scroll;
+      var keempatElem = document.getElementsByClassName("_4");
+      var kelima = document.getElementsByClassName("kelima")[0].getBoundingClientRect().top + scroll;
+      var kelimaElem = document.getElementsByClassName("_5");
+      var keenam = document.getElementsByClassName("keenam")[0].getBoundingClientRect().top + scroll;
+      var keenamElem = document.getElementsByClassName("_6");
+      var ketujuh = document.getElementsByClassName("ketujuh")[0].getBoundingClientRect().top + scroll;
+      var ketujuhElem = document.getElementsByClassName("_7");
+      var kedelapan = document.getElementsByClassName("kedelapan")[0].getBoundingClientRect().top + scroll;
+      var kedelapanElem = document.getElementsByClassName("_8");
+      var kesembilan = document.getElementsByClassName("kesembilan")[0].getBoundingClientRect().top + scroll;
+      var kesembilanElem = document.getElementsByClassName("_9");
+      var kesepuluh = document.getElementsByClassName("kesepuluh")[0].getBoundingClientRect().top + scroll;
+      var kesepuluhElem = document.getElementsByClassName("_10");
+      if (scrollMiddle > pertama) {pertamaElem[0].classList.add('active')}
+      else {pertamaElem[0].classList.remove('active')}
+      if (scrollMiddle > kedua) {keduaElem[0].classList.add('active')}
+      else {keduaElem[0].classList.remove('active')}
+      if (scrollMiddle > ketiga) {ketigaElem[0].classList.add('active')}
+      else {ketigaElem[0].classList.remove('active')}
+      if (scrollMiddle > keempat) {keempatElem[0].classList.add('active')}
+      else {keempatElem[0].classList.remove('active')}
+      if (scrollMiddle > kelima) {kelimaElem[0].classList.add('active')}
+      else {kelimaElem[0].classList.remove('active')}
+      if (scrollMiddle > keenam) {keenamElem[0].classList.add('active')}
+      else {keenamElem[0].classList.remove('active')}
+      if (scrollMiddle > ketujuh) {ketujuhElem[0].classList.add('active')}
+      else {ketujuhElem[0].classList.remove('active')}
+      if (scrollMiddle > kedelapan) {kedelapanElem[0].classList.add('active')}
+      else {kedelapanElem[0].classList.remove('active')}
+      if (scrollMiddle > kesembilan) {kesembilanElem[0].classList.add('active')}
+      else {kesembilanElem[0].classList.remove('active')}
+      if (scrollMiddle > kesepuluh) {kesepuluhElem[0].classList.add('active')}
+      else {kesepuluhElem[0].classList.remove('active')}
+      }
+    window.addEventListener('scroll', handleScrollBody);
+    // Tab function
+    var btnContainer = document.getElementById("tabmenu");
+    var contentContainer = document.getElementById("tabcontent");
+    var btns = btnContainer.getElementsByClassName("w-tab-link");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function(e) {
+        e.preventDefault()
+        var current = btnContainer.getElementsByClassName("w--current");
+        current[0].className = current[0].className.replace(" w--current", "");
+        this.className += " w--current";
+        var tabName = this.getAttribute("data-w-tab");
+        var currentTab = contentContainer.getElementsByClassName("w--tab-active");
+        currentTab[0].className = currentTab[0].className.replace(" w--tab-active", "");
+        var tabContentCl = contentContainer.getElementsByClassName(tabName) ;
+        tabContentCl[0].className += " w--tab-active";
+      });
+    }
+
+    // Accordion function
+    var accorParent = document.getElementsByClassName("div-block-97");
+    for (var i = 0; i < accorParent.length; i++) {
+      accorParent[i].addEventListener("click", function(e) {
+        e.preventDefault()
+        if (this.classList.contains("w--active")) {
+          this.classList.remove("w--active");
+        }
+        else {
+          this.className += " w--active"; 
+        }
+      });
+    }
+  }
 	render() {
 	return (
 	<Layout>
@@ -333,7 +448,7 @@ class coronaPage extends Component {
                   </div>
                   <div className="scroll-img">
                     <div className="div-block-48"></div>
-                    <div className="div-block-49"></div><img src={step3} srcset="images/step3-p-500.png 500w, images/step3-p-800.png 800w, images/step3-p-1080.png 1080w, images/step3.png 1122w" sizes="100vw" alt="" className="image-5"/></div>
+                    <div className="div-block-49"></div><img src={step3} alt="" className="image-5"/></div>
                   <div className="scroll-text">
                     <h2 className="heading-30">Step 3</h2>
                     <p className="paragraph">Select the test card you have. Our technology is compatible with test cards purchased directly from Vessel as well as those from other regulatory approved sources.</p>
@@ -394,7 +509,7 @@ class coronaPage extends Component {
                   </div>
                   <div className="scroll-img">
                     <div className="div-block-48"></div>
-                    <div className="div-block-49"></div><img src={step4} srcset="images/step4-p-500.png 500w, images/step4-p-800.png 800w, images/step4-p-1080.png 1080w, images/step4.png 1122w" sizes="100vw" alt="" className="image-5"/></div>
+                    <div className="div-block-49"></div><img src={step4} alt="" className="image-5"/></div>
                   <div className="scroll-text">
                     <h2 className="heading-30">Step 4</h2>
                     <p className="paragraph">Watch the instructional video and apply one (1) drop of blood to the test card. An alcohol swab, lancet and pipette is provided in the test kit.</p>
@@ -761,45 +876,45 @@ class coronaPage extends Component {
       </div>
       <div className="div-block-42">
         <div data-duration-in="300" data-duration-out="100" className="tabs w-tabs">
-          <div className="tabs-menu covid w-tab-menu">
-            <a data-w-tab="Only IgM" className="tab-link-tab-1 w-inline-block w-tab-link">
+          <div className="tabs-menu covid w-tab-menu" id="tabmenu">
+            <a data-w-tab="only-igm" className="tab-link-tab-1 w-inline-block w-tab-link">
               <div className="text-block-19">Only IgM antibodies are detected<br/></div>
             </a>
-            <a data-w-tab="IgM and IgG" className="tab-link-tab-1 w-inline-block w-tab-link">
+            <a data-w-tab="igm-and-igg" className="tab-link-tab-1 w-inline-block w-tab-link">
               <div className="text-block-19">IgM and IgG antibodies are detected<br/></div>
             </a>
-            <a data-w-tab="Only IgG" className="tab-link-tab-1 w-inline-block w-tab-link">
+            <a data-w-tab="only-igg" className="tab-link-tab-1 w-inline-block w-tab-link">
               <div className="text-block-19">Only IgG antibodies are detected<br/></div>
             </a>
-            <a data-w-tab="No anti" className="tab-link-tab-1 w-inline-block w-tab-link">
+            <a data-w-tab="no-anti" className="tab-link-tab-1 w-inline-block w-tab-link">
               <div className="text-block-19">No antibodies are detected<br/></div>
             </a>
-            <a data-w-tab="Invalid test" className="tab-link-tab-1 w-inline-block w-tab-link w--current">
+            <a data-w-tab="invalid-test" className="tab-link-tab-1 w-inline-block w-tab-link w--current">
               <div className="text-block-19">Invalid test<br/></div>
             </a>
           </div>
-          <div className="tabs-content covid w-tab-content">
-            <div data-w-tab="Only IgM" className="tab-pane-vitamin-b7 w-tab-pane">
+          <div className="tabs-content covid w-tab-content" id="tabcontent">
+            <div data-w-tab="Only IgM" className="tab-pane-vitamin-b7 w-tab-pane only-igm">
               <h2 className="heading-4">Only IgM antibodies are detected<br/></h2>
               <p className="vessel">If only IgM antibodies are detected, this suggests a new infection from the virus in the past few weeks.<br/></p>
               <div className="div-block-56"><img src={result_igm} height="" alt="" className="image-29"/></div>
             </div>
-            <div data-w-tab="IgM and IgG" className="w-tab-pane">
+            <div data-w-tab="IgM and IgG" className="w-tab-pane igm-and-igg">
               <h2 className="heading-4">IgM and IgG antibodies are detected</h2>
               <p className="vessel">If IgM and IgG antibodies are detected, this signifies both an acute infection from the virus in the past 3-6 weeks, and the development of IgG antibodies, the body’s form of long-term protection.</p>
               <div className="div-block-56"><img src={result_both} height="" alt="" className="image-29"/></div>
             </div>
-            <div data-w-tab="Only IgG" className="w-tab-pane">
+            <div data-w-tab="Only IgG" className="w-tab-pane only-igg">
               <h2 className="heading-4">Only IgG antibodies are detected</h2>
               <p className="vessel">If IgM antibodies are not detected and only IgG antibodies are detected, this signifies a previous infection more than four weeks ago and possible long-term immunity.</p>
               <div className="div-block-56"><img src={result_igg} height="" alt="" className="image-29"/></div>
             </div>
-            <div data-w-tab="No anti" className="w-tab-pane">
+            <div data-w-tab="No anti" className="w-tab-pane no-anti">
               <h2 className="heading-4">No antibodies are detected</h2>
               <p className="vessel">If no antibodies are detected, this signifies that you probably have not had an infection with the virus, or that you were exposed recently and are in the incubation period of 1-2 weeks when you have the virus but have not yet produced antibodies, or that your immune system might be unable to produce antibodies.</p>
               <div className="div-block-56"><img src={result_neg} height="" alt="" className="image-29"/></div>
             </div>
-            <div data-w-tab="Invalid test" className="w-tab-pane w--tab-active">
+            <div data-w-tab="Invalid test" className="w-tab-pane w--tab-active invalid-test">
               <h2 className="heading-4">Invalid test</h2>
               <p className="vessel">Invalid test. The test cards we work with are able to determine if the blood sample was enough to make a valid test. If not, it will produce an invalid result.</p>
               <div className="div-block-56"><img src={invalid} height="" alt="" className="image-29"/></div>
@@ -871,7 +986,7 @@ class coronaPage extends Component {
         <h2 className="heading lab covid">Comparing PCR Testing to <span className="text-span-5">Antibody Testing</span><br/></h2>
         <p className="paragraph-14 paragraph">Below is a side-by-side comparison of the antibody test card vs typical lab-based PCR testing. Both can play a critical role in the fight against COVID-19. PCR is better at detecting the virus even in the incubation period.  Antibody testing can assess your immune response quickly and tell you if you&#x27;ve had an infection in the past that you&#x27;ve recovered from.<br/></p>
       </div>
-      <div data-w-id="301d1548-03d5-d866-0943-324df16ca2fa" className="div-block-39">
+      <div data-w-id="301d1548-03d5-d866-0943-324df16ca2fa" className="div-block-39" id="labpos">
         <div className="line-vertical"></div>
         <div className="line-vertical-s-compare shadow"></div>
         <div className="div-block-11 top-line">
@@ -1030,7 +1145,7 @@ class coronaPage extends Component {
           </div>
           <div className="div-block-10 child">
             <div className="bullet-wrap">
-              <div className="div-block-14 kesepuluh"></div>
+              <div className="div-block-14 kesepuluh" id="labposlast"></div>
             </div>
           </div>
           <div className="div-block-13">

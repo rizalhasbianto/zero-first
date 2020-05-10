@@ -71,6 +71,7 @@ class homePage extends Component {
         var posLabLast = document.getElementById("labposlast").getBoundingClientRect().top + scroll;
         var line = scrollMiddle - posLab;
         var lineElem = document.getElementsByClassName("line-vertical");
+        
         var learn = document.getElementById("learn").getBoundingClientRect().top + scroll;
         var food = document.getElementById("food").getBoundingClientRect().top + scroll;
         var sup = document.getElementById("sup").getBoundingClientRect().top + scroll;
