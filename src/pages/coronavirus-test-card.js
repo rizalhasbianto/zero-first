@@ -1,5 +1,6 @@
 import React, { Component} from "react"
 import { Link } from "gatsby"
+import Slider from "react-slick";
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -88,6 +89,17 @@ import em from "../images/em.png"
 import expand from "../images/expand.png"
 
 class coronaPage extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      nav1: null,
+      nav2: null,
+      nav3: null,
+      nav4: null,
+      nav5: null,
+      nav6: null
+    };
+  }
   componentDidMount() {
     var learnContent = document.getElementsByClassName("learn");
       var foodContent = document.getElementsByClassName("food");
@@ -206,8 +218,48 @@ class coronaPage extends Component {
         }
       });
     }
+    // slick
+    this.setState({
+      nav1: this.slider1,
+      nav2: this.slider2,
+      nav3: this.slider3,
+      nav4: this.slider4,
+      nav5: this.slider5,
+      nav6: this.slider6
+    });
+    function nextFunction() {
+      var next = document.getElementsByClassName("slick-prev");
+      var i;
+        for (i = 0; i < next.length; i++) {
+          next[i].click();
+        }
+    }
+    function prevFunction() {
+      var next = document.getElementsByClassName("slick-next");
+      var i;
+        for (i = 0; i < next.length; i++) {
+          next[i].click();
+        }
+    }
+    var nextElem = document.getElementById("next");
+    var prevElem = document.getElementById("prev");
+    nextElem.addEventListener("click", nextFunction);
+    prevElem.addEventListener("click", prevFunction);
   }
 	render() {
+    const settings = {
+      dots: false,
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    };
+    const textSlide = {
+      dots: false,
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      fade: !0
+    };
 	return (
 	<Layout>
     <SEO title="corona" />
@@ -1236,7 +1288,7 @@ class coronaPage extends Component {
       </div>
       <div className="div-block-45 w-clearfix">
         <div className="div-block-44 w-clearfix">
-          <div id="first-slide" className="div-block-26 slider-a w-clearfix">
+        <Slider {...settings} className="div-block-26 slider-a w-clearfix" asNavFor={this.state.nav2} ref={slider => (this.slider1 = slider)}>
             <div className="div-block-28 grow"><img src={_Jesus_Gonzalez} alt="" className="image-8 slide-img"/></div>
             <div className="div-block-28 grow"><img src={_Matt_McCord} alt="" className="image-8 slide-img"/></div>
             <div className="div-block-28 grow"><img src={_Jon_Carder} alt="" className="image-8 slide-img"/></div>
@@ -1278,8 +1330,8 @@ class coronaPage extends Component {
             <div className="div-block-28 grow"><img src={_Kyle_Brown} alt="" className="image-8 slide-img"/></div>
             <div className="div-block-28 grow"><img src={_Doug_Lorenzen} alt="" className="image-8 slide-img"/></div>
             <div className="div-block-28 grow"><img src={_Ryan_Dranginis} alt="" className="image-8 slide-img"/></div>
-          </div>
-          <div id="first-slide" className="div-block-26 slider-b w-clearfix">
+          </Slider>
+          <Slider {...settings} className="div-block-26 slider-b w-clearfix" asNavFor={this.state.nav3} ref={slider => (this.slider2 = slider)}>
             <div className="div-block-28 grow"><img src={_Matt_McCord} alt="" className="image-8 slide-img"/></div>
             <div className="div-block-28 grow"><img src={_Jon_Carder} alt="" className="image-8 slide-img"/></div>
             <div className="div-block-28 grow"><img src={_Blake_Jendrusch} alt="" className="image-8 slide-img"/></div>
@@ -1321,8 +1373,8 @@ class coronaPage extends Component {
             <div className="div-block-28 grow"><img src={_Doug_Lorenzen} alt="" className="image-8 slide-img"/></div>
             <div className="div-block-28 grow"><img src={_Ryan_Dranginis} alt="" className="image-8 slide-img"/></div>
             <div className="div-block-28 grow"><img src={_Jesus_Gonzalez} alt="" className="image-8 slide-img"/></div>
-          </div>
-          <div id="first-slide" className="div-block-26 slider-c w-clearfix">
+          </Slider>
+          <Slider {...settings} className="div-block-26 slider-c w-clearfix" asNavFor={this.state.nav4} ref={slider => (this.slider3 = slider)}>
             <div className="div-block-28 grow"><img src={_Jon_Carder} alt="" className="image-8 slide-img"/></div>
             <div className="div-block-28 grow"><img src={_Blake_Jendrusch} alt="" className="image-8 slide-img"/></div>
             <div className="div-block-28 grow"><img src={_Jeremy_Schumann} alt="" className="image-12 slide-img"/></div>
@@ -1364,10 +1416,10 @@ class coronaPage extends Component {
             <div className="div-block-28 grow"><img src={_Ryan_Dranginis} alt="" className="image-8 slide-img"/></div>
             <div className="div-block-28 grow"><img src={_Jesus_Gonzalez} alt="" className="image-8 slide-img"/></div>
             <div className="div-block-28 grow"><img src={_Matt_McCord} alt="" className="image-8 slide-img"/></div>
-          </div>
+        </Slider>
         </div>
         <div className="div-block-24">
-          <div className="div-block-25">
+        <Slider {...textSlide} className="div-block-25" asNavFor={this.state.nav1} ref={slider => (this.slider4 = slider)}>
             <div id="text-slide" className="slide-content">
               <h2 className="heading-4 backed">Jon Carder<br/></h2>
               <p className="paragraph">Co-Founder / CEO <br/></p>
@@ -1532,7 +1584,7 @@ class coronaPage extends Component {
               <h2 className="heading-4 backed">Matt McCord</h2>
               <p className="paragraph">Co-founder / Innovation Director<br/></p>
             </div>
-          </div>
+          </Slider>
           <div className="div-block-46"><img src={prev} id="prev" height="50" alt="" className="image-14"/><img src={next} id="next" height="50" alt=""/></div>
         </div>
       </div>

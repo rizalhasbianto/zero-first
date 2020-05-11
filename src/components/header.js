@@ -5,13 +5,15 @@ import { Helmet } from "react-helmet"
 
 import Logo from "../images/Logo.png"
 import close from "../images/close.png"
+import close_icon from "../images/close-Icon.png"
+import whiteLogo from "../images/white-logo.png"
 
 class Header extends React.Component {
 componentDidMount() {
 	var lastScrollTop ='0'
     function handleScroll() {
 	    var st = window.pageYOffset || document.documentElement.scrollTop; 
-      var x = document.getElementsByClassName("menu-navigation");
+      var x = document.getElementsByClassName("menu-nav");
       var scroll = window.pageYOffset;
       var elem = document.getElementsByClassName("notification-bar-container");
       var faded = document.getElementsByClassName("faded");
@@ -102,7 +104,7 @@ render() {
         <div className="div-block-120">
           <div className="div-block-119">
             <div className="div-block-64">
-              <div data-w-id="f5ccf9f4-a3e9-20be-34c3-4c2e866f771d" className="close" onClick={this.handleClick}><img src="images/close-Icon.png" alt="" className="image-32" /></div><a href="#" className="w-inline-block"><img src="images/white-logo.png" height="32" alt="" className="image-18" /></a></div>
+              <div data-w-id="f5ccf9f4-a3e9-20be-34c3-4c2e866f771d" className="close" onClick={this.handleClick}><img src={close_icon} alt="" className="image-32" /></div><a href="#" className="w-inline-block"><img src={whiteLogo} height="32" alt="" className="image-18" /></a></div>
             <div data-collapse="none" data-animation="default" data-duration="400" className="navbar w-nav">
               <nav role="navigation" className="nav-menu w-nav-menu">
                 <div className="nav-li">
