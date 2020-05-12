@@ -411,3 +411,99 @@ opacity: 0;
   -o-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   }
+  #k_id_email, #consent-country {
+    margin-bottom: 20px;
+    }
+  .klaviyo_styling label.agree-label {
+      display: flex;
+      align-items: top;
+  }
+  .checkmark {
+  width: 30px;
+      height: 30px;
+      display: block;
+      background-color: rgb(59, 65, 56);
+      border-radius: 17px;
+      margin-right: 20px;
+          position: relative;
+  }
+  .check-checked {
+  display:none;
+      background-repeat: no-repeat;
+      background-size: 10px;
+      background-position: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+  }
+    input:checked ~ .check-checked{
+    display:block;
+  }
+    #email_signup {
+        width: 100%;
+      max-width: none;
+  }
+    .rounded, #k_id_email {
+    height: 54px;
+      border-radius: 20px;
+      padding: 0 20px;
+      font-family: 'Noe Text Regular', sans-serif;
+      background: rgba(255, 255, 255, 0.7);
+      border: none;
+      width: 100%;
+  }
+  p.subsc {
+      margin: 20px 0;
+      font-weight: 400;
+      }
+      .klaviyo_styling .klaviyo_submit_button {
+      display: inline-block;
+      padding: 17px 55px;
+      float: left;
+      border-radius: 22px;
+      background-color: rgba(0, 0, 0, 0.7);
+      font-family: 'Banana Grotesk Regular', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0.31px;
+      height: 54px;
+      }
+      .klaviyo_messages {
+      display:none!important;
+      }
+      .klaviyo_form_actions {
+          position: relative;
+      overflow: hidden;
+  }
+  .cover {
+  position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+  }
+  .agee-check {
+      overflow: hidden;
+  }
+  .agree {
+  width: 20px;
+      height: 20px;
+      margin-top: 27px;
+      margin-right: 10px;
+      float: left;
+  }
+  .subsca {
+      float: left;
+      width: calc( 100% - 40px );
+  }
+  #consent-country {
+      -webkit-appearance: none;   
+          background-repeat: no-repeat;
+      background-position: 93%;
+  }
