@@ -1,5 +1,6 @@
 import React, { Component} from "react"
-import { Link } from "gatsby"
+import { withPrefix, Link } from "gatsby"
+import { Helmet } from "react-helmet"
 import Slider from "react-slick";
 import $ from 'jquery'
 import jQuery from 'jquery'
@@ -323,7 +324,12 @@ class coronaPage extends Component {
       fade: !0
     };
 	return (
+    <>
+    <Helmet>
+    <script src={withPrefix('script.js')} type="text/javascript" />
+    </Helmet>
 	<Layout>
+    
     <SEO title="corona" />
     <div className="main-section covid">
     <div className="top covid"><img src={Group_7} alt="" className="image mobile" />
@@ -1864,7 +1870,8 @@ class coronaPage extends Component {
     </div>
   </div>
   </Layout>
-	)
+	</>
+  )
 	}
 }
 

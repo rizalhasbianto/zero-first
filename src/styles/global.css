@@ -507,3 +507,15 @@ opacity: 0;
           background-repeat: no-repeat;
       background-position: 93%;
   }
+  body .klaviyo_styling .dark-bt {
+    display: inline-block;
+    padding: 17px 55px;
+    float: left;
+    border-radius: 22px;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-family: 'Banana Grotesk Regular', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.31px;
+    height: auto;
+}
