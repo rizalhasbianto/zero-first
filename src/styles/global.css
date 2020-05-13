@@ -232,7 +232,7 @@ opacity: 0;
   transition: opacity 0.2s ease-in-out;
   transition-delay: 0.5s;
 }
-.lab-child {
+.div-block-11.lab-child {
   opacity: 0.25;
 -webkit-transition: opacity 0.2s linear;
   -moz-transition: opacity 0.2s linear;
