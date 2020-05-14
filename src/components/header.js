@@ -123,7 +123,7 @@ render() {
             <div data-collapse="none" data-animation="default" data-duration="400" className="navbar w-nav">
               <nav role="navigation" className="nav-menu w-nav-menu">
                 <div className="nav-li">
-                <Link className={url === '/' ? `nav-link-2 w-nav-link w--current` : `nav-link-2 w-nav-link`} to="/">Wellness Test Card</Link>
+                <Link className={url == '/' ? `nav-link-2 w-nav-link w--current` : `nav-link-2 w-nav-link`} to="/">Wellness Test Card</Link>
                 </div>
                 <div className="nav-li">
                 <Link id={url} className={url == '/coronavirus/' ? `nav-link-2 w-nav-link w--current` : `nav-link-2 w-nav-link`} to="/coronavirus/">Coronavirus Test Card</Link>
