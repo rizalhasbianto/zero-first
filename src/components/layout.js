@@ -12,7 +12,6 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 
 const url = window.location.pathname;
-  const res = url.replace(/\//g, "");
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -24,7 +23,7 @@ const Layout = ({ children }) => {
     }
   `)
   return (
-    <div className={res}>
+    <div className={url}>
       <Header siteTitle={data.site.siteMetadata.title} />
         <main >{children}</main>
     </div>
