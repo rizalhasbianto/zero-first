@@ -8,6 +8,7 @@ import Logo from "../images/Logo.png"
 import close from "../images/close.png"
 import close_icon from "../images/close-Icon.png"
 import whiteLogo from "../images/white-logo.png"
+const url = typeof window !== 'undefined' ? window.location.pathname : '';
 
 class Header extends React.Component {
 componentDidMount() {
@@ -68,7 +69,7 @@ render() {
   <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
   <link href="images/webclip.png" rel="apple-touch-icon" />
 </Helmet>
-  <div className="notification-bar-wrapper">
+  <div className={url === '/' ? `notification-bar-wrapper` : `notification-hidden`}>
     <div className="notification-bar">
       <div className="notification-bar-container w-container">
         <h4 className="annoucement">At-Home Coronavirus Test</h4>
@@ -96,10 +97,12 @@ render() {
           </div>
           <div className="logo"><a href="index.html" aria-current="page" className="w-inline-block w--current"><img src={Logo} height="32" alt="" className="image-19" /></a></div>
           <div className="w-clearfix">
-          <div className="dark-bt nav-bt w-button" onClick={() => scrollTo('#join-waitlist')}>Join Waitlist</div>
-          <div className="dark-bt nav-bt mobile w-button" onClick={() => scrollTo('#join-waitlist')}>Join</div>
-          <Link className="dark-bt nav-bt w-button" to="/wellness-test-cards/">Pre-order</Link>
-          <Link className="dark-bt nav-bt mobile w-button" to="/wellness-test-cards/">Pre-order</Link>
+          {url === '/coronavirus/' ? 
+          <><div className="dark-bt nav-bt w-button" onClick={() => scrollTo('#join-waitlist')}>Join Waitlist</div>
+          <div className="dark-bt nav-bt mobile w-button" onClick={() => scrollTo('#join-waitlist')}>Join</div> </>
+          : <><Link className="dark-bt nav-bt w-button" to="/wellness-test-cards/">Pre-order</Link>
+          <Link className="dark-bt nav-bt mobile w-button" to="/wellness-test-cards/">Pre-order</Link></>}
+          
           </div>
         </div>
       </div>
@@ -113,10 +116,10 @@ render() {
             <div data-collapse="none" data-animation="default" data-duration="400" className="navbar w-nav">
               <nav role="navigation" className="nav-menu w-nav-menu">
                 <div className="nav-li">
-                <Link className='nav-link-2 w-nav-link' to="/">Wellness Test Card</Link>
+                <Link className={url === '/' ? `nav-link-2 w-nav-link w--current` : `nav-link-2 w-nav-link`} to="/">Wellness Test Card</Link>
                 </div>
                 <div className="nav-li">
-                <Link className="nav-link-2 w-nav-link w--current" to="/coronavirus/">Coronavirus Test Card</Link>
+                <Link className={url === '/coronavirus/' ? `nav-link-2 w-nav-link w--current` : `nav-link-2 w-nav-link`} to="/coronavirus/">Coronavirus Test Card</Link>
                   </div>
                 <div className="nav-li">
                 <Link className="nav-link-2 w-nav-link" to="/page-2/">About</Link>
