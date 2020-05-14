@@ -126,7 +126,7 @@ render() {
                 <Link className={url === '/' ? `nav-link-2 w-nav-link w--current` : `nav-link-2 w-nav-link`} to="/">Wellness Test Card</Link>
                 </div>
                 <div className="nav-li">
-                <Link id={url} className={url === '/coronavirus/' ? `nav-link-2 w-nav-link w--current` : `nav-link-2 w-nav-link`} to="/coronavirus/">Coronavirus Test Card</Link>
+                <Link id={url} className={url == '/coronavirus/' ? `nav-link-2 w-nav-link w--current` : `nav-link-2 w-nav-link`} to="/coronavirus/">Coronavirus Test Card</Link>
                   </div>
                 <div className="nav-li">
                 <Link className="nav-link-2 w-nav-link" to="/page-2/">About</Link>
