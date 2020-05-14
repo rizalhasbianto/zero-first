@@ -2,7 +2,6 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, { Component} from "react"
 import { Helmet } from "react-helmet"
-import scrollTo from 'gatsby-plugin-smoothscroll';
 
 import Logo from "../images/Logo.png"
 import close from "../images/close.png"
@@ -97,9 +96,7 @@ render() {
           </div>
           <div className="logo"><a href="index.html" aria-current="page" className="w-inline-block w--current"><img src={Logo} height="32" alt="" className="image-19" /></a></div>
           <div className="w-clearfix">
-          {url === '/coronavirus/' ? <>
-          <div className="dark-bt nav-bt w-button" onClick={() => scrollTo('#join-waitlist')}>Join Waitlist</div>
-          <div className="dark-bt nav-bt mobile w-button" onClick={() => scrollTo('#join-waitlist')}>Join</div> </>
+          {url === '/coronavirus/' ? <></>
           : <><Link className="dark-bt nav-bt w-button" to="/wellness-test-cards/">Pre-order</Link>
           <Link className="dark-bt nav-bt mobile w-button" to="/wellness-test-cards/">Pre-order</Link></>}
           </div>
