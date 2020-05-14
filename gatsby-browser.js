@@ -8,4 +8,7 @@
 import "./src/styles/components.css"
 import "./src/styles/normalize.css"
 import "./src/styles/vessel-dev.css"
-import "./src/styles/global.css"	
+import "./src/styles/global.css"
+exports.onRouteUpdate = ({ location }) => {
+    console.log('new pathname', location.pathname)
+  }	
