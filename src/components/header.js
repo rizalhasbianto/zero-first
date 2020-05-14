@@ -3,12 +3,13 @@ import PropTypes from "prop-types"
 import React, { Component} from "react"
 import { Helmet } from "react-helmet"
 import scrollTo from 'gatsby-plugin-smoothscroll';
+import { Location } from '@reach/router'
 
 import Logo from "../images/Logo.png"
 import close from "../images/close.png"
 import close_icon from "../images/close-Icon.png"
 import whiteLogo from "../images/white-logo.png"
-const url = typeof window !== 'undefined' ? window.location.pathname : '';
+var url = '';
 
 class Header extends React.Component {
 componentDidMount() {
@@ -69,6 +70,12 @@ render() {
   <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
   <link href="images/webclip.png" rel="apple-touch-icon" />
 </Helmet>
+<Location>
+      {({ location }) => {
+        url = (location.pathname);
+        console.log(location.pathname)
+      }}
+    </Location>
   <div className={url === '/' ? `notification-bar-wrapper` : `notification-hidden`}>
     <div className="notification-bar">
       <div className="notification-bar-container w-container">
