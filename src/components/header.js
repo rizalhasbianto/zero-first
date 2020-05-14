@@ -2,11 +2,13 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, { Component} from "react"
 import { Helmet } from "react-helmet"
+import scrollTo from 'gatsby-plugin-smoothscroll';
 
 import Logo from "../images/Logo.png"
 import close from "../images/close.png"
 import close_icon from "../images/close-Icon.png"
 import whiteLogo from "../images/white-logo.png"
+const url = window.location.pathname;
 
 class Header extends React.Component {
 componentDidMount() {
@@ -67,7 +69,7 @@ render() {
   <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
   <link href="images/webclip.png" rel="apple-touch-icon" />
 </Helmet>
-  <div className="notification-bar-wrapper">
+  <div className={url === '/' ? `notification-bar-wrapper` : `notification-hidden`}>
     <div className="notification-bar">
       <div className="notification-bar-container w-container">
         <h4 className="annoucement">At-Home Coronavirus Test</h4>
@@ -75,7 +77,9 @@ render() {
           <div>
             <div className="text-block-20">We&#x27;re in the final stages of bringing to market a <span className="text-span-3">COVID-19 antibody</span> test that utilizes a finger prick along with an app to give you results in just 15 minutes from home.</div>
           </div>
-          <div className="div-block-74 w-clearfix"><a href="coronavirus.html" className="dark-bt rose w-button">Learn more</a></div>
+          <div className="div-block-74 w-clearfix">
+           <Link className="dark-bt rose w-button" to="/wellness-test-cards/">Learn more</Link>
+          </div>
         </div>
       </div><img src={close} data-w-id="55a9ad55-4615-3891-1a1a-7e4f45bda160" alt="" className="image-25" /></div>
   </div>
@@ -93,13 +97,16 @@ render() {
           </div>
           <div className="logo"><a href="index.html" aria-current="page" className="w-inline-block w--current"><img src={Logo} height="32" alt="" className="image-19" /></a></div>
           <div className="w-clearfix">
-          <Link className="dark-bt nav-bt w-button" to="/page-2/">Pre-order</Link>
-          <a href="wellness-test-cards.html" className="dark-bt nav-bt mobile w-button">Pre-order</a>
+          {url === '/coronavirus/' ? <>
+          <div className="dark-bt nav-bt w-button" onClick={() => scrollTo('#join-waitlist')}>Join Waitlist</div>
+          <div className="dark-bt nav-bt mobile w-button" onClick={() => scrollTo('#join-waitlist')}>Join</div> </>
+          : <><Link className="dark-bt nav-bt w-button" to="/wellness-test-cards/">Pre-order</Link>
+          <Link className="dark-bt nav-bt mobile w-button" to="/wellness-test-cards/">Pre-order</Link></>}
           </div>
         </div>
       </div>
     </div>
-    <div className={ this.state.isToggleOn ? 'menu-content hiding asup' : 'menu-content showing kaluar'}>
+    <div className={ this.state.isToggleOn ? 'menu-content hiding asup' : 'menu-content showing kaluar s'}>
       <div className={ this.state.isToggleOn ? 'div-block-40 hiding' : 'div-block-40 showing'}>
         <div className="div-block-120">
           <div className="div-block-119">
@@ -108,10 +115,10 @@ render() {
             <div data-collapse="none" data-animation="default" data-duration="400" className="navbar w-nav">
               <nav role="navigation" className="nav-menu w-nav-menu">
                 <div className="nav-li">
-                <Link className="nav-link-2 w-nav-link w--current" to="/">Wellness Test Card</Link>
+                <Link className={url === '/' ? `nav-link-2 w-nav-link w--current` : `nav-link-2 w-nav-link`} to="/">Wellness Test Card</Link>
                 </div>
                 <div className="nav-li">
-                <Link className="nav-link-2 w-nav-link" to="/coronavirus-test-card/">Coronavirus Test Card</Link>
+                <Link className={url === '/coronavirus/' ? `nav-link-2 w-nav-link w--current` : `nav-link-2 w-nav-link`} to="/coronavirus/">Coronavirus Test Card</Link>
                   </div>
                 <div className="nav-li">
                 <Link className="nav-link-2 w-nav-link" to="/page-2/">About</Link>
