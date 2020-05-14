@@ -21,10 +21,8 @@ const Layout = ({ children }) => {
       }
     }
   `)
-  const url = window.location.pathname;
-  const res = url.replace(/\//g, "");
   return (
-    <div className={res}>
+    <div>
       <Header siteTitle={data.site.siteMetadata.title} />
         <main >{children}</main>
     </div>
