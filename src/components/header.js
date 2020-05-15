@@ -103,7 +103,7 @@ render() {
           </div>
           <div className="logo"><a href="index.html" aria-current="page" className="w-inline-block w--current"><img src={Logo} height="32" alt="" className="image-19" /></a></div>
           <div className="w-clearfix">
-          {url == '/corona/' ? 
+          {url == '/coronavirus/' ? 
           <><div className="dark-bt nav-bt w-button" onClick={() => scrollTo('#join-waitlist')}>Join Waitlist</div>
           <div className="dark-bt nav-bt mobile w-button" onClick={() => scrollTo('#join-waitlist')}>Join</div> </>
           : <><Link className="dark-bt nav-bt w-button" to="/wellness-test-cards/">Pre-order</Link>
@@ -125,7 +125,7 @@ render() {
                 <Link className={url == '/' ? `nav-link-2 w-nav-link w--current` : `nav-link-2 w-nav-link`} to="/">Wellness Test Card</Link>
                 </div>
                 <div className="nav-li">
-                <Link className={url == '/corona/' ? `nav-link-2 w-nav-link w--current` : `nav-link-2 w-nav-link`} to="/corona/">Coronavirus Test Card</Link>
+                <Link className={url == '/coronavirus/' ? `nav-link-2 w-nav-link w--current` : `nav-link-2 w-nav-link`} to="/coronavirus/">Coronavirus Test Card</Link>
                   </div>
                 <div className="nav-li test">
                 <Link className={url == '/page-2/' ? `nav-link-2 w-nav-link w--current` : `nav-link-2 w-nav-link`} to="/page-2/">About</Link>
