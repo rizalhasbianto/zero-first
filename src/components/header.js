@@ -125,7 +125,7 @@ render() {
                 <div className="nav-li">
                 <Link className={url == '/' ? `nav-link-2 w-nav-link w--current` : `nav-link-2 w-nav-link`} to="/">Wellness Test Card</Link>
                 </div>
-                <div className="nav-li">
+                <div className="nav-li test">
                 <Link className={url == '/page-2/' ? `nav-link-2 w-nav-link w--current` : `nav-link-2 w-nav-link`} to="/page-2/">About</Link>
                   </div>
                 <div className="nav-li">
