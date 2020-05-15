@@ -104,7 +104,7 @@ render() {
           </div>
           <div className="logo"><a href="index.html" aria-current="page" className="w-inline-block w--current"><img src={Logo} height="32" alt="" className="image-19" /></a></div>
           <div className="w-clearfix">
-          {url === '/coronavirus/' ? 
+          {url == '/coronavirus/' ? 
           <><div className="dark-bt nav-bt w-button" onClick={() => scrollTo('#join-waitlist')}>Join Waitlist</div>
           <div className="dark-bt nav-bt mobile w-button" onClick={() => scrollTo('#join-waitlist')}>Join</div> </>
           : <><Link className="dark-bt nav-bt w-button" to="/wellness-test-cards/">Pre-order</Link>
