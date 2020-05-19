@@ -102,13 +102,27 @@ render() {
             </div>
           </div>
           <div className="logo"><a href="index.html" aria-current="page" className="w-inline-block w--current"><img src={Logo} height="32" alt="" className="image-19" /></a></div>
-          <div className="w-clearfix">
-          {url == '/coronavirus/' ? 
-          <><div className="dark-bt nav-bt w-button" onClick={() => scrollTo('#join-waitlist')}>Join Waitlist</div>
-          <div className="dark-bt nav-bt mobile w-button" onClick={() => scrollTo('#join-waitlist')}>Join</div> </>
-          : <><Link className="dark-bt nav-bt w-button" to="/wellness-test-cards/">Pre-order</Link>
-          <Link className="dark-bt nav-bt mobile w-button" to="/wellness-test-cards/">Pre-order</Link></>}
-          
+          <div className="w-clearfix" id={url}>
+            <Location>
+      {({ location }) => {
+        url = (location.pathname);
+        return (
+        <>
+        {url === '/coronavirus' && 
+            <><div className="dark-bt nav-bt w-button" onClick={() => scrollTo('#join-waitlist')}>Join Waitlist</div>
+            <div className="dark-bt nav-bt mobile w-button" onClick={() => scrollTo('#join-waitlist')}>Join</div> </>
+          }
+          {url === '/' && 
+            <><Link className="dark-bt nav-bt w-button" to="/wellness-test-cards/">Pre-order</Link>
+            <Link className="dark-bt nav-bt mobile w-button" to="/wellness-test-cards/">Pre-order</Link></>
+          }
+          {url === '/coronavirus-grouptesting' && 
+            <><div className="dark-bt nav-bt w-button" onClick={() => scrollTo('#contact-us')}>Contact Us</div>
+            <div className="dark-bt nav-bt mobile w-button" onClick={() => scrollTo('#contact-us')}>Join</div> </>
+          }
+        </>)
+      }}
+    </Location>
           </div>
         </div>
       </div>
@@ -125,10 +139,10 @@ render() {
                 <Link className={url == '/' ? `nav-link-2 w-nav-link w--current` : `nav-link-2 w-nav-link`} to="/">Wellness Test Card</Link>
                 </div>
                 <div className="nav-li">
-                <Link className={url == '/coronavirus/' ? `nav-link-2 w-nav-link w--current` : `nav-link-2 w-nav-link`} to="/coronavirus/">Coronavirus Test Card</Link>
+                <Link className={url == '/coronavirus' ? `nav-link-2 w-nav-link w--current` : `nav-link-2 w-nav-link`} to="/coronavirus">Coronavirus Test Card</Link>
                   </div>
                 <div className="nav-li test">
-                <Link className={url == '/page-2/' ? `nav-link-2 w-nav-link w--current` : `nav-link-2 w-nav-link`} to="/page-2/">About</Link>
+                <Link className={url == '/coronavirus-grouptesting' ? `nav-link-2 w-nav-link w--current` : `nav-link-2 w-nav-link`} to="/coronavirus-grouptesting">Corona Virus Group Testing</Link>
                   </div>
                 <div className="nav-li"><a href="careers.html" className="nav-link-2 w-nav-link">Careers</a></div>
                 <div className="nav-li"><a href="#" data-w-id="f5ccf9f4-a3e9-20be-34c3-4c2e866f7730" className="nav-link-2 expand w-nav-link">Partner</a>
