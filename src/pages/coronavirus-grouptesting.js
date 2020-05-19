@@ -97,8 +97,7 @@ class coronaPage extends Component {
     window.addEventListener('scroll', handleScrollBody);
     
     // CONTACT FORM
-    function placeholder () {
-      window.setTimeout(function(){ 
+    window.setTimeout(function(){ 
       document.getElementById("company-dabff0c2-494a-44b3-8330-1928f55fbe16").placeholder = "Entity Name";
       document.getElementById("firstname-dabff0c2-494a-44b3-8330-1928f55fbe16").placeholder = "Your Name";
       document.getElementById("job_function-dabff0c2-494a-44b3-8330-1928f55fbe16").placeholder = "Your Role/Title";
@@ -111,8 +110,14 @@ class coronaPage extends Component {
       document.getElementById('number_of_tests_needed-dabff0c2-494a-44b3-8330-1928f55fbe16').firstChild.innerHTML ='Number of tests needed';
       document.getElementById('fulfillment_preference-dabff0c2-494a-44b3-8330-1928f55fbe16').firstChild.innerHTML ='Fulfillment type';
     }, 1000);  
-    }
-      window.addEventListener("load", placeholder);
+    document.getElementById('contact_form').addEventListener('DOMNodeInserted', OnNodeInserted, false);
+    function OnNodeInserted () {
+      if (document.getElementById("contact_form").querySelectorAll(".submitted-message").length > 0) 
+        {
+          alert("form submited");
+      document.getElementsByClassName('sub-thank')[0].classList.add('submited');
+        }
+  }
   }
 	render() {
 	return (
