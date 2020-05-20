@@ -49,7 +49,6 @@ class homePage extends Component {
     };
   }
   componentDidMount() {
-    console.log('scrolling')
       // Tour and Compare animation
       var learnContent = document.getElementsByClassName("learn");
       var foodContent = document.getElementsByClassName("food");
@@ -59,6 +58,7 @@ class homePage extends Component {
       var improveContent = document.getElementsByClassName("improve");
       var lastScrollTop = 0;
       function handleScrollBody() {
+        console.log('scrolling');
         // Add Height for tour section
         var scan = document.getElementsByClassName("scan");
         var container = document.getElementsByClassName("container-6");
