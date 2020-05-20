@@ -1,3 +1,6 @@
+  .sticky {
+    position:sticky!important;
+  }
   :focus {
 	outline: none;
   }

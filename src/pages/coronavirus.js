@@ -120,6 +120,8 @@ class coronaPage extends Component {
       var scanHeight = scan[0].offsetHeight;
       container[0].style.height = scanHeight+"px";
       var scroll = window.pageYOffset;
+      var learnE = document.getElementById("step2");
+      if (learnE !== null && learnE !== undefined ) {
       var learn = document.getElementById("step2").getBoundingClientRect().top + scroll;
       var food = document.getElementById("step3").getBoundingClientRect().top + scroll;
       var sup = document.getElementById("step4").getBoundingClientRect().top + scroll;
@@ -190,6 +192,7 @@ class coronaPage extends Component {
       else {kesembilanElem[0].classList.remove('active')}
       if (scrollMiddle > kesepuluh) {kesepuluhElem[0].classList.add('active')}
       else {kesepuluhElem[0].classList.remove('active')}
+      }
       }
     window.addEventListener('scroll', handleScrollBody);
     // Tab function

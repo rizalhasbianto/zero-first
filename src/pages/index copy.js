@@ -71,8 +71,7 @@ class homePage extends Component {
         var posLabLast = document.getElementById("labposlast").getBoundingClientRect().top + scroll;
         var line = scrollMiddle - posLab;
         var lineElem = document.getElementsByClassName("line-vertical");
-        var learnE = document.getElementById("learn");
-        if (learnE !== null && learnE !== undefined ) {
+        
         var learn = document.getElementById("learn").getBoundingClientRect().top + scroll;
         var food = document.getElementById("food").getBoundingClientRect().top + scroll;
         var sup = document.getElementById("sup").getBoundingClientRect().top + scroll;
@@ -116,7 +115,6 @@ class homePage extends Component {
         else {equipmentElem[0].classList.remove('active')}
         if (scrollMiddle > process) {processElem[0].classList.add('active')}
         else {processElem[0].classList.remove('active')}
-        }
       }
       window.addEventListener('scroll', handleScrollBody);
       // Add heading moving animation

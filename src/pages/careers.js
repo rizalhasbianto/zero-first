@@ -13,6 +13,21 @@ import white_logo from "../images/white-logo.png"
 import close from "../images/close.png"
 
 class coronaPage extends Component {
+	componentDidMount() {
+	// Accordion function
+    var accorParent = document.getElementsByClassName("div-block-97");
+    for (var i = 0; i < accorParent.length; i++) {
+      accorParent[i].addEventListener("click", function(e) {
+        e.preventDefault()
+        if (this.classList.contains("w--active")) {
+          this.classList.remove("w--active");
+        }
+        else {
+          this.className += " w--active"; 
+        }
+      });
+	}
+}
 	render() {
 	return (
 	<Layout>
