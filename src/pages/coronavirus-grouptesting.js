@@ -114,7 +114,6 @@ class coronaPage extends Component {
     function OnNodeInserted () {
       if (document.getElementById("contact_form").querySelectorAll(".submitted-message").length > 0) 
         {
-          alert("form submited");
       document.getElementsByClassName('sub-thank')[0].classList.add('submited');
         }
   }

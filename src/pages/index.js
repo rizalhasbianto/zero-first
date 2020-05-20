@@ -49,6 +49,7 @@ class homePage extends Component {
     };
   }
   componentDidMount() {
+    console.log('scrolling')
       // Tour and Compare animation
       var learnContent = document.getElementsByClassName("learn");
       var foodContent = document.getElementsByClassName("food");
