@@ -10,9 +10,25 @@ import close from "../images/close.png"
 import close_icon from "../images/close-Icon.png"
 import whiteLogo from "../images/white-logo.png"
 var url = '';
+var headButton = '';
 
 class Header extends React.Component {
+
 componentDidMount() {
+  var path = window.location.pathname;
+  var pathName = path.replace(/\//g, "");
+  if (pathName == 'coronavirus') {
+    headButton = <><div className="dark-bt nav-bt w-button" onClick={() => scrollTo('#join-waitlist')}>Join Waitlist</div>
+    <div className="dark-bt nav-bt mobile w-button" onClick={() => scrollTo('#join-waitlist')}>Join</div> </>
+  }
+  else if (pathName == 'coronavirus-grouptesting'){
+    headButton = <><div className="dark-bt nav-bt w-button" onClick={() => scrollTo('#contact-us')}>Contact Us</div>
+      <div className="dark-bt nav-bt mobile w-button" onClick={() => scrollTo('#contact-us')}>Join</div> </>
+  }
+  else {
+    headButton = <><Link className="dark-bt nav-bt w-button" to="/wellness-test-cards/">Pre-order</Link>
+    <Link className="dark-bt nav-bt mobile w-button" to="/wellness-test-cards/">Pre-order</Link></>
+  }
 	var lastScrollTop ='0'
     function handleScroll() {
 	    var st = window.pageYOffset || document.documentElement.scrollTop; 
@@ -65,7 +81,7 @@ handleClick() {
 }
 render() {
   return (
-<>
+<div>
 <Helmet>
   <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
   <link href="images/webclip.png" rel="apple-touch-icon" />
@@ -103,26 +119,7 @@ render() {
           </div>
           <div className="logo"><a href="index.html" aria-current="page" className="w-inline-block w--current"><img src={Logo} height="32" alt="" className="image-19" /></a></div>
           <div className="w-clearfix" id={url}>
-            <Location>
-      {({ location }) => {
-        url = (location.pathname);
-        return (
-        <>
-        {url === '/coronavirus' && 
-            <><div className="dark-bt nav-bt w-button" onClick={() => scrollTo('#join-waitlist')}>Join Waitlist</div>
-            <div className="dark-bt nav-bt mobile w-button" onClick={() => scrollTo('#join-waitlist')}>Join</div> </>
-          }
-          {url === '/' && 
-            <><Link className="dark-bt nav-bt w-button" to="/wellness-test-cards/">Pre-order</Link>
-            <Link className="dark-bt nav-bt mobile w-button" to="/wellness-test-cards/">Pre-order</Link></>
-          }
-          {url === '/coronavirus-grouptesting' && 
-            <><div className="dark-bt nav-bt w-button" onClick={() => scrollTo('#contact-us')}>Contact Us</div>
-            <div className="dark-bt nav-bt mobile w-button" onClick={() => scrollTo('#contact-us')}>Join</div> </>
-          }
-        </>)
-      }}
-    </Location>
+          {headButton}
           </div>
         </div>
       </div>
@@ -169,7 +166,7 @@ render() {
       </div>
     </div>
   </div>
-  </>
+  </div>
   )
   }
 }
