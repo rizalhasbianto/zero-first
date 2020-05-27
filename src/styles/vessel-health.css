@@ -4983,7 +4983,7 @@ a {
   max-height: none;
   max-width: 720px;
   min-width: 0vw;
-  margin-top: -60%;
+  margin-top: -70%;
 }
 
 .image-20.data-priv {
@@ -5176,7 +5176,7 @@ a {
 
 .div-block-85 {
   position: relative;
-  width: 45%;
+  width: 60%;
   margin-top: 0px;
   padding-left: 0px;
 }
@@ -6687,7 +6687,7 @@ a {
 }
 
 .div-block-129 {
-  text-align: center;
+  text-align: left;
 }
 
 .heading-65 {
@@ -6695,8 +6695,13 @@ a {
 }
 
 .heading-65.sold {
-  margin-bottom: 50px;
-  text-align: left;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 0px;
+  margin-left: -100px;
+  opacity: 0;
+  line-height: 28px;
+  text-align: center;
 }
 
 .div-block-130 {
@@ -6822,6 +6827,10 @@ a {
 }
 
 .menu-nav.toping {
+  position: relative;
+}
+
+.div-block-133 {
   position: relative;
 }
 
@@ -7429,6 +7438,25 @@ a {
   -ms-grid-row-align: stretch;
   align-self: stretch;
   background-color: #fff;
+}
+
+.html-embed-7 {
+  margin-bottom: 40px;
+}
+
+.numb {
+  display: block;
+}
+
+.div-block-158 {
+  position: absolute;
+  left: 0px;
+  top: auto;
+  bottom: 0px;
+  width: 2px;
+  height: 0px;
+  margin-left: -2px;
+  background-color: #5b6657;
 }
 
 @media screen and (max-width: 991px) {
@@ -11220,7 +11248,7 @@ a {
     font-size: 13px;
   }
   .div-block-121 {
-    width: 70%;
+    width: 100%;
   }
   .html-embed-5 {
     display: block;
@@ -11231,7 +11259,7 @@ a {
   .div-block-126 {
     position: relative;
     left: 0px;
-    bottom: -60px;
+    bottom: -40px;
     margin-top: 0px;
     margin-right: 0px;
     padding-top: 0px;
@@ -11242,13 +11270,13 @@ a {
   }
   .div-block-126.last {
     left: 90px;
-    bottom: -60px;
+    bottom: -40px;
   }
   .div-block-126.second {
     position: relative;
     left: 7px;
     top: auto;
-    bottom: -60px;
+    bottom: -40px;
     display: block;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -11279,7 +11307,7 @@ a {
     transform: rotate(-90deg);
   }
   .heading-62 {
-    width: 80%;
+    width: 100%;
     margin-right: 0px;
     margin-left: auto;
     line-height: 26px;
@@ -11299,9 +11327,22 @@ a {
   .heading-64 {
     line-height: 26px;
   }
+  .div-block-129 {
+    position: absolute;
+    right: 0px;
+    height: 100%;
+  }
   .heading-65.sold {
+    max-width: 110px;
+    min-width: auto;
+    margin-top: 30px;
     margin-bottom: 0px;
+    margin-left: -70px;
     padding-bottom: 50px;
+    font-family: 'Banana Grotesk Bold', sans-serif;
+    line-height: 26px;
+    font-weight: 500;
+    text-align: left;
   }
   .div-block-131 {
     width: auto;
@@ -11370,7 +11411,7 @@ a {
   }
   .div-block-133 {
     position: relative;
-    left: 40vw;
+    left: 28vw;
     top: auto;
     width: 500px;
     height: auto;
@@ -11533,7 +11574,7 @@ a {
     flex-wrap: wrap;
   }
   .steps {
-    width: 100%;
+    width: 50%;
   }
   .heading-67 {
     font-size: 18px;
@@ -11554,6 +11595,10 @@ a {
     padding-top: 20px;
     padding-right: 20px;
     padding-left: 20px;
+  }
+  .div-block-158 {
+    width: 1px;
+    background-color: #000;
   }
 }
 
