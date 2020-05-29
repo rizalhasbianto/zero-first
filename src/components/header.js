@@ -81,7 +81,7 @@ handleClick() {
 }
 render() {
   return (
-<div>
+<>
 <Helmet>
   <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
   <link href="images/webclip.png" rel="apple-touch-icon" />
@@ -133,24 +133,25 @@ render() {
             <div data-collapse="none" data-animation="default" data-duration="400" className="navbar w-nav">
               <nav role="navigation" className="nav-menu w-nav-menu">
                 <div className="nav-li">
-                <Link className={url == '/' ? `nav-link-2 w-nav-link w--current` : `nav-link-2 w-nav-link`} to="/">Wellness Test Card</Link>
+                  <Link className={url == '/' ? `nav-link-2 w-nav-link w--current` : `nav-link-2 w-nav-link`} to="/">Wellness Test Card</Link>
                 </div>
                 <div className="nav-li">
-                <Link className={url == '/coronavirus' ? `nav-link-2 w-nav-link w--current` : `nav-link-2 w-nav-link`} to="/coronavirus">Coronavirus Test Card</Link>
-                  </div>
-                <div className="nav-li test">
-                <Link className={url == '/coronavirus-grouptesting' ? `nav-link-2 w-nav-link w--current` : `nav-link-2 w-nav-link`} to="/coronavirus-grouptesting">Corona Virus Group Testing</Link>
-                  </div>
-                <div className="nav-li"><a href="careers.html" className="nav-link-2 w-nav-link">Careers</a></div>
-                <div className="nav-li"><a href="#" data-w-id="f5ccf9f4-a3e9-20be-34c3-4c2e866f7730" className="nav-link-2 expand w-nav-link">Partner</a>
-                  <div className="p-qs nav">
-                    <div className="text-block-22">For Partner Inquiries, <a href="mailto:partner@vesselhealth.com?subject=Vessel%20Health%20partner%20inquiry" className="link-16">partner@vesselhealth.com</a></div>
-                  </div>
+                  <Link className={url == '/coronavirus' ? `nav-link-2 w-nav-link w--current` : `nav-link-2 w-nav-link`} to="/coronavirus">Coronavirus Test Card</Link>
                 </div>
-                <div className="nav-li"><a href="#" data-w-id="f5ccf9f4-a3e9-20be-34c3-4c2e866f7738" className="nav-link-2 expand w-nav-link">Press</a>
-                  <div className="p-qs nav">
-                    <div className="text-block-22">For Press Inquiries, <a href="mailto:press@vesselhealth.com?subject=Vessel%20Health%20press%20inquiry" className="link-15">press@vesselhealth.com</a></div>
-                  </div>
+                <div className="nav-li">
+                  <Link className={url == '/coronavirus-grouptesting' ? `nav-link-2 w-nav-link w--current` : `nav-link-2 w-nav-link`} to="/coronavirus-grouptesting">Corona Virus Group Testing</Link>
+                </div>
+                <div className="nav-li">
+                  <Link className={url == '/careers' ? `nav-link-2 w-nav-link w--current` : `nav-link-2 w-nav-link`} to="/careers">Careers</Link>
+                </div>
+                <div className="nav-li">
+                  <Link className={url == '/about' ? `nav-link-2 w-nav-link w--current` : `nav-link-2 w-nav-link`} to="/about">About</Link>
+                </div>
+                <div className="nav-li">
+                  <a href="https://vesselhealth.com/blog/" className="nav-link-2 w-nav-link">Blog</a>
+                </div>
+                <div className="nav-li">
+                <Link className={url == '/partner' ? `nav-link-2 w-nav-link w--current` : `nav-link-2 w-nav-link`} to="/partner">Partner</Link>
                 </div>
               </nav>
             </div>
@@ -166,7 +167,7 @@ render() {
       </div>
     </div>
   </div>
-  </div>
+  </>
   )
   }
 }

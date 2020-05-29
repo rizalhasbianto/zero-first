@@ -460,14 +460,23 @@ class coronaPage extends Component {
         <div class="div-block-36"><img src={white_logo} height="40" alt="" class="image-11"/></div>
         <div class="div-block-35">
           <div class="footer-text">Email: <a href="mailto:wegotyou@vesselhealth.com?subject=Vessel%20Health%20General%20Inquiry"><span class="footer-link">wegotyou@vesselhealth.com</span></a></div><a href="http://vesselhealth.zendesk.com/" target="_blank" class="footer-link">Help Center</a></div>
-        <div class="div-block-35"><a href="index.html" class="footer-link">Wellness Test Card</a><a href="coronavirus.html" class="footer-link">Coronavirus Test Card</a><a href="coronavirus-grouptesting.html" class="footer-link">Coronavirus Group Testing</a><a href="about.html" aria-current="page" class="footer-link w--current">About</a><a href="https://vesselhealth.com/blog" class="footer-link">Blog</a><a href="careers.html" class="footer-link">Careers</a><a href="partner.html" class="footer-link">Partner</a><a data-w-id="29e0c7c7-8219-87fb-f109-071890567bc1" href="#" class="footer-link">Press</a></div>
+        <div class="div-block-35">
+        <Link className="footer-link" to="/">Wellness Test Card</Link>
+        <Link className="footer-link" to="/coronavirus">Coronavirus Test Card</Link>
+        <Link className="footer-link" to="/about">About</Link>
+        <Link className="footer-link" to="/careers">Careers</Link>
+        <Link className="footer-link" to="/partner">Partner</Link>
+        <Link className="footer-link" to="#">Press</Link>
+        </div>
       </div>
       <div class="container-11 w-container">
         <div class="div-block-36">
           <h4 class="lab-child white last"><a href="https://www.instagram.com/vesselhealth/" target="_blank" class="link">Ig</a><em class="italic-text-2">/</em><a href="https://www.facebook.com/vesselhq" target="_blank" class="link">Fb</a><em class="italic-text-2">/</em><a href="http://twitter.com/wearevessel" target="_blank" class="link">Tw</a><em class="italic-text">/</em>&nbsp;<a href="https://www.youtube.com/channel/UCljstRPPpBCBwe_un2pU45w" target="_blank" class="link-2">Yt</a></h4>
         </div>
         <div class="div-block-37">
-          <div class="footer-text notice">2020 Vessel. All rights Reserved.</div><a href="privacy-policy.html" class="footer-link notice">Privacy Policy</a><a href="terms-of-service.html" class="footer-link notice">Terms of Service</a>
+          <div class="footer-text notice">2020 Vessel. All rights Reserved.</div>
+          <Link className="footer-link notice" to="/privacy-policy">Privacy Policy</Link>
+          <Link className="footer-link notice" to="/terms-of-service">Terms of Service</Link>
           <div class="footer-text notice patent">Patent Pending</div>
           <div class="footer-text notice disclaimer">* <strong>This product is intended only for maintaining and encouraging a healthy lifestyle and is unrelated to the diagnosis, cure, mitigation, prevention, or treatment of a disease or condition</strong>. &nbsp;Designed by Vessel in California.</div>
         </div>

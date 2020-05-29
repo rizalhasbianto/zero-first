@@ -1365,14 +1365,23 @@ class homePage extends Component {
         <div className="div-block-36"><img src={white_logo} height="40" alt="" className="image-11"/></div>
         <div className="div-block-35">
           <div className="footer-text">Email: <a href="mailto:wegotyou@vesselhealth.com?subject=Vessel%20Health%20General%20Inquiry"><span className="footer-link">wegotyou@vesselhealth.com</span></a></div><a href="http://vesselhealth.zendesk.com/" target="_blank" className="footer-link">Help Center</a></div>
-        <div className="div-block-35"><a href="index.html" aria-current="page" className="footer-link w--current">Wellness Test Card</a><a href="coronavirus.html" className="footer-link">Coronavirus Test Card</a><a href="about.html" className="footer-link">About</a><a href="careers.html" className="footer-link">Careers</a><a data-w-id="29e0c7c7-8219-87fb-f109-071890567bbf" href="#" className="footer-link">Partner</a><a data-w-id="29e0c7c7-8219-87fb-f109-071890567bc1" href="#" className="footer-link">Press</a></div>
+        <div className="div-block-35">
+        <Link className="footer-link" to="/">Wellness Test Card</Link>
+        <Link className="footer-link" to="/coronavirus">Coronavirus Test Card</Link>
+        <Link className="footer-link" to="/about">About</Link>
+        <Link className="footer-link" to="/careers">Careers</Link>
+        <Link className="footer-link" to="/partner">Partner</Link>
+        <Link className="footer-link" to="#">Press</Link>
+        </div>
       </div>
       <div className="container-11 w-container">
         <div className="div-block-36">
           <h4 className="lab-child white last"><a href="https://www.instagram.com/vesselhealth/" target="_blank" className="link">Ig</a><em className="italic-text-2">/</em><a href="https://www.facebook.com/vesselhq" target="_blank" className="link">Fb</a><em className="italic-text-2">/</em><a href="http://twitter.com/wearevessel" target="_blank" className="link">Tw</a><em className="italic-text">/</em>&nbsp;<a href="https://www.youtube.com/channel/UCljstRPPpBCBwe_un2pU45w" target="_blank" className="link-2">Yt</a></h4>
         </div>
         <div className="div-block-37">
-          <div className="footer-text notice">2020 Vessel. All rights Reserved.</div><a href="privacy-policy.html" className="footer-link notice">Privacy Policy</a><a href="terms-of-service.html" className="footer-link notice">Terms of Service</a>
+          <div className="footer-text notice">2020 Vessel. All rights Reserved.</div>
+          <Link className="footer-link notice" to="/privacy-policy">Privacy Policy</Link>
+          <Link className="footer-link notice" to="/terms-of-service">Terms of Service</Link>
           <div className="footer-text notice patent">Patent Pending</div>
           <div className="footer-text notice disclaimer">* This product is not intended for use in diagnosing diseases or other conditions; &nbsp;determining state of health; &nbsp;or curing, mitigating, treating, or preventing disease. &nbsp;Designed by Vessel in California.</div>
         </div>
@@ -1440,12 +1449,24 @@ class homePage extends Component {
               </div><img src={white_logo} height="32" alt="" className="image-18"/></div>
             <div data-collapse="none" data-animation="default" data-duration="400" className="navbar w-nav">
               <nav role="navigation" className="nav-menu w-nav-menu">
-                <div className="nav-li"><a href="index.html" aria-current="page" className="nav-link-2 w-nav-link w--current">Wellness Test Card</a></div>
-                <div className="nav-li"><a href="coronavirus.html" className="nav-link-2 w-nav-link">Coronavirus Test Card</a></div>
-                <div className="nav-li"><a href="about.html" className="nav-link-2 w-nav-link">About</a></div>
-                <div className="nav-li"><a href="careers.html" className="nav-link-2 w-nav-link">Careers</a></div>
-                <div className="nav-li"><a href="mailto:partners@vesselhealth.com?subject=Vessel%20Health%20Partner%20Inquiry" className="nav-link-2 w-nav-link">Partner</a></div>
-                <div className="nav-li"><a href="#" data-w-id="a4fe9eb0-4130-2c0c-fef5-aca3a688a248" className="nav-link-2 w-nav-link">Press</a></div>
+                <div className="nav-li">
+                  <Link className="nav-link-2 w-nav-link " to="/">Wellness Test Card</Link>
+                </div>
+                <div className="nav-li">
+                  <Link className="nav-link-2 w-nav-link " to="/coronavirus">Coronavirus Test Card</Link>
+                </div>
+                <div className="nav-li">
+                  <Link className="nav-link-2 w-nav-link " to="/about">About</Link>
+                </div>
+                <div className="nav-li">
+                  <Link className="nav-link-2 w-nav-link " to="/careers">Careers</Link>
+                </div>
+                <div className="nav-li">
+                  <Link className="nav-link-2 w-nav-link " to="/partner">Partner</Link>
+                </div>
+                <div className="nav-li">
+                  <Link className="nav-link-2 w-nav-link " to="#">Press</Link>
+                </div>
               </nav>
             <div className="w-nav-overlay" data-wf-ignore=""></div></div>
             <div className="div-block-58">
