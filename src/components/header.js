@@ -82,6 +82,12 @@ render() {
     <Link className="dark-bt nav-bt mobile w-button" to="/wellness-test-cards">Pre-order</Link></>
     console.log(path)
   }
+  if ( path == '/') {
+    topBar = 'notification-bar-wrapper';
+  }
+  else {
+    topBar = 'notification-hidden';
+  }
 }
   return (
 <>
@@ -94,7 +100,7 @@ render() {
         url = (location.pathname);
       }}
     </Location>
-  <div className={path == '/' ? `notification-bar-wrapper` : `notification-hidden`}>
+  <div className={topBar}>
     <div className="notification-bar">
       <div className="notification-bar-container w-container">
         <h4 className="annoucement">At-Home Coronavirus Test</h4>
