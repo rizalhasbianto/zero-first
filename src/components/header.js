@@ -10,25 +10,11 @@ import close from "../images/close.png"
 import close_icon from "../images/close-Icon.png"
 import whiteLogo from "../images/white-logo.png"
 var url = '';
+var topBar = '';
 var headButton = <><Link className="dark-bt nav-bt w-button" to="/wellness-test-cards">Pre-order</Link>
 <Link className="dark-bt nav-bt mobile w-button" to="/wellness-test-cards">Pre-order</Link></>;
 class Header extends React.Component {
   componentDidMount() {
-    var path = window.location.pathname;
-    var pathName = path.replace(/\//g, "");
-    if (pathName == 'coronavirus') {
-      headButton = <><div className="dark-bt nav-bt w-button" onClick={() => scrollTo('#join-waitlist')}>Join Waitlist</div>
-      <div className="dark-bt nav-bt mobile w-button" onClick={() => scrollTo('#join-waitlist')}>Join</div> </>
-    }
-    else if (pathName == 'coronavirus-grouptesting'){
-      headButton = <><div className="dark-bt nav-bt w-button" onClick={() => scrollTo('#contact-us')}>Contact Us</div>
-        <div className="dark-bt nav-bt mobile w-button" onClick={() => scrollTo('#contact-us')}>Join</div> </>
-    }
-    else {
-      headButton = <><Link className="dark-bt nav-bt w-button" to="/wellness-test-cards">Pre-order</Link>
-      <Link className="dark-bt nav-bt mobile w-button" to="/wellness-test-cards">Pre-order</Link></>
-      console.log(headButton)
-    }
 	var lastScrollTop ='0'
     function handleScroll() {
 	    var st = window.pageYOffset || document.documentElement.scrollTop; 
@@ -80,6 +66,23 @@ handleClick() {
   }));
 }
 render() {
+  if (typeof window !== 'undefined') {
+  var path = window.location.pathname;
+  var pathName = path.replace(/\//g, "");
+  if (pathName == 'coronavirus') {
+    headButton = <><div className="dark-bt nav-bt w-button" onClick={() => scrollTo('#join-waitlist')}>Join Waitlist</div>
+    <div className="dark-bt nav-bt mobile w-button" onClick={() => scrollTo('#join-waitlist')}>Join</div> </>
+  }
+  else if (pathName == 'coronavirus-grouptesting'){
+    headButton = <><div className="dark-bt nav-bt w-button" onClick={() => scrollTo('#contact-us')}>Contact Us</div>
+      <div className="dark-bt nav-bt mobile w-button" onClick={() => scrollTo('#contact-us')}>Join</div> </>
+  }
+  else {
+    headButton = <><Link className="dark-bt nav-bt w-button" to="/wellness-test-cards">Pre-order</Link>
+    <Link className="dark-bt nav-bt mobile w-button" to="/wellness-test-cards">Pre-order</Link></>
+    console.log(path)
+  }
+}
   return (
 <>
 <Helmet>
@@ -91,7 +94,7 @@ render() {
         url = (location.pathname);
       }}
     </Location>
-  <div className={url === '/' ? `notification-bar-wrapper` : `notification-hidden`}>
+  <div className={path == '/' ? `notification-bar-wrapper` : `notification-hidden`}>
     <div className="notification-bar">
       <div className="notification-bar-container w-container">
         <h4 className="annoucement">At-Home Coronavirus Test</h4>
