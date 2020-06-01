@@ -17,6 +17,14 @@ module.exports = {
     `gatsby-plugin-smoothscroll`,
     `gatsby-plugin-sharp`,
     {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `orjz7lujxjmx`,
+        accessToken: `vB1TSw_7LyuBpK82qM94V7mYzXBG2iRHhuRmBbQc3bE`,
+        host: `preview.contentful.com`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,

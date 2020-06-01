@@ -48,6 +48,7 @@ import _Christian_Chasmer from "../images/7-Christian-Chasmer.jpg"
 import _Kyle_Brown from "../images/6-Kyle-Brown.jpg"
 import _Doug_Lorenzen from "../images/5-Doug-Lorenzen.jpg"
 import _Ryan_Drnginis from "../images/4-Ryan-Dranginis.jpg"
+import _Chris_Hoffman from "../images/44_chris-hoffman.jpg"
 import prev from "../images/prev.png"
 import next from "../images/next.png"
 import jon_carder_headshot from "../images/jon-carder-headshot.jpg"
@@ -141,6 +142,7 @@ class coronaPage extends Component {
             <div className="div-block-28 grow"><img src={_Jesus_Gonzalez} alt="" className="image-8 slide-img"/></div>
             <div className="div-block-28 grow"><img src={_Matt_McCord} alt="" className="image-8 slide-img"/></div>
             <div className="div-block-28 grow"><img src={_Jon_Carder} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Chris_Hoffman} alt="" className="image-8 slide-img"/></div>
             <div className="div-block-28 grow"><img src={_Blake_Jendrusch} alt="" className="image-8 slide-img"/></div>
             <div className="div-block-28 grow"><img src={_Jeremy_Schumann} alt="" className="image-12 slide-img"/></div>
             <div className="div-block-28 grow jordan"><img src={_Jordan_Ames} alt="" className="image-8 slide-img"/></div>
@@ -183,6 +185,7 @@ class coronaPage extends Component {
           <Slider {...settings} className="div-block-26 slider-b w-clearfix" asNavFor={this.state.nav3} ref={slider => (this.slider2 = slider)}>
             <div className="div-block-28 grow"><img src={_Matt_McCord} alt="" className="image-8 slide-img"/></div>
             <div className="div-block-28 grow"><img src={_Jon_Carder} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Chris_Hoffman} alt="" className="image-8 slide-img"/></div>
             <div className="div-block-28 grow"><img src={_Blake_Jendrusch} alt="" className="image-8 slide-img"/></div>
             <div className="div-block-28 grow"><img src={_Jeremy_Schumann} alt="" className="image-12 slide-img"/></div>
             <div className="div-block-28 grow jordan"><img src={_Jordan_Ames} alt="" className="image-8 slide-img"/></div>
@@ -225,6 +228,7 @@ class coronaPage extends Component {
           </Slider>
           <Slider {...settings} className="div-block-26 slider-c w-clearfix" asNavFor={this.state.nav4} ref={slider => (this.slider3 = slider)}>
             <div className="div-block-28 grow"><img src={_Jon_Carder} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Chris_Hoffman} alt="" className="image-8 slide-img"/></div>
             <div className="div-block-28 grow"><img src={_Blake_Jendrusch} alt="" className="image-8 slide-img"/></div>
             <div className="div-block-28 grow"><img src={_Jeremy_Schumann} alt="" className="image-12 slide-img"/></div>
             <div className="div-block-28 grow jordan"><img src={_Jordan_Ames} alt="" className="image-8 slide-img"/></div>
@@ -272,6 +276,10 @@ class coronaPage extends Component {
             <div id="text-slide" className="slide-content">
               <h2 className="heading-4 backed">Jon Carder<br/></h2>
               <p className="paragraph">Co-Founder / CEO <br/></p>
+            </div>
+            <div id="text-slide" className="slide-content">
+              <h2 className="heading-4 backed">Chris Hoffman<br/></h2>
+              <p className="paragraph">Head of Customer Loyalty<br/></p>
             </div>
             <div id="text-slide" className="slide-content">
               <h2 className="heading-4 backed">Blake Jendrusch<br/></h2>
