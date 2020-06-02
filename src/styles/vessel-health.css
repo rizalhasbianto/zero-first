@@ -3592,7 +3592,7 @@ a {
 .text-change-6.heading {
   position: absolute;
   top: 0px;
-  display: none;
+  display: block;
   margin-left: 5px;
   font-family: 'Banana Grotesk Medium', sans-serif;
   color: #fff;
@@ -3607,7 +3607,7 @@ a {
 .text-change-7.heading {
   position: absolute;
   top: 0px;
-  display: none;
+  display: block;
   margin-left: 5px;
   font-family: 'Banana Grotesk Medium', sans-serif;
   color: #fff;
@@ -3736,7 +3736,7 @@ a {
 .text-change-8.heading {
   position: absolute;
   top: 0px;
-  display: none;
+  display: block;
   width: 405px;
   margin-left: 5px;
   color: #fff;
