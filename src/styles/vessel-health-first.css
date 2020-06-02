@@ -662,6 +662,10 @@ a {
   background-color: rgba(251, 243, 235, 0);
 }
 
+.works.covbiz {
+  margin-bottom: 80px;
+}
+
 .cream-bg {
   position: absolute;
   left: 0px;
@@ -1155,6 +1159,10 @@ a {
 }
 
 .green-bg.covid {
+  left: 0px;
+}
+
+.green-bg.app {
   left: 0px;
 }
 
@@ -3514,7 +3522,7 @@ a {
 
 .text-wrap {
   position: relative;
-  left: 218px;
+  left: 150px;
   top: -75px;
   display: inline-block;
   width: 200px;
@@ -3522,6 +3530,10 @@ a {
 
 .text-wrap.home {
   left: 218px;
+}
+
+.text-wrap.covbiz {
+  left: 357px;
 }
 
 .text-change-2 {
@@ -3592,7 +3604,7 @@ a {
 .text-change-6.heading {
   position: absolute;
   top: 0px;
-  display: block;
+  display: none;
   margin-left: 5px;
   font-family: 'Banana Grotesk Medium', sans-serif;
   color: #fff;
@@ -3607,7 +3619,7 @@ a {
 .text-change-7.heading {
   position: absolute;
   top: 0px;
-  display: block;
+  display: none;
   margin-left: 5px;
   font-family: 'Banana Grotesk Medium', sans-serif;
   color: #fff;
@@ -3736,7 +3748,7 @@ a {
 .text-change-8.heading {
   position: absolute;
   top: 0px;
-  display: block;
+  display: none;
   width: 405px;
   margin-left: 5px;
   color: #fff;
@@ -4061,6 +4073,10 @@ a {
   -webkit-align-self: flex-start;
   -ms-flex-item-align: start;
   align-self: flex-start;
+}
+
+.div-block-53.covbiz {
+  padding-bottom: 60px;
 }
 
 .image-17 {
@@ -5163,10 +5179,16 @@ a {
 
 .accessbility {
   position: relative;
-  display: block;
+  display: none;
   overflow: hidden;
   padding-top: 150px;
   padding-bottom: 150px;
+}
+
+.accessbility.app {
+  display: block;
+  overflow: visible;
+  padding-bottom: 100px;
 }
 
 .heading-40 {
@@ -5218,11 +5240,11 @@ a {
 }
 
 .image-22 {
-  width: 48%;
+  width: 100%;
 }
 
 .image-23 {
-  width: 48%;
+  width: 100%;
 }
 
 .test-kit {
@@ -5409,6 +5431,10 @@ a {
   display: block;
 }
 
+.paragraph-16.paragraph.covid.covbiz.para {
+  padding-bottom: 0px;
+}
+
 .div-block-92 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5432,6 +5458,10 @@ a {
 
 .list-limitations {
   margin-bottom: 20px;
+}
+
+.list-limitations.para {
+  margin-bottom: 0px;
 }
 
 .limitations {
@@ -6133,12 +6163,18 @@ a {
 }
 
 .section-2.app {
-  background-color: #fff;
+  display: block;
+  padding-top: 0px;
+  background-color: transparent;
 }
 
 .container-26 {
   padding-top: 60px;
   padding-bottom: 140px;
+}
+
+.container-26.app {
+  padding-top: 0px;
 }
 
 .container-26._404 {
@@ -6870,7 +6906,7 @@ a {
 }
 
 .div-block-135.covid.business {
-  margin-top: 20%;
+  margin-top: 22%;
 }
 
 .text-block-23 {
@@ -7336,6 +7372,10 @@ a {
   width: 50%;
 }
 
+.steps.imgw.sbs.col3 {
+  width: 33.3%;
+}
+
 .image-39 {
   width: 50%;
 }
@@ -7416,7 +7456,7 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 60%;
+  width: 80%;
   margin-bottom: 40px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -7457,6 +7497,43 @@ a {
   height: 0px;
   margin-left: -2px;
   background-color: #5b6657;
+}
+
+.section-5 {
+  background-color: transparent;
+}
+
+.link-block {
+  margin-right: 15px;
+}
+
+.bold-text-9 {
+  font-family: 'Noe Text Bold', sans-serif;
+  font-weight: 400;
+}
+
+.bold-text-10 {
+  font-family: 'Noe Text Bold', sans-serif;
+}
+
+.bold-text-11 {
+  font-family: 'Noe Text Bold', sans-serif;
+}
+
+.bold-text-12 {
+  font-family: 'Noe Text Bold', sans-serif;
+}
+
+.bold-text-13 {
+  font-family: 'Noe Text Bold', sans-serif;
+}
+
+.bold-text-14 {
+  font-family: 'Noe Text Bold', sans-serif;
+}
+
+.bold-text-15 {
+  font-family: 'Noe Text Bold', sans-serif;
 }
 
 @media screen and (max-width: 991px) {
@@ -8528,8 +8605,11 @@ a {
   .heading.covid19.business {
     width: 70%;
   }
+  .heading.covid19.business.second {
+    width: 100%;
+  }
   .heading.covid19.business.main {
-    width: 71%;
+    width: 69%;
   }
   .heading.data {
     margin-bottom: 20px;
@@ -8687,6 +8767,7 @@ a {
   }
   .works.covbiz {
     margin-top: -40px;
+    margin-bottom: 0px;
     padding-right: 30px;
   }
   .cream-bg {
@@ -8967,6 +9048,9 @@ a {
     padding-right: 20px;
     padding-left: 20px;
   }
+  .container-2.covid.business {
+    margin-top: 0px;
+  }
   .body {
     padding-left: 0px;
   }
@@ -9078,7 +9162,7 @@ a {
     padding-left: 0px;
   }
   .div-block-11.lab-child._7.covbiz {
-    height: 160px;
+    height: 280px;
   }
   .div-block-11.lab-child._8 {
     height: 172px;
@@ -9693,7 +9777,8 @@ a {
     display: block;
   }
   .word-change.covid19 {
-    margin-top: -130px;
+    margin-top: -140px;
+    padding-bottom: 50px;
   }
   .text-change-1.heading {
     display: inline-block;
@@ -9710,6 +9795,10 @@ a {
   }
   .text-wrap.home {
     left: 99px;
+  }
+  .text-wrap.covbiz {
+    left: -5px;
+    top: -5px;
   }
   .text-change-2.heading {
     display: inline-block;
@@ -11390,7 +11479,7 @@ a {
     padding-left: 0px;
   }
   .white-bg.covid.business {
-    top: 64%;
+    top: 71%;
     z-index: 2;
     display: block;
     min-height: 360px;
@@ -11648,5 +11737,11 @@ a {
   font-family: 'Banana Grotesk Extra Light';
   src: url('../fonts/BananaGrotesk-Extralight.otf') format('opentype');
   font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Noe Text Bold';
+  src: url('../fonts/NoeText-Bold.otf') format('opentype');
+  font-weight: 700;
   font-style: normal;
 }
