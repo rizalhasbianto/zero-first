@@ -228,7 +228,7 @@ class homePage extends Component {
           <div className="div-block-3">
             <div className="word-change">
               <h1 className="heading change"> In pursuit<br/>of better</h1>
-              <div className="text-wrap">
+              <div className="text-wrap home">
                 <div className="text-change-1 heading">focus</div>
                 <div className="text-change-2 heading">energy</div>
                 <div className="text-change-3 heading">immunity</div>
