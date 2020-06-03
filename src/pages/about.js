@@ -119,7 +119,7 @@ class coronaPage extends Component {
     <div class="container-23 w-container">
       <div class="div-block-103">
         <h1>Start from within</h1>
-        <p class="paragraph">When it comes to personal health, information is everything. That’s why we created a revolutionary approach to help people understand and optimize their health through at-home assessment, personalized action plans, and ongoing progress monitoring. After all, if we can identify what’s holding us back, there’s no limit to what we can achieve.&nbsp;<br/></p><a href="wellness-test-cards.html" class="dark-bt main-section-bt w-button">Pre-order</a></div>
+        <p class="paragraph">When it comes to personal health, information is everything. That’s why we created a revolutionary approach to help people understand and optimize their health through at-home assessment, personalized action plans, and ongoing progress monitoring. After all, if we can identify what’s holding us back, there’s no limit to what we can achieve.&nbsp;<br/></p><Link to="/wellness-test-cards" class="dark-bt main-section-bt w-button">Pre-order</Link></div>
     </div><img src={Group_} alt="" class="image-26-copy"/></div>
   <div class="our-mission">
     <div class="container-25 w-container">
@@ -461,7 +461,7 @@ class coronaPage extends Component {
     <div class="container-9 w-container">
       <div class="div-block-32 w-clearfix">
         <h2 class="white heading">Your best is yet to come<br/></h2>
-        <p class="paragraph white">Coming summer 2020.</p><a href="wellness-test-cards.html" class="dark-bt white w-button">Pre-order</a></div>
+        <p class="paragraph white">Coming summer 2020.</p><Link to="/wellness-test-cards" class="dark-bt white w-button">Pre-order</Link></div>
     </div>
     <div class="footer-content">
       <div class="container-10 w-container">
@@ -475,7 +475,7 @@ class coronaPage extends Component {
         <Link className="footer-link" to="/about">About</Link>
         <Link className="footer-link" to="/careers">Careers</Link>
         <Link className="footer-link" to="/partner">Partner</Link>
-        <Link className="footer-link" to="#">Press</Link>
+        <Link className="footer-link press-f" to="#">Press</Link>
         </div>
       </div>
       <div class="container-11 w-container">
@@ -488,69 +488,6 @@ class coronaPage extends Component {
           <Link className="footer-link notice" to="/terms-of-service">Terms of Service</Link>
           <div class="footer-text notice patent">Patent Pending</div>
           <div class="footer-text notice disclaimer">* <strong>This product is intended only for maintaining and encouraging a healthy lifestyle and is unrelated to the diagnosis, cure, mitigation, prevention, or treatment of a disease or condition</strong>. &nbsp;Designed by Vessel in California.</div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="poups">
-    <div class="partner-pop">
-      <div data-w-id="a4fe9eb0-4130-2c0c-fef5-aca3a688a210" class="div-block-130"></div>
-      <div class="div-block-59">
-        <div data-w-id="a4fe9eb0-4130-2c0c-fef5-aca3a688a212" class="close pop"><img src={close} alt=""/></div>
-        <div class="div-block-53 pop">
-          <h2 class="heading popup">For partnership inquiries<br/></h2>
-          <h3 class="heading-61 email-click"><a href="mailto:partner@vesselhealth.com?subject=Vessel%20Health%20partner%20inquiry" class="link-14">partner@vesselhealth.com</a></h3>
-        </div>
-      </div>
-    </div>
-    <div class="pop-sec">
-      <div data-w-id="a4fe9eb0-4130-2c0c-fef5-aca3a688a21b" class="div-block-130"></div>
-      <div class="div-block-59">
-        <div data-w-id="a4fe9eb0-4130-2c0c-fef5-aca3a688a21d" class="close pop"><img src={close} alt=""/></div>
-        <div class="div-block-53 pop">
-          <h2 class="heading popup">Join the waitlist<br/></h2>
-          <h4 class="heading-52 subsecond">Total subscribers </h4>
-        </div>
-        <div class="w-embed">
-          <div class="klaviyo-form-LBcxWV"></div>
-        </div>
-        <div class="disclaimer">By submitting this form you agree to our <a href="terms-of-service.html" class="link-10">terms of service</a> and <a href="privacy-policy.html" class="link-9">privacy policy.</a></div>
-      </div>
-      <div class="div-block-40">
-        <div class="div-block-120">
-          <div class="div-block-119">
-            <div class="div-block-64">
-              <div data-w-id="a4fe9eb0-4130-2c0c-fef5-aca3a688a232" class="close">
-                <div class="text-block-2">x</div>
-              </div><img src={white_logo} height="32" alt="" class="image-18"/></div>
-            <div data-collapse="none" data-animation="default" data-duration="400" role="banner" class="navbar w-nav">
-              <nav role="navigation" class="nav-menu w-nav-menu">
-                <div class="nav-li"><a href="index.html" class="nav-link-2 w-nav-link">Wellness Test Card</a></div>
-                <div class="nav-li"><a href="coronavirus.html" class="nav-link-2 w-nav-link">Coronavirus Test Card</a></div>
-                <div class="nav-li"><a href="about.html" aria-current="page" class="nav-link-2 w-nav-link w--current">About</a></div>
-                <div class="nav-li"><a href="careers.html" class="nav-link-2 w-nav-link">Careers</a></div>
-                <div class="nav-li"><a href="mailto:partners@vesselhealth.com?subject=Vessel%20Health%20Partner%20Inquiry" class="nav-link-2 w-nav-link">Partner</a></div>
-                <div class="nav-li"><a href="#" data-w-id="a4fe9eb0-4130-2c0c-fef5-aca3a688a248" class="nav-link-2 w-nav-link">Press</a></div>
-              </nav>
-            </div>
-            <div class="div-block-58">
-              <div><a href="index.html" class="dark-bt white w-button">Support</a></div>
-              <div>
-                <h4 class="lab-child white last"><a href="https://www.instagram.com/vesselhealth/" target="_blank" class="link">Ig</a><em class="italic-text-2">/</em><a href="https://www.facebook.com/vesselhq" target="_blank" class="link">Fb</a><em class="italic-text-2">/</em><a href="http://twitter.com/wearevessel" target="_blank" class="link">Tw</a><em class="italic-text">/</em>&nbsp;<a href="https://www.youtube.com/channel/UCljstRPPpBCBwe_un2pU45w" target="_blank" class="link-2">Yt</a></h4>
-              </div>
-            </div>
-          </div>
-          <div data-w-id="a4fe9eb0-4130-2c0c-fef5-aca3a688a25f" class="div-block-117"></div>
-        </div>
-      </div>
-    </div>
-    <div class="press-pop">
-      <div data-w-id="a4fe9eb0-4130-2c0c-fef5-aca3a688a261" class="div-block-130"></div>
-      <div class="div-block-59">
-        <div data-w-id="a4fe9eb0-4130-2c0c-fef5-aca3a688a263" class="close pop"><img src={close} alt=""/></div>
-        <div class="div-block-53 pop">
-          <h2 class="heading popup">For press inquiries<br/></h2>
-          <h3 class="heading-61 email-click"><a href="mailto:press@vesselhealth.com?subject=Vessel%20Health%20press%20inquiry" class="link-13">press@vesselhealth.com</a></h3>
         </div>
       </div>
     </div>

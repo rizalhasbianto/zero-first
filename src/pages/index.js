@@ -5,7 +5,6 @@ import Slider from "react-slick";
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import close from "../images/close.png"
 import white_logo from "../images/white-logo.png"
 import main_top_mob from "../images/main-top_mob.png"
 import vessel_top from "../images/vessel_top.png"
@@ -1372,7 +1371,7 @@ class homePage extends Component {
         <Link className="footer-link" to="/about">About</Link>
         <Link className="footer-link" to="/careers">Careers</Link>
         <Link className="footer-link" to="/partner">Partner</Link>
-        <Link className="footer-link" to="#">Press</Link>
+        <Link className="footer-link press-f" to="#">Press</Link>
         </div>
       </div>
       <div className="container-11 w-container">
@@ -1388,101 +1387,6 @@ class homePage extends Component {
         </div>
       </div>
       <div className="html-embed-6 w-embed w-script">
-      </div>
-    </div>
-  </div>
-  <div className="poups">
-    <div className="partner-pop">
-      <div data-w-id="a4fe9eb0-4130-2c0c-fef5-aca3a688a210" className="div-block-130"></div>
-      <div className="div-block-59">
-        <div data-w-id="a4fe9eb0-4130-2c0c-fef5-aca3a688a212" className="close pop"><img src={close} alt=""/></div>
-        <div className="div-block-53 pop">
-          <h1 className="heading popup">For partnership inquiries<br/></h1>
-          <h3 className="heading-61 email-click"><a href="mailto:partner@vesselhealth.com?subject=Vessel%20Health%20partner%20inquiry" className="link-14">partner@vesselhealth.com</a></h3>
-        </div>
-      </div>
-    </div>
-    <div className="pop-sec">
-      <div data-w-id="a4fe9eb0-4130-2c0c-fef5-aca3a688a21b" className="div-block-130"></div>
-      <div className="div-block-59">
-        <div data-w-id="a4fe9eb0-4130-2c0c-fef5-aca3a688a21d" className="close pop"><img src={close} data-w-id="1c88a0b7-bbfe-c4ac-7626-fe89b8ef7d92" alt=""/></div>
-        <div className="div-block-53 pop">
-          <h1 className="heading popup">Join the waitlist<br/></h1>
-          <h4 className="heading-52 subsecond">Total subscribers </h4>
-        </div>
-        <div className="w-embed">
-          <div className="klaviyo-form-LBcxWV klaviyo-form form-version-cid-1">
-          <div className="ResetElements__Div-sc-8e6zl9-0 gUoYgx needsclick undefined">
-          <form className="ResetElements__Form-sc-8e6zl9-1 View__FormView-sc-1ou3cq2-0 brebrf klaviyo-form-version-cid_1 needsclick klaviyo-form-version-cid_1" noValidate="" tabIndex="-1">
-          <div className="ResetElements__Div-sc-8e6zl9-0 Column__FormColumn-z5j99u-0 Ndwyt needsclick undefined">
-          <div className="ResetElements__Div-sc-8e6zl9-0 Row__FormRow-sc-17nghml-0 kgtZaW needsclick undefined">
-          <div className="ResetElements__Div-sc-8e6zl9-0 FormComponent__StyledFormComponentWrapper-e0xun6-0 fjdFDR needsclick undefined">
-          <div className="ResetElements__Div-sc-8e6zl9-0 TextInput__StyledInputContainer-sc-1o6de9f-1 bQDdTc needsclick undefined">
-          <input type="email" name="email" tabIndex="0" placeholder="Enter email address" aria-label="Enter email address" aria-invalid="false" className="ResetElements__Input-sc-8e6zl9-8 FUXqS TextInput__FormStyledTextInput-sc-1o6de9f-0 fsIKy needsclick TextInput__FormStyledTextInput-sc-1o6de9f-0 fsIKy" value="" />
-          <div className="ResetElements__Div-sc-8e6zl9-0 ValidationMessage__Container-sc-1agouhi-0 kKQEmZ needsclick undefined">
-          </div>
-          </div>
-          </div>
-          <div className="ResetElements__Div-sc-8e6zl9-0 FormComponent__StyledFormComponentWrapper-e0xun6-0 cGEpIm needsclick undefined">
-          <button type="button" tabIndex="0" className="ResetElements__Button-sc-8e6zl9-2 Button__FormStyledButton-p2mbjt-0 lgRuVD needsclick undefined">Join the Waitlist</button>
-          </div>
-          </div>
-          </div>
-          <input type="submit" tabIndex="-1" className="ResetElements__Input-sc-8e6zl9-8 FUXqS View__HiddenSubmit-sc-1ou3cq2-1 dSnrYQ needsclick View__HiddenSubmit-sc-1ou3cq2-1 dSnrYQ" value="Submit" />
-          </form>
-          </div>
-          </div>
-        </div>
-        <div className="disclaimer">By submitting this form you agree to our <a href="terms-of-service.html" className="link-10">terms of service</a> and <a href="privacy-policy.html" className="link-9">privacy policy.</a></div>
-      </div>
-      <div className="div-block-40">
-        <div className="div-block-120">
-          <div className="div-block-119">
-            <div className="div-block-64">
-              <div data-w-id="a4fe9eb0-4130-2c0c-fef5-aca3a688a232" className="close">
-                <div className="text-block-2">x</div>
-              </div><img src={white_logo} height="32" alt="" className="image-18"/></div>
-            <div data-collapse="none" data-animation="default" data-duration="400" className="navbar w-nav">
-              <nav role="navigation" className="nav-menu w-nav-menu">
-                <div className="nav-li">
-                  <Link className="nav-link-2 w-nav-link " to="/">Wellness Test Card</Link>
-                </div>
-                <div className="nav-li">
-                  <Link className="nav-link-2 w-nav-link " to="/coronavirus">Coronavirus Test Card</Link>
-                </div>
-                <div className="nav-li">
-                  <Link className="nav-link-2 w-nav-link " to="/about">About</Link>
-                </div>
-                <div className="nav-li">
-                  <Link className="nav-link-2 w-nav-link " to="/careers">Careers</Link>
-                </div>
-                <div className="nav-li">
-                  <Link className="nav-link-2 w-nav-link " to="/partner">Partner</Link>
-                </div>
-                <div className="nav-li">
-                  <Link className="nav-link-2 w-nav-link " to="#">Press</Link>
-                </div>
-              </nav>
-            <div className="w-nav-overlay" data-wf-ignore=""></div></div>
-            <div className="div-block-58">
-              <div><a href="index.html" aria-current="page" className="dark-bt white w-button w--current">Support</a></div>
-              <div>
-                <h4 className="lab-child white last"><a href="https://www.instagram.com/vesselhealth/" target="_blank" className="link">Ig</a><em className="italic-text-2">/</em><a href="https://www.facebook.com/vesselhq" target="_blank" className="link">Fb</a><em className="italic-text-2">/</em><a href="http://twitter.com/wearevessel" target="_blank" className="link">Tw</a><em className="italic-text">/</em>&nbsp;<a href="https://www.youtube.com/channel/UCljstRPPpBCBwe_un2pU45w" target="_blank" className="link-2">Yt</a></h4>
-              </div>
-            </div>
-          </div>
-          <div data-w-id="a4fe9eb0-4130-2c0c-fef5-aca3a688a25f" className="div-block-117"></div>
-        </div>
-      </div>
-    </div>
-    <div className="press-pop">
-      <div data-w-id="a4fe9eb0-4130-2c0c-fef5-aca3a688a261" className="div-block-130"></div>
-      <div className="div-block-59">
-        <div data-w-id="a4fe9eb0-4130-2c0c-fef5-aca3a688a263" className="close pop"><img src={close} alt=""/></div>
-        <div className="div-block-53 pop">
-          <h1 className="heading popup">For press inquiries<br/></h1>
-          <h3 className="heading-61 email-click"><a href="mailto:press@vesselhealth.com?subject=Vessel%20Health%20press%20inquiry" className="link-13">press@vesselhealth.com</a></h3>
-        </div>
       </div>
     </div>
   </div>

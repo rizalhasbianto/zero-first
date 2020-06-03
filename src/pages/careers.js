@@ -184,7 +184,7 @@ class coronaPage extends Component {
     <div className="container-9 w-container">
       <div className="div-block-32 w-clearfix">
         <h2 className="white heading">Your best is yet to come</h2>
-        <p className="paragraph white">Coming summer 2020.</p><a href="wellness-test-cards.html" className="dark-bt white w-button">Pre-order</a></div>
+        <p className="paragraph white">Coming summer 2020.</p><Link to="/wellness-test-cards" className="dark-bt white w-button">Pre-order</Link></div>
     </div>
     <div className="footer-content">
       <div className="container-10 w-container">
@@ -198,7 +198,7 @@ class coronaPage extends Component {
         <Link className="footer-link" to="/about">About</Link>
         <Link className="footer-link" to="/careers">Careers</Link>
         <Link className="footer-link" to="/partner">Partner</Link>
-        <Link className="footer-link" to="#">Press</Link>
+        <Link className="footer-link press-f" to="#">Press</Link>
         </div>
       </div>
       <div className="container-11 w-container">
@@ -215,70 +215,7 @@ class coronaPage extends Component {
       </div>
     </div>
   </div>
-  <div className="poups">
-    <div className="partner-pop">
-      <div data-w-id="a4fe9eb0-4130-2c0c-fef5-aca3a688a210" className="div-block-130"></div>
-      <div className="div-block-59">
-        <div data-w-id="a4fe9eb0-4130-2c0c-fef5-aca3a688a212" className="close pop"><img src={close} alt=""/></div>
-        <div className="div-block-53 pop">
-          <h2 className="heading popup">For partnership inquiries<br/></h2>
-          <h3 className="heading-61 email-click"><a href="mailto:partner@vesselhealth.com?subject=Vessel%20Health%20partner%20inquiry" className="link-14">partner@vesselhealth.com</a></h3>
-        </div>
-      </div>
-    </div>
-    <div className="pop-sec">
-      <div data-w-id="a4fe9eb0-4130-2c0c-fef5-aca3a688a21b" className="div-block-130"></div>
-      <div className="div-block-59">
-        <div data-w-id="a4fe9eb0-4130-2c0c-fef5-aca3a688a21d" className="close pop"><img src={close} data-w-id="1c88a0b7-bbfe-c4ac-7626-fe89b8ef7d92" alt=""/></div>
-        <div className="div-block-53 pop">
-          <h2 className="heading popup">Join the waitlist<br/></h2>
-          <h4 className="heading-52 subsecond">Total subscribers </h4>
-        </div>
-        <div className="w-embed">
-          <div className="klaviyo-form-LBcxWV"></div>
-        </div>
-        <div className="disclaimer">By submitting this form you agree to our <a href="terms-of-service.html" className="link-10">terms of service</a> and <a href="privacy-policy.html" className="link-9">privacy policy.</a></div>
-      </div>
-      <div className="div-block-40">
-        <div className="div-block-120">
-          <div className="div-block-119">
-            <div className="div-block-64">
-              <div data-w-id="a4fe9eb0-4130-2c0c-fef5-aca3a688a232" className="close">
-                <div className="text-block-2">x</div>
-              </div><img src={white_logo} height="32" alt="" className="image-18"/></div>
-            <div data-collapse="none" data-animation="default" data-duration="400" role="banner" className="navbar w-nav">
-              <nav role="navigation" className="nav-menu w-nav-menu">
-                <div className="nav-li"><a href="index.html" className="nav-link-2 w-nav-link">Wellness Test Card</a></div>
-                <div className="nav-li"><a href="coronavirus.html" className="nav-link-2 w-nav-link">Coronavirus Test Card</a></div>
-                <div className="nav-li"><a href="about.html" className="nav-link-2 w-nav-link">About</a></div>
-                <div className="nav-li"><a href="careers.html" aria-current="page" className="nav-link-2 w-nav-link w--current">Careers</a></div>
-                <div className="nav-li"><a href="mailto:partners@vesselhealth.com?subject=Vessel%20Health%20Partner%20Inquiry" className="nav-link-2 w-nav-link">Partner</a></div>
-                <div className="nav-li"><a href="#" data-w-id="a4fe9eb0-4130-2c0c-fef5-aca3a688a248" className="nav-link-2 w-nav-link">Press</a></div>
-              </nav>
-            </div>
-            <div className="div-block-58">
-              <div><a href="index.html" className="dark-bt white w-button">Support</a></div>
-              <div>
-                <h4 className="lab-child white last"><a href="https://www.instagram.com/vesselhealth/" target="_blank" className="link">Ig</a><em className="italic-text-2">/</em><a href="https://www.facebook.com/vesselhq" target="_blank" className="link">Fb</a><em className="italic-text-2">/</em><a href="http://twitter.com/wearevessel" target="_blank" className="link">Tw</a><em className="italic-text">/</em>&nbsp;<a href="https://www.youtube.com/channel/UCljstRPPpBCBwe_un2pU45w" target="_blank" className="link-2">Yt</a></h4>
-              </div>
-            </div>
-          </div>
-          <div data-w-id="a4fe9eb0-4130-2c0c-fef5-aca3a688a25f" className="div-block-117"></div>
-        </div>
-      </div>
-    </div>
-    <div className="press-pop">
-      <div data-w-id="a4fe9eb0-4130-2c0c-fef5-aca3a688a261" className="div-block-130"></div>
-      <div className="div-block-59">
-        <div data-w-id="a4fe9eb0-4130-2c0c-fef5-aca3a688a263" className="close pop"><img src={close} alt=""/></div>
-        <div className="div-block-53 pop">
-          <h2 className="heading popup">For press inquiries<br/></h2>
-          <h3 className="heading-61 email-click">
-			  <a href="mailto:press@vesselhealth.com?subject=Vessel%20Health%20press%20inquiry" className="link-13">press@vesselhealth.com</a></h3>
-        </div>
-      </div>
-    </div>
-  </div>
+
   </div>
   </Layout>
 	)

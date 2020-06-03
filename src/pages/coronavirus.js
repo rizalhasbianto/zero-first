@@ -238,14 +238,16 @@ class coronaPage extends Component {
       nav6: this.slider6
     });
     function nextFunction() {
-      var next = document.getElementsByClassName("slick-prev");
+      var why = document.getElementsByClassName("why-vessel");
+      var next = why[0].getElementsByClassName("slick-prev");
       var i;
         for (i = 0; i < next.length; i++) {
           next[i].click();
         }
     }
     function prevFunction() {
-      var next = document.getElementsByClassName("slick-next");
+      var why = document.getElementsByClassName("why-vessel");
+      var next = why[0].getElementsByClassName("slick-next");
       var i;
         for (i = 0; i < next.length; i++) {
           next[i].click();
@@ -256,6 +258,27 @@ class coronaPage extends Component {
     nextElem.addEventListener("click", nextFunction);
     prevElem.addEventListener("click", prevFunction);
 
+    // Result slide next prev
+    function nextFunctionResult() {
+      var why = document.getElementsByClassName("result");
+      var next = why[0].getElementsByClassName("slick-prev");
+      var i;
+        for (i = 0; i < next.length; i++) {
+          next[i].click();
+        }
+    }
+    function prevFunctionResult() {
+      var why = document.getElementsByClassName("result");
+      var next = why[0].getElementsByClassName("slick-next");
+      var i;
+        for (i = 0; i < next.length; i++) {
+          next[i].click();
+        }
+    }
+    var nextElem = document.getElementById("result-next");
+    var prevElem = document.getElementById("result-prev");
+    nextElem.addEventListener("click", prevFunctionResult);
+    prevElem.addEventListener("click", nextFunctionResult);
     // ajax for subscription
       var xhttp = new XMLHttpRequest();
       xhttp.onreadystatechange=function() {
@@ -505,7 +528,7 @@ class coronaPage extends Component {
                     <div className="div-block-49"></div><img src={step1}  alt="" className="image-5"/></div>
                   <div className="scroll-text">
                     <h2 className="heading-30">Step 1</h2>
-                    <p className="paragraph">Download the free Vessel app once it has been approved for use in your country. <span onClick={() => scrollTo('#join-waitlist')} >Join the waitlist</span> to be notified.</p>
+                    <p className="paragraph">Download the free Vessel app once it has been approved for use in your country. <span onClick={() => scrollTo('#join-waitlist')} className="span-link">Join the waitlist</span> to be notified.</p>
                     <div className="div-block-86 step1"><img src={appstore_bt} alt="" className="image-22"/>
                     <img src={playstore_bt} alt="" className="image-23"/></div>
                   </div>
@@ -1139,7 +1162,10 @@ class coronaPage extends Component {
             <p className="vessel covid">Invalid test. The test cards we work with also are able to determine if the sample was enough to make a valid test. If not, it will show a result suggesting an invalid result.</p>
           </div>
           </Slider>
-        <div className="div-block-46 covid"><img src={prev} height="50" alt="" className="image-14 prev"/><img src={next} height="50" alt="" className="next"/></div>
+        <div className="div-block-46 covid">
+          <img src={prev} height="50" alt="" className="image-14 prev" id="result-prev"/>
+          <img src={next} height="50" alt="" className="next" id="result-next"/>
+        </div>
         <div className="w-embed w-script">
         </div>
       </div>
@@ -1935,7 +1961,7 @@ class coronaPage extends Component {
         <Link className="footer-link" to="/about">About</Link>
         <Link className="footer-link" to="/careers">Careers</Link>
         <Link className="footer-link" to="/partner">Partner</Link>
-        <Link className="footer-link" to="#">Press</Link>
+        <Link className="footer-link press-f" to="#">Press</Link>
         </div>
       </div>
       <div className="container-11 w-container">
@@ -1951,89 +1977,6 @@ class coronaPage extends Component {
         </div>
       </div>
       <div className="html-embed-6 w-embed w-script">
-      </div>
-    </div>
-  </div>
-  <div className="poups">
-    <div className="partner-pop">
-      <div data-w-id="a4fe9eb0-4130-2c0c-fef5-aca3a688a210" className="div-block-130"></div>
-      <div className="div-block-59">
-        <div data-w-id="a4fe9eb0-4130-2c0c-fef5-aca3a688a212" className="close pop"><img src={close} alt=""/></div>
-        <div className="div-block-53 pop">
-          <h1 className="heading popup">For partnership inquiries<br/></h1>
-          <h3 className="heading-61 email-click"><a href="mailto:partner@vesselhealth.com?subject=Vessel%20Health%20partner%20inquiry" className="link-14">partner@vesselhealth.com</a></h3>
-        </div>
-      </div>
-    </div>
-    <div className="pop-sec">
-      <div data-w-id="a4fe9eb0-4130-2c0c-fef5-aca3a688a21b" className="div-block-130"></div>
-      <div className="div-block-59">
-        <div data-w-id="a4fe9eb0-4130-2c0c-fef5-aca3a688a21d" className="close pop"><img src={close} data-w-id="1c88a0b7-bbfe-c4ac-7626-fe89b8ef7d92" alt=""/></div>
-        <div className="div-block-53 pop">
-          <h1 className="heading popup">Join the waitlist<br/></h1>
-          <h4 className="heading-52 subsecond">Total subscribers </h4>
-        </div>
-        <div className="w-embed">
-          <div className="klaviyo-form-LBcxWV klaviyo-form form-version-cid-1">
-          <div className="ResetElements__Div-sc-8e6zl9-0 gUoYgx needsclick undefined">
-          <form className="ResetElements__Form-sc-8e6zl9-1 View__FormView-sc-1ou3cq2-0 brebrf klaviyo-form-version-cid_1 needsclick klaviyo-form-version-cid_1" noValidate="" tabIndex="-1">
-          <div className="ResetElements__Div-sc-8e6zl9-0 Column__FormColumn-z5j99u-0 Ndwyt needsclick undefined">
-          <div className="ResetElements__Div-sc-8e6zl9-0 Row__FormRow-sc-17nghml-0 kgtZaW needsclick undefined">
-          <div className="ResetElements__Div-sc-8e6zl9-0 FormComponent__StyledFormComponentWrapper-e0xun6-0 fjdFDR needsclick undefined">
-          <div className="ResetElements__Div-sc-8e6zl9-0 TextInput__StyledInputContainer-sc-1o6de9f-1 bQDdTc needsclick undefined">
-          <input type="email" name="email" tabIndex="0" placeholder="Enter email address" aria-label="Enter email address" aria-invalid="false" className="ResetElements__Input-sc-8e6zl9-8 FUXqS TextInput__FormStyledTextInput-sc-1o6de9f-0 fsIKy needsclick TextInput__FormStyledTextInput-sc-1o6de9f-0 fsIKy" value="" />
-          <div className="ResetElements__Div-sc-8e6zl9-0 ValidationMessage__Container-sc-1agouhi-0 kKQEmZ needsclick undefined">
-          </div>
-          </div>
-          </div>
-          <div className="ResetElements__Div-sc-8e6zl9-0 FormComponent__StyledFormComponentWrapper-e0xun6-0 cGEpIm needsclick undefined">
-          <button type="button" tabIndex="0" className="ResetElements__Button-sc-8e6zl9-2 Button__FormStyledButton-p2mbjt-0 lgRuVD needsclick undefined">Join the Waitlist</button>
-          </div>
-          </div>
-          </div>
-          <input type="submit" tabIndex="-1" className="ResetElements__Input-sc-8e6zl9-8 FUXqS View__HiddenSubmit-sc-1ou3cq2-1 dSnrYQ needsclick View__HiddenSubmit-sc-1ou3cq2-1 dSnrYQ" value="Submit" />
-          </form>
-          </div>
-          </div>
-        </div>
-        <div className="disclaimer">By submitting this form you agree to our <a href="terms-of-service.html" className="link-10">terms of service</a> and <a href="privacy-policy.html" className="link-9">privacy policy.</a></div>
-      </div>
-      <div className="div-block-40">
-        <div className="div-block-120">
-          <div className="div-block-119">
-            <div className="div-block-64">
-              <div data-w-id="a4fe9eb0-4130-2c0c-fef5-aca3a688a232" className="close">
-                <div className="text-block-2">x</div>
-              </div><img src={white_logo} height="32" alt="" className="image-18"/></div>
-            <div data-collapse="none" data-animation="default" data-duration="400" className="navbar w-nav">
-              <nav role="navigation" className="nav-menu w-nav-menu">
-                <div className="nav-li"><a href="index.html" aria-current="page" className="nav-link-2 w-nav-link w--current">Wellness Test Card</a></div>
-                <div className="nav-li"><a href="coronavirus.html" className="nav-link-2 w-nav-link">Coronavirus Test Card</a></div>
-                <div className="nav-li"><a href="about.html" className="nav-link-2 w-nav-link">About</a></div>
-                <div className="nav-li"><a href="careers.html" className="nav-link-2 w-nav-link">Careers</a></div>
-                <div className="nav-li"><a href="mailto:partners@vesselhealth.com?subject=Vessel%20Health%20Partner%20Inquiry" className="nav-link-2 w-nav-link">Partner</a></div>
-                <div className="nav-li"><a href="#" data-w-id="a4fe9eb0-4130-2c0c-fef5-aca3a688a248" className="nav-link-2 w-nav-link">Press</a></div>
-              </nav>
-            <div className="w-nav-overlay" data-wf-ignore=""></div></div>
-            <div className="div-block-58">
-              <div><a href="index.html" aria-current="page" className="dark-bt white w-button w--current">Support</a></div>
-              <div>
-                <h4 className="lab-child white last"><a href="https://www.instagram.com/vesselhealth/" target="_blank" className="link">Ig</a><em className="italic-text-2">/</em><a href="https://www.facebook.com/vesselhq" target="_blank" className="link">Fb</a><em className="italic-text-2">/</em><a href="http://twitter.com/wearevessel" target="_blank" className="link">Tw</a><em className="italic-text">/</em>&nbsp;<a href="https://www.youtube.com/channel/UCljstRPPpBCBwe_un2pU45w" target="_blank" className="link-2">Yt</a></h4>
-              </div>
-            </div>
-          </div>
-          <div data-w-id="a4fe9eb0-4130-2c0c-fef5-aca3a688a25f" className="div-block-117"></div>
-        </div>
-      </div>
-    </div>
-    <div className="press-pop">
-      <div data-w-id="a4fe9eb0-4130-2c0c-fef5-aca3a688a261" className="div-block-130"></div>
-      <div className="div-block-59">
-        <div data-w-id="a4fe9eb0-4130-2c0c-fef5-aca3a688a263" className="close pop"><img src={close} alt=""/></div>
-        <div className="div-block-53 pop">
-          <h1 className="heading popup">For press inquiries<br/></h1>
-          <h3 className="heading-61 email-click"><a href="mailto:press@vesselhealth.com?subject=Vessel%20Health%20press%20inquiry" className="link-13">press@vesselhealth.com</a></h3>
-        </div>
       </div>
     </div>
   </div>

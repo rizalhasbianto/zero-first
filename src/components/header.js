@@ -48,8 +48,8 @@ class Header extends React.Component {
     window.addEventListener('scroll', handleScroll);
     var topBar = document.getElementsByClassName('image-25')
     topBar[0].addEventListener('click', (event) => {
-      var covid = document.getElementsByClassName("notification-bar-wrapper");
-      covid[0].style.display = "none";
+      var covid = document.getElementById("very-top-bar");
+      covid.style.display = "none";
     });
 }
 constructor(props) {
@@ -75,7 +75,7 @@ render() {
   }
   else if (pathName == 'coronavirus-grouptesting'){
     headButton = <><div className="dark-bt nav-bt w-button" onClick={() => scrollTo('#contact-us')}>Contact Us</div>
-      <div className="dark-bt nav-bt mobile w-button" onClick={() => scrollTo('#contact-us')}>Join</div> </>
+      <div className="dark-bt nav-bt mobile w-button" onClick={() => scrollTo('#contact-us')}>Contact</div> </>
   }
   else {
     headButton = <><Link className="dark-bt nav-bt w-button" to="/wellness-test-cards">Pre-order</Link>
@@ -99,7 +99,7 @@ render() {
         url = (location.pathname);
       }}
     </Location>
-  <div className={topBar}>
+  <div className={topBar} id="very-top-bar">
     <div className="notification-bar">
       <div className="notification-bar-container w-container">
         <h4 className="annoucement">At-Home Coronavirus Test</h4>
@@ -108,7 +108,7 @@ render() {
             <div className="text-block-20">We&#x27;re in the final stages of bringing to market a <span className="text-span-3">COVID-19 antibody</span> test that utilizes a finger prick along with an app to give you results in just 15 minutes from home.</div>
           </div>
           <div className="div-block-74 w-clearfix">
-           <Link className="dark-bt rose w-button" to="/wellness-test-cards/">Learn more</Link>
+           <Link className="dark-bt rose w-button" to="/coronavirus">Learn more</Link>
           </div>
         </div>
       </div><img src={close} data-w-id="55a9ad55-4615-3891-1a1a-7e4f45bda160" alt="" className="image-25" /></div>
@@ -125,7 +125,11 @@ render() {
               <div className="first-burger"></div>
             </div>
           </div>
-          <div className="logo"><a href="index.html" aria-current="page" className="w-inline-block w--current"><img src={Logo} height="32" alt="" className="image-19" /></a></div>
+          <div className="logo">
+            <Link to="/" aria-current="page" className="w-inline-block w--current">
+              <img src={Logo} height="32" alt="" className="image-19" />
+            </Link>
+          </div>
           <div className="w-clearfix" id={url}>
           {headButton}
           </div>

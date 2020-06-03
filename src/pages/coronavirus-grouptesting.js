@@ -135,7 +135,7 @@ class coronaPage extends Component {
           <div className="div-block-3 covid19">
             <div className="word-change covid19">
               <h1 className="heading covid19 business main">COVID-19 Antibody Testing for Your Entire</h1>
-              <div className="text-wrap">
+              <div className="text-wrap group-covid">
                 <div className="text-change-1 heading">Business</div>
                 <div className="text-change-2 heading">School</div>
                 <div className="text-change-3 heading">City</div>
@@ -143,7 +143,7 @@ class coronaPage extends Component {
                 <div className="text-change-5 heading covbiz">Agency</div>
               </div>
             </div>
-            <p className="paragraph main covid">Together we can reduce the risk of reopening businesses with safe and accurate antibody testing, for everyone.</p>
+            <p className="paragraph main covid">We have enough tests for your entire group, and will help you implement testing protocols along with drive-through or on-site testing facilities.</p>
             <button onClick={() => scrollTo('#contact-us')} className="dark-bt main-section-bt w-button">Contact Us</button>
             <p className="paragraph main disclaimer">Looking for <a href="coronavirus.html">individual tests?</a></p>
           </div>
@@ -163,7 +163,7 @@ class coronaPage extends Component {
         <p className="paragraph covbiz">Antibody tests, also called serological tests, help to measure current or past infection rates of COVID-19, and can be administered to large groups of people such as businesses, schools, and cities to indicate the total number of cases within the group or geographic area.&nbsp;<br/>&zwj;<br/>When administered in accordance with proper protocols, antibody tests may be paired with RT-PCR tests and physician evaluations to help with early COVID-19 detection, which can assist in reopening state and local economies.&nbsp;&nbsp;<br/>&zwj;<br/>Individuals who have been exposed to, and recovered from, COVID-19 will likely have antibodies to the SARS-CoV-2 virus in their blood, which may reduce their risk of exposure when returning to work.</p>
         </div>
         <div className="div-block-79 ab-test covid business right">
-          <p className="paragraph covid">Since testing capacity is often limited by the number of labs and doctors available to perform tests, and the length of time it takes to run each test, we have been working closely with the FDA on an at-home antibody testing solution that may become an integral part of broadly accepted return-to-work protocols. Antibody tests cards are cost effective and easily mass-produced in quantities large enough for entire cities. With our App (in clinical trials now) tests can be taken at home in just 15 minutes. In addition to at-home testing, we can also help you setup on-site or in-clinic testing using drive-throughs or temporary test facilities.</p>
+        <p className="paragraph covid">Antibody tests can be administered quickly and inexpensively without lab testing, but have a higher risk of false-positive results than RT-PCR tests.&nbsp; Because of this, they are most effective when administered on a recurring cadence, and as part of a larger testing protocol.&nbsp;<br/>&zwj;<br/>In the months to come, as we reopen society and the economy, we will need to know how widespread COVID-19 infection has been in our population. Antibody tests are a cost-effective way to test many people, multiple times if needed without overburdening our healthcare heroes or risking transmission through unnecessary lab visits to generate critical data that employers and individuals can use to determine next steps.<br/></p>
         </div>
       </div>
       <div className="white-bg covid top"></div>
@@ -254,11 +254,11 @@ class coronaPage extends Component {
         </div>
         <div className="works-block _2nd"><img src={covbiz_how_2} alt="" className="image-3"/>
           <h4 className="heading-23">02</h4>
-          <p className="paragraph how-it-works-col">We’ll help you deploy tests on-site at your location, or at approved testing facilities, or at individual&#x27;s homes with the Vessel App<br/></p>
+          <p className="paragraph how-it-works-col">A complete return-to-work protocol will be developed for you by our partner WorkSTEPS, based on your organization’s unique needs<br/></p>
         </div>
         <div className="works-block _3rd"><img src={covbiz_how_3} alt="" className="image-2"/>
           <h4 className="heading-23">03</h4>
-          <p className="paragraph how-it-works-col">Follow approved return-to-work protocols and regulatory-approved guidelines as appropriate</p>
+          <p className="paragraph how-it-works-col">A medical team will be setup to administer the tests at your location, at nearby clinics, or at a drive-through facility</p>
         </div>
       </div>
     </div>
@@ -271,6 +271,35 @@ class coronaPage extends Component {
         <div className="div-block-155"><img src={ri_hope} alt="" className="image-38 ri"/></div>
         <div className="div-block-155"><img src={microsoft} alt="" className="image-38"/></div>
         <div className="div-block-155"><img src={dod_us} alt="" className="image-38 dod"/></div>
+      </div>
+    </div>
+  </div>
+  <div id="limitations-of-antibody-test" className="limitations covid">
+    <div className="container-21 w-container">
+      <div className="div-block-53 covbiz">
+        <h2 className="heading lab covid">How we approach group testing for COVID-19<br/></h2>
+      </div>
+      <div className="div-block-92">
+        <div className="div-block-93">
+          <div className="list-limitations">
+            <p className="number covid">•</p>
+            <p className="paragraph-16 paragraph covid covbiz"><strong className="bold-text-13">Large quantities of test cards<br/></strong>We work closely with multiple FDA-authorized test card manufacturers to produce millions of new test cards every week, so that you can test your entire workforce or population.<br/></p>
+          </div>
+          <div className="list-limitations">
+            <p className="number covid">•</p>
+            <p className="paragraph-16 paragraph covid covbiz"><strong className="bold-text-15">Pricing Transparency<br/></strong>Antibody tests are less expensive than PCR tests or Saliva tests ($35 ea. vs. $150 ea.), and we are completely transparent with our pricing, charging only a small markup to cover our administrative costs.<br/></p>
+          </div>
+        </div>
+        <div className="div-block-94">
+          <div className="list-limitations">
+            <p className="number covid">•</p>
+            <p className="paragraph-16 paragraph covid covbiz"><strong className="bold-text-9">Return-to-work protocols</strong><br/>We will help you implement a custom return-to-work protocol for your unique needs that reduces risk through regular antibody testing, temperature checks, virtual screenings, telehealth, contact tracing, PPE supplies, and more.<br/></p>
+          </div>
+          <div className="list-limitations">
+            <p className="number covid">•</p>
+            <p className="paragraph-16 paragraph covid covbiz"><strong className="bold-text-14">Convenient Testing Locations<br/></strong>Working with a network of over 1,200 clinics and medical professionals in all 50 states, we’ll help you setup testing at a nearby clinic, at a testing facility on site, or at a drive-through location that enables 15 minute in-car testing.<br/></p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -372,32 +401,6 @@ class coronaPage extends Component {
       </div>
     </div>
   </div>
-  <div id="limitations-of-antibody-test" className="limitations covid">
-    <div className="container-21 w-container">
-      <div className="div-block-92">
-        <div className="div-block-93">
-          <div className="list-limitations">
-            <p className="number covid">•</p>
-            <p className="paragraph-16 paragraph covid covbiz">We are actively working with the FDA on emergency approval of at-home testing.<br/></p>
-          </div>
-          <div className="list-limitations">
-            <p className="number covid">•</p>
-            <p className="paragraph-16 paragraph covid covbiz">We are working with major cities including Denver on Toronto to provide tests for their residents.<br/></p>
-          </div>
-        </div>
-        <div className="div-block-94">
-          <div className="div-block-101 covbiz">
-            <p className="number covid">•</p>
-            <p className="paragraph-16 paragraph covid covbiz">Our manufacturing partners are developing millions of test card weekly, and we are shipping test cards for on-site or in-clinic use.<br/></p>
-          </div>
-          <div className="list-limitations">
-            <p className="number covid">•</p>
-            <p className="paragraph-16 paragraph covid covbiz">There are currently<span className="subs-first"> </span>people on the waitlist for home-use test cards (coming soon).  <a href="/coronavirus#join-waitlist">Join the waitlist.</a><br/></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
   <div id="contact-us" className="join-waitlist">
     <div className="container-29 covid w-container">
       <div className="div-block-53 covid">
@@ -450,7 +453,7 @@ class coronaPage extends Component {
         <Link className="footer-link" to="/about">About</Link>
         <Link className="footer-link" to="/careers">Careers</Link>
         <Link className="footer-link" to="/partner">Partner</Link>
-        <Link className="footer-link" to="#">Press</Link>
+        <Link className="footer-link press-f" to="#">Press</Link>
         </div>
       </div>
       <div className="container-11 w-container">
@@ -463,69 +466,6 @@ class coronaPage extends Component {
           <Link className="footer-link notice" to="/terms-of-service">Terms of Service</Link>
           <div className="footer-text notice patent">Patent Pending</div>
           <div className="footer-text notice disclaimer">* <strong>This product is intended only for maintaining and encouraging a healthy lifestyle and is unrelated to the diagnosis, cure, mitigation, prevention, or treatment of a disease or condition</strong>.  Designed by Vessel in California.</div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div className="poups">
-    <div className="partner-pop">
-      <div data-w-id="a4fe9eb0-4130-2c0c-fef5-aca3a688a210" className="div-block-130"></div>
-      <div className="div-block-59">
-        <div data-w-id="a4fe9eb0-4130-2c0c-fef5-aca3a688a212" className="close pop"><img src={close} alt=""/></div>
-        <div className="div-block-53 pop">
-          <h2 className="heading popup">For partnership inquiries<br/></h2>
-          <h3 className="heading-61 email-click"><a href="mailto:partner@vesselhealth.com?subject=Vessel%20Health%20partner%20inquiry" className="link-14">partner@vesselhealth.com</a></h3>
-        </div>
-      </div>
-    </div>
-    <div className="pop-sec">
-      <div data-w-id="a4fe9eb0-4130-2c0c-fef5-aca3a688a21b" className="div-block-130"></div>
-      <div className="div-block-59">
-        <div data-w-id="a4fe9eb0-4130-2c0c-fef5-aca3a688a21d" className="close pop"><img src={close} alt=""/></div>
-        <div className="div-block-53 pop">
-          <h2 className="heading popup">Join the waitlist<br/></h2>
-          <h4 className="heading-52 subsecond">Total subscribers </h4>
-        </div>
-        <div className="w-embed">
-          <div className="klaviyo-form-LBcxWV"></div>
-        </div>
-        <div className="disclaimer">By submitting this form you agree to our <a href="terms-of-service.html" className="link-10">terms of service</a> and <a href="privacy-policy.html" className="link-9">privacy policy.</a></div>
-      </div>
-      <div className="div-block-40">
-        <div className="div-block-120">
-          <div className="div-block-119">
-            <div className="div-block-64">
-              <div data-w-id="a4fe9eb0-4130-2c0c-fef5-aca3a688a232" className="close">
-                <div className="text-block-2">x</div>
-              </div><img src={white_logo} height="32" alt="" className="image-18"/></div>
-            <div data-collapse="none" data-animation="default" data-duration="400" role="banner" className="navbar w-nav">
-              <nav role="navigation" className="nav-menu w-nav-menu">
-                <div className="nav-li"><a href="index.html" className="nav-link-2 w-nav-link">Wellness Test Card</a></div>
-                <div className="nav-li"><a href="coronavirus.html" className="nav-link-2 w-nav-link">Coronavirus Test Card</a></div>
-                <div className="nav-li"><a href="about.html" className="nav-link-2 w-nav-link">About</a></div>
-                <div className="nav-li"><a href="careers.html" className="nav-link-2 w-nav-link">Careers</a></div>
-                <div className="nav-li"><a href="mailto:partners@vesselhealth.com?subject=Vessel%20Health%20Partner%20Inquiry" className="nav-link-2 w-nav-link">Partner</a></div>
-                <div className="nav-li"><a href="#" data-w-id="a4fe9eb0-4130-2c0c-fef5-aca3a688a248" className="nav-link-2 w-nav-link">Press</a></div>
-              </nav>
-            </div>
-            <div className="div-block-58">
-              <div><a href="index.html" className="dark-bt white w-button">Support</a></div>
-              <div>
-                <h4 className="lab-child white last"><a href="https://www.instagram.com/vesselhealth/" target="_blank" className="link">Ig</a><em className="italic-text-2">/</em><a href="https://www.facebook.com/vesselhq" target="_blank" className="link">Fb</a><em className="italic-text-2">/</em><a href="http://twitter.com/wearevessel" target="_blank" className="link">Tw</a><em className="italic-text">/</em> <a href="https://www.youtube.com/channel/UCljstRPPpBCBwe_un2pU45w" target="_blank" className="link-2">Yt</a></h4>
-              </div>
-            </div>
-          </div>
-          <div data-w-id="a4fe9eb0-4130-2c0c-fef5-aca3a688a25f" className="div-block-117"></div>
-        </div>
-      </div>
-    </div>
-    <div className="press-pop">
-      <div data-w-id="a4fe9eb0-4130-2c0c-fef5-aca3a688a261" className="div-block-130"></div>
-      <div className="div-block-59">
-        <div data-w-id="a4fe9eb0-4130-2c0c-fef5-aca3a688a263" className="close pop"><img src={close} alt=""/></div>
-        <div className="div-block-53 pop">
-          <h2 className="heading popup">For press inquiries<br/></h2>
-          <h3 className="heading-61 email-click"><a href="mailto:press@vesselhealth.com?subject=Vessel%20Health%20press%20inquiry" className="link-13">press@vesselhealth.com</a></h3>
         </div>
       </div>
     </div>
