@@ -237,6 +237,7 @@ numb();
         <div className="div-block-35">
         <Link className="footer-link" to="/">Wellness Test Card</Link>
         <Link className="footer-link" to="/coronavirus">Coronavirus Test Card</Link>
+        <Link className="footer-link" to="/coronavirus-grouptesting">Corona Virus Group Testing</Link>
         <Link className="footer-link" to="/about">About</Link>
         <Link className="footer-link" to="/careers">Careers</Link>
         <Link className="footer-link" to="/partner">Partner</Link>
@@ -253,12 +254,6 @@ numb();
           <Link className="footer-link notice" to="/terms-of-service">Terms of Service</Link>
           <div className="footer-text notice patent">Patent Pending</div>
           <div className="footer-text notice disclaimer">* This product is not intended for use in diagnosing diseases or other conditions;  determining state of health;  or curing, mitigating, treating, or preventing disease.  Designed by Vessel in California.</div>
-        </div>
-      </div>
-      <div className="cookies-bar">
-        <div className="w-container">
-          <div className="cookies-notice">
-            <p className="paragraph-28 cookies">This site uses cookies. By continuing to browse the site, you are agreeing to our use of cookies. <a href="privacy-policy.html">Learn more</a></p><a data-w-id="05ffb679-b0af-bac0-0223-ac07643b6b05" href="#" className="dark-bt cookies w-button">Got it</a></div>
         </div>
       </div>
     </div>

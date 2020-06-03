@@ -1,6 +1,7 @@
 import React, { Component} from "react"
 import { withPrefix, Link } from "gatsby"
 import { Helmet } from "react-helmet"
+import scrollTo from 'gatsby-plugin-smoothscroll';
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -17,7 +18,7 @@ import covid_business_tc from "../images/covid_business_tc.jpg"
 import harv_ethic from "../images/harv-ethic.jpg"
 import covbiz_how_1 from "../images/covbiz-how_1.jpg"
 import covbiz_how_2 from "../images/covbiz-how_2.jpg"
-import covbiz_how_3 from "../images/covbiz-how_3.jpg"
+import covbiz_how_3 from "../images/covbiz-how_3.jpeg"
 import den_mhc from "../images/den_mhc.png"
 import ri_hope from "../images/ri_hope.png"
 import microsoft from "../images/microsoft.png"
@@ -109,6 +110,7 @@ class coronaPage extends Component {
       document.getElementById('test_type-dabff0c2-494a-44b3-8330-1928f55fbe16').firstChild.innerHTML = 'Test type';
       document.getElementById('number_of_tests_needed-dabff0c2-494a-44b3-8330-1928f55fbe16').firstChild.innerHTML ='Number of tests needed';
       document.getElementById('fulfillment_preference-dabff0c2-494a-44b3-8330-1928f55fbe16').firstChild.innerHTML ='Fulfillment type';
+      document.getElementById('referral_source-dabff0c2-494a-44b3-8330-1928f55fbe16').placeholder ='How did you hear about us?';
     }, 1000);  
     document.getElementById('contact_form').addEventListener('DOMNodeInserted', OnNodeInserted, false);
     function OnNodeInserted () {
@@ -141,7 +143,8 @@ class coronaPage extends Component {
                 <div className="text-change-5 heading covbiz">Agency</div>
               </div>
             </div>
-            <p className="paragraph main covid">Together we can reduce the risk of reopening businesses with safe and accurate antibody testing, for everyone.</p><a href="#contact-us" className="dark-bt main-section-bt w-button">Contact Us</a>
+            <p className="paragraph main covid">Together we can reduce the risk of reopening businesses with safe and accurate antibody testing, for everyone.</p>
+            <button onClick={() => scrollTo('#contact-us')} className="dark-bt main-section-bt w-button">Contact Us</button>
             <p className="paragraph main disclaimer">Looking for <a href="coronavirus.html">individual tests?</a></p>
           </div>
         </div>
@@ -157,7 +160,7 @@ class coronaPage extends Component {
       </div>
       <div className="container-14 covid business bottom w-container">
         <div className="div-block-79 ab-test covid business import">
-          <p className="paragraph covbiz">As many as 50 percent of people with COVID-19 aren’t aware they have the virus because they do not show symptoms or feel sick. Unfortunately, those people can still spread the virus to others who may become very sick. To safely reopen our businesses, cities, and states in a way that reduces the risk of further spreading the coronavirus, proper tests and protocols are critical. According to the FDA, high-quality antibody tests (a type of serological test) can help us understand a person’s and population’s exposure to COVID-19. A person who has been exposed to, and recovered from, COVID-19 will likely have antibodies to the SARS-CoV-2 virus in their blood, which may reduce their risk of exposure when returning to work.</p>
+        <p className="paragraph covbiz">Antibody tests, also called serological tests, help to measure current or past infection rates of COVID-19, and can be administered to large groups of people such as businesses, schools, and cities to indicate the total number of cases within the group or geographic area.&nbsp;<br/>&zwj;<br/>When administered in accordance with proper protocols, antibody tests may be paired with RT-PCR tests and physician evaluations to help with early COVID-19 detection, which can assist in reopening state and local economies.&nbsp;&nbsp;<br/>&zwj;<br/>Individuals who have been exposed to, and recovered from, COVID-19 will likely have antibodies to the SARS-CoV-2 virus in their blood, which may reduce their risk of exposure when returning to work.</p>
         </div>
         <div className="div-block-79 ab-test covid business right">
           <p className="paragraph covid">Since testing capacity is often limited by the number of labs and doctors available to perform tests, and the length of time it takes to run each test, we have been working closely with the FDA on an at-home antibody testing solution that may become an integral part of broadly accepted return-to-work protocols. Antibody tests cards are cost effective and easily mass-produced in quantities large enough for entire cities. With our App (in clinical trials now) tests can be taken at home in just 15 minutes. In addition to at-home testing, we can also help you setup on-site or in-clinic testing using drive-throughs or temporary test facilities.</p>
@@ -171,10 +174,24 @@ class coronaPage extends Component {
     <div className="overview first">
       <div className="div-block-153">
         <div className="container-14 universal reverse w-container">
-          <div className="div-block-79 scable">
-            <h2 className="heading covbiz">A Scalable, Accurate, and Safe Approach</h2>
-            <p className="paragraph covbiz">We are partnered with multiple FDA-approved test card manufacturers that are currently producing millions of new test cards every week. Tests can be procured for entire businesses, cities, and even states with solutions for on-site testing, in-clinic testing, and at-home testing using the Vessel App. <a href="#contact-us">Contact us</a> to get started.<br/></p>
-            <p className="paragraph">Our approach to testing is designed to support established return-to-work protocols created by medical experts working closely with government task forces. In clinical trials conducted for FDA approval, serological antibody tests for COVID-19 were 95% accurate when administered twice.<br/></p><a href="#contact-us" className="dark-bt main-section-bt w-button">Contact Us</a></div>
+        <div className="div-block-79 scable">
+            <h2 className="heading covbiz">The Difference Between Antibody and PCR Tests</h2>
+            <p className="paragraph covbiz"><strong className="bold-text-11">Antibody tests</strong> use a small sample of blood taken with a finger prick, and results are available in ten to twenty minutes. The test looks for IgM antibodies to indicate early immune response in people recently infected, and IgG antibodies to indicate later stage immune response in those who have recovered.<br/>‍<br/><strong className="bold-text-12">PCR tests</strong> use a small sample of your DNA taken with a nasal swab, and results are typically available in 3-10 days after a laboratory analysis. The test looks for the presence of viral nucleic acids and tells if a person is currently infected with the virus. <br/></p>
+            <p>It’s important to <strong className="bold-text-10">keep in mind</strong> the following:</p>
+            <div className="list-limitations para">
+              <p className="number covid">•</p>
+              <p className="paragraph-16 paragraph covid covbiz para">Antibody tests and PCR tests are friends. They can be used together as part of a more comprehensive testing protocol.<br/></p>
+            </div>
+            <div className="list-limitations para">
+              <p className="number covid">•</p>
+              <p className="paragraph-16 paragraph covid covbiz para">PCR tests are often reserved for people currently showing symptoms.  Antibody tests can be taken by anyone.<br/></p>
+            </div>
+            <div className="list-limitations">
+              <p className="number covid">•</p>
+              <p className="paragraph-16 paragraph covid covbiz para">Neither test is 100% accurate. Accuracy increases with two or more tests, and results should always be discussed with a physician.<br/></p>
+            </div>
+            <button onClick={() => scrollTo('#contact-us')} className="dark-bt main-section-bt w-button">Contact Us</button>
+            </div>
           <div className="div-block-135 covid business">
             <div className="div-block-136"><img src={quote} alt="" className="image-33"/></div>
             <div className="div-block-131">
@@ -429,6 +446,7 @@ class coronaPage extends Component {
         <div className="div-block-35">
         <Link className="footer-link" to="/">Wellness Test Card</Link>
         <Link className="footer-link" to="/coronavirus">Coronavirus Test Card</Link>
+        <Link className="footer-link" to="/coronavirus-grouptesting">Corona Virus Group Testing</Link>
         <Link className="footer-link" to="/about">About</Link>
         <Link className="footer-link" to="/careers">Careers</Link>
         <Link className="footer-link" to="/partner">Partner</Link>
@@ -445,12 +463,6 @@ class coronaPage extends Component {
           <Link className="footer-link notice" to="/terms-of-service">Terms of Service</Link>
           <div className="footer-text notice patent">Patent Pending</div>
           <div className="footer-text notice disclaimer">* <strong>This product is intended only for maintaining and encouraging a healthy lifestyle and is unrelated to the diagnosis, cure, mitigation, prevention, or treatment of a disease or condition</strong>.  Designed by Vessel in California.</div>
-        </div>
-      </div>
-      <div className="cookies-bar">
-        <div className="w-container">
-          <div className="cookies-notice">
-            <p className="paragraph-28 cookies">This site uses cookies to ensure you get the best experience on our website. <a href="privacy-policy.html">Learn more</a></p><a data-w-id="05ffb679-b0af-bac0-0223-ac07643b6b05" href="#" className="dark-bt cookies w-button">Got it</a></div>
         </div>
       </div>
     </div>

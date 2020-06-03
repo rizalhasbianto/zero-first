@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet"
 import Slider from "react-slick";
 import $ from 'jquery'
 import jQuery from 'jquery'
+import scrollTo from 'gatsby-plugin-smoothscroll';
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -83,6 +84,7 @@ import _Andrew_Beinbrink from "../images/8-Andrew-Beinbrink.jpg"
 import _Christian_Chasmer from "../images/7-Christian-Chasmer.jpg"
 import _Kyle_Brown from "../images/6-Kyle-Brown.jpg"
 import _Doug_Lorenzen from "../images/5-Doug-Lorenzen.jpg"
+import _Chris_Hoffman from "../images/44_chris-hoffman.jpg"
 import prev from "../images/prev.png"
 import next from "../images/next.png"
 import Icon from "../images/Icon.png"
@@ -353,7 +355,9 @@ class coronaPage extends Component {
             <div className="word-change covid19">
               <h1 className="heading covid19">At-home <br/>testing for <span className="text-span-2">COVID-19 antibodies</span></h1>
             </div>
-            <p className="paragraph main covid">Vessel’s app and serology test enable accurate at-home detection of antibodies against the novel coronavirus in 15 minutes. At-home antibody testing is a promising new tool with multiple benefits. Antibody tests use the same lateral flow assay (LFA) technology that we spent the last three years developing for our wellness test, enabling us to swiftly deploy an at-home testing solution for COVID-19. A thorough review by the proper regulatory agencies is currently under way.</p><a href="#join-waitlist" className="dark-bt main-section-bt w-button">Join the waitlist</a></div>
+            <p className="paragraph main covid">Vessel’s app and serology test enable accurate at-home detection of antibodies against the novel coronavirus in 15 minutes. At-home antibody testing is a promising new tool with multiple benefits. Antibody tests use the same lateral flow assay (LFA) technology that we spent the last three years developing for our wellness test, enabling us to swiftly deploy an at-home testing solution for COVID-19. A thorough review by the proper regulatory agencies is currently under way.</p>
+            <button onClick={() => scrollTo('#join-waitlist')} className="dark-bt main-section-bt w-button">Join the waitlist</button>
+          </div>
         </div>
       </div>
       <div className="div-block"><img src={Group_7}  alt="" className="image" /></div>
@@ -501,7 +505,7 @@ class coronaPage extends Component {
                     <div className="div-block-49"></div><img src={step1}  alt="" className="image-5"/></div>
                   <div className="scroll-text">
                     <h2 className="heading-30">Step 1</h2>
-                    <p className="paragraph">Download the free Vessel app once it has been approved for use in your country. <a href="#join-waitlist">Join the waitlist</a> to be notified.</p>
+                    <p className="paragraph">Download the free Vessel app once it has been approved for use in your country. <span onClick={() => scrollTo('#join-waitlist')} >Join the waitlist</span> to be notified.</p>
                     <div className="div-block-86 step1"><img src={appstore_bt} alt="" className="image-22"/>
                     <img src={playstore_bt} alt="" className="image-23"/></div>
                   </div>
@@ -1041,7 +1045,7 @@ class coronaPage extends Component {
       <div className="div-block-42">
         <div data-duration-in="300" data-duration-out="100" className="tabs w-tabs">
           <div className="tabs-menu covid w-tab-menu" id="tabmenu">
-            <a data-w-tab="only-igm" className="tab-link-tab-1 w-inline-block w-tab-link">
+            <a data-w-tab="only-igm" className="tab-link-tab-1 w-inline-block w-tab-link w--current">
               <div className="text-block-19">Only IgM antibodies are detected<br/></div>
             </a>
             <a data-w-tab="igm-and-igg" className="tab-link-tab-1 w-inline-block w-tab-link">
@@ -1053,12 +1057,12 @@ class coronaPage extends Component {
             <a data-w-tab="no-anti" className="tab-link-tab-1 w-inline-block w-tab-link">
               <div className="text-block-19">No antibodies are detected<br/></div>
             </a>
-            <a data-w-tab="invalid-test" className="tab-link-tab-1 w-inline-block w-tab-link w--current">
+            <a data-w-tab="invalid-test" className="tab-link-tab-1 w-inline-block w-tab-link">
               <div className="text-block-19">Invalid test<br/></div>
             </a>
           </div>
           <div className="tabs-content covid w-tab-content" id="tabcontent">
-            <div data-w-tab="Only IgM" className="tab-pane-vitamin-b7 w-tab-pane only-igm">
+            <div data-w-tab="Only IgM" className="tab-pane-vitamin-b7 w--tab-active w-tab-pane only-igm">
               <h2 className="heading-4">Only IgM antibodies are detected<br/></h2>
               <p className="vessel">If only IgM antibodies are detected, this suggests a new infection from the virus in the past few weeks.<br/></p>
               <div className="div-block-56"><img src={result_igm} height="" alt="" className="image-29"/></div>
@@ -1078,7 +1082,7 @@ class coronaPage extends Component {
               <p className="vessel">If no antibodies are detected, this signifies that you probably have not had an infection with the virus, or that you were exposed recently and are in the incubation period of 1-2 weeks when you have the virus but have not yet produced antibodies, or that your immune system might be unable to produce antibodies.</p>
               <div className="div-block-56"><img src={result_neg} height="" alt="" className="image-29"/></div>
             </div>
-            <div data-w-tab="Invalid test" className="w-tab-pane w--tab-active invalid-test">
+            <div data-w-tab="Invalid test" className="w-tab-pane invalid-test">
               <h2 className="heading-4">Invalid test</h2>
               <p className="vessel">Invalid test. The test cards we work with are able to determine if the blood sample was enough to make a valid test. If not, it will produce an invalid result.</p>
               <div className="div-block-56"><img src={invalid} height="" alt="" className="image-29"/></div>
@@ -1404,6 +1408,7 @@ class coronaPage extends Component {
             <div className="div-block-28 grow"><img src={_Jesus_Gonzalez} alt="" className="image-8 slide-img"/></div>
             <div className="div-block-28 grow"><img src={_Matt_McCord} alt="" className="image-8 slide-img"/></div>
             <div className="div-block-28 grow"><img src={_Jon_Carder} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Chris_Hoffman} alt="" className="image-8 slide-img"/></div>
             <div className="div-block-28 grow"><img src={_Blake_Jendrusch} alt="" className="image-8 slide-img"/></div>
             <div className="div-block-28 grow"><img src={_Jeremy_Schumann} alt="" className="image-12 slide-img"/></div>
             <div className="div-block-28 grow jordan"><img src={_Jordan_Ames} alt="" className="image-8 slide-img"/></div>
@@ -1446,6 +1451,7 @@ class coronaPage extends Component {
           <Slider {...settings} className="div-block-26 slider-b w-clearfix" asNavFor={this.state.nav3} ref={slider => (this.slider2 = slider)}>
             <div className="div-block-28 grow"><img src={_Matt_McCord} alt="" className="image-8 slide-img"/></div>
             <div className="div-block-28 grow"><img src={_Jon_Carder} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Chris_Hoffman} alt="" className="image-8 slide-img"/></div>
             <div className="div-block-28 grow"><img src={_Blake_Jendrusch} alt="" className="image-8 slide-img"/></div>
             <div className="div-block-28 grow"><img src={_Jeremy_Schumann} alt="" className="image-12 slide-img"/></div>
             <div className="div-block-28 grow jordan"><img src={_Jordan_Ames} alt="" className="image-8 slide-img"/></div>
@@ -1488,6 +1494,7 @@ class coronaPage extends Component {
           </Slider>
           <Slider {...settings} className="div-block-26 slider-c w-clearfix" asNavFor={this.state.nav4} ref={slider => (this.slider3 = slider)}>
             <div className="div-block-28 grow"><img src={_Jon_Carder} alt="" className="image-8 slide-img"/></div>
+            <div className="div-block-28 grow"><img src={_Chris_Hoffman} alt="" className="image-8 slide-img"/></div>
             <div className="div-block-28 grow"><img src={_Blake_Jendrusch} alt="" className="image-8 slide-img"/></div>
             <div className="div-block-28 grow"><img src={_Jeremy_Schumann} alt="" className="image-12 slide-img"/></div>
             <div className="div-block-28 grow jordan"><img src={_Jordan_Ames} alt="" className="image-8 slide-img"/></div>
@@ -1535,6 +1542,10 @@ class coronaPage extends Component {
             <div id="text-slide" className="slide-content">
               <h2 className="heading-4 backed">Jon Carder<br/></h2>
               <p className="paragraph">Co-Founder / CEO <br/></p>
+            </div>
+            <div id="text-slide" className="slide-content">
+              <h2 className="heading-4 backed">Chris Hoffman<br/></h2>
+              <p className="paragraph">Head of Customer Loyalty<br/></p>
             </div>
             <div id="text-slide" className="slide-content">
               <h2 className="heading-4 backed">Blake Jendrusch<br/></h2>
@@ -1882,7 +1893,7 @@ class coronaPage extends Component {
               <div data-w-id="843efc21-9c85-3ec4-1e10-94fc16c3cbf4" className="accordion-trigger w-clearfix">
             <p className="paragraph-18 number">13</p>
                 <h3 className="heading-46">How many tests are going to be available?<br/></h3><img src={expand} alt="" className="expand-icon"/></div>
-              <p className="p-qs paragraph">This is a worldwide pandemic, which is why we’ve secured manufacturing for hundreds of thousands of test kits per day and are now seeking regulatory approval around the world. We have partnered with the xPrize Pandemic Alliance, Anthem Blue Cross Blue Shield, and Doc.ai on clinical trials to verify that antibody tests can be safely and accurately administered at home. We’re also working with UCSF to validate the accuracy of various different test cards, which should be completed by the end of April 2020. Once approved we will be offering test cards for sale on VesselHealth.com. To be notified when Vessel is available in your country <a href="#join-waitlist">join our waitlist here</a>.<br/></p>
+              <p className="p-qs paragraph">This is a worldwide pandemic, which is why we’ve secured manufacturing for hundreds of thousands of test kits per day and are now seeking regulatory approval around the world. We have partnered with the xPrize Pandemic Alliance, Anthem Blue Cross Blue Shield, and Doc.ai on clinical trials to verify that antibody tests can be safely and accurately administered at home. We’re also working with UCSF to validate the accuracy of various different test cards, which should be completed by the end of April 2020. Once approved we will be offering test cards for sale on VesselHealth.com. To be notified when Vessel is available in your country <span onClick={() => scrollTo('#join-waitlist')} >join our waitlist here</span>.<br/></p>
             </div>
           </div>
           <div className="div-block-98">
@@ -1920,6 +1931,7 @@ class coronaPage extends Component {
         <div className="div-block-35">
         <Link className="footer-link" to="/">Wellness Test Card</Link>
         <Link className="footer-link" to="/coronavirus">Coronavirus Test Card</Link>
+        <Link className="footer-link" to="/coronavirus-grouptesting">Corona Virus Group Testing</Link>
         <Link className="footer-link" to="/about">About</Link>
         <Link className="footer-link" to="/careers">Careers</Link>
         <Link className="footer-link" to="/partner">Partner</Link>
@@ -1936,12 +1948,6 @@ class coronaPage extends Component {
           <Link className="footer-link notice" to="/terms-of-service">Terms of Service</Link>
           <div className="footer-text notice patent">Patent Pending</div>
           <div className="footer-text notice disclaimer">* This product is not intended for use in diagnosing diseases or other conditions; &nbsp;determining state of health; &nbsp;or curing, mitigating, treating, or preventing disease. &nbsp;Designed by Vessel in California.</div>
-        </div>
-      </div>
-      <div className="cookies-bar">
-        <div className="w-container">
-          <div className="cookies-notice">
-            <p className="paragraph-28 cookies">This site uses cookies. By continuing to browse the site, you are agreeing to our use of cookies. <a href="privacy-policy.html">Learn more</a></p><a data-w-id="05ffb679-b0af-bac0-0223-ac07643b6b05" href="#" className="dark-bt cookies w-button">Got it</a></div>
         </div>
       </div>
       <div className="html-embed-6 w-embed w-script">

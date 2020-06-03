@@ -4,6 +4,9 @@
 .step-8, .learn {
   height: 100%;
 }
+.cookies-bar.showing {
+  display: block;
+}
 .heading.we_vessel {
   margin-bottom:10px;
 }
@@ -433,7 +436,7 @@ opacity: 0;
     margin-bottom: 20px;
     }
   .klaviyo_styling label.agree-label {
-      display: flex;
+      display: flex!important;
       align-items: top;
   }
   .checkmark {
@@ -509,11 +512,11 @@ opacity: 0;
   .agee-check {
       overflow: hidden;
   }
-  .agree {
-  width: 20px;
-      height: 20px;
-      margin-top: 27px;
-      margin-right: 10px;
+  body input[type='checkbox'].agree {
+  width: 20px!important;
+      height: 20px!important;
+      margin-top: 27px!important;
+      margin-right: 10px!important;
       float: left;
   }
   .subsca {

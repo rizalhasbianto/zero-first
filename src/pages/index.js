@@ -239,8 +239,8 @@ class homePage extends Component {
                 <div className="text-change-8 heading">living</div>
               </div>
             </div>
-            <p className="paragraph main home">Meet Vessel, the in-home wellness tracker that instantly and accurately uncovers what your body really needs.</p><a href="wellness-test-cards.html" className="dark-bt main-section-bt w-button">Pre-order</a>
-            <p className="paragraph main disclaimer">Looking for the Coronavirus test? <a href="coronavirus.html">Click here</a></p>
+            <p className="paragraph main home">Meet Vessel, the in-home wellness tracker that instantly and accurately uncovers what your body really needs.</p><Link to="/wellness-test-cards" className="dark-bt main-section-bt w-button">Pre-order</Link>
+            <p className="paragraph main disclaimer">Looking for the Coronavirus test? <Link to="/coronavirus">Click here</Link></p>
           </div>
         </div>
       </div>
@@ -1023,7 +1023,7 @@ class homePage extends Component {
         </div>
         <div className="div-block-51">
           <div className="div-block-50"></div>
-          <div className="div-block-52 w-clearfix"><a href="wellness-test-cards.html" className="dark-bt w-button">Pre-order</a></div>
+          <div className="div-block-52 w-clearfix"><Link to="/wellness-test-cards" className="dark-bt w-button">Pre-order</Link></div>
         </div>
       </div>
       <div className="div-block-55">
@@ -1243,7 +1243,7 @@ class homePage extends Component {
         </div>
         <div className="div-block-51">
           <div className="div-block-50"></div>
-          <div className="div-block-52 home w-clearfix"><a href="wellness-test-cards.html" className="dark-bt w-button">Pre-order</a></div>
+          <div className="div-block-52 home w-clearfix"><Link to="/wellness-test-cards" className="dark-bt w-button">Pre-order</Link></div>
         </div>
       </div>
       <div className="rose-bg home"></div>
@@ -1358,7 +1358,7 @@ class homePage extends Component {
     <div className="container-9 w-container">
       <div className="div-block-32 w-clearfix">
         <h2 className="white heading">Your best is yet to come</h2>
-        <p className="paragraph white">Instant- home health tracker for those in relentless pursuit of being better, doing better, and performing your best.</p><a href="wellness-test-cards.html" className="dark-bt white w-button">Pre-order</a></div>
+        <p className="paragraph white">Instant- home health tracker for those in relentless pursuit of being better, doing better, and performing your best.</p><Link to="/wellness-test-cards" className="dark-bt white w-button">Pre-order</Link></div>
     </div>
     <div className="footer-content">
       <div className="container-10 w-container">
@@ -1368,6 +1368,7 @@ class homePage extends Component {
         <div className="div-block-35">
         <Link className="footer-link" to="/">Wellness Test Card</Link>
         <Link className="footer-link" to="/coronavirus">Coronavirus Test Card</Link>
+        <Link className="footer-link" to="/coronavirus-grouptesting">Corona Virus Group Testing</Link>
         <Link className="footer-link" to="/about">About</Link>
         <Link className="footer-link" to="/careers">Careers</Link>
         <Link className="footer-link" to="/partner">Partner</Link>
@@ -1384,12 +1385,6 @@ class homePage extends Component {
           <Link className="footer-link notice" to="/terms-of-service">Terms of Service</Link>
           <div className="footer-text notice patent">Patent Pending</div>
           <div className="footer-text notice disclaimer">* This product is not intended for use in diagnosing diseases or other conditions; &nbsp;determining state of health; &nbsp;or curing, mitigating, treating, or preventing disease. &nbsp;Designed by Vessel in California.</div>
-        </div>
-      </div>
-      <div className="cookies-bar">
-        <div className="w-container">
-          <div className="cookies-notice">
-            <p className="paragraph-28 cookies">This site uses cookies. By continuing to browse the site, you are agreeing to our use of cookies. <a href="privacy-policy.html">Learn more</a></p><a data-w-id="05ffb679-b0af-bac0-0223-ac07643b6b05" href="#" className="dark-bt cookies w-button">Got it</a></div>
         </div>
       </div>
       <div className="html-embed-6 w-embed w-script">

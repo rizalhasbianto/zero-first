@@ -233,6 +233,7 @@ class coronaPage extends Component {
           <div className="footer-text">Email: <a href="mailto:wegotyou@vesselhealth.com?subject=Vessel%20Health%20General%20Inquiry"><span className="footer-link">wegotyou@vesselhealth.com</span></a></div><a href="http://vesselhealth.zendesk.com/" target="_blank" className="footer-link">Help Center</a></div>
         <div className="div-block-35">
 		<Link className="footer-link" to="/coronavirus">Coronavirus Test Card</Link>
+    <Link className="footer-link" to="/coronavirus-grouptesting">Corona Virus Group Testing</Link>
         <Link className="footer-link" to="/about">About</Link>
         <Link className="footer-link" to="/careers">Careers</Link>
         <Link className="footer-link" to="/partner">Partner</Link>
@@ -249,12 +250,6 @@ class coronaPage extends Component {
           <Link className="footer-link notice" to="/terms-of-service">Terms of Service</Link>
           <div className="footer-text notice patent">Patent Pending</div>
           <div className="footer-text notice disclaimer">* <strong>This product is intended only for maintaining and encouraging a healthy lifestyle and is unrelated to the diagnosis, cure, mitigation, prevention, or treatment of a disease or condition</strong>.  Designed by Vessel in California.</div>
-        </div>
-      </div>
-      <div className="cookies-bar">
-        <div className="w-container">
-          <div className="cookies-notice">
-            <p className="paragraph-28 cookies">This site uses cookies to ensure you get the best experience on our website. <a href="privacy-policy.html" aria-current="page" className="w--current">Learn more</a></p><a data-w-id="05ffb679-b0af-bac0-0223-ac07643b6b05" href="#" className="dark-bt cookies w-button">Got it</a></div>
         </div>
       </div>
     </div>

@@ -1,5 +1,6 @@
 import React, { Component} from "react"
 import { Link } from "gatsby"
+import scrollTo from 'gatsby-plugin-smoothscroll';
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -38,7 +39,8 @@ class coronaPage extends Component {
     <div className="container-23 careers w-container">
       <div className="div-block-103 hiring-top">
         <h1>We’re hiring!</h1>
-        <p className="paragraph">Passionate about personal health and wellness? Inspired by new and complex challenges? Driven by the idea of disrupting the wellness industry? Determined to build the best experience possible for millions of users? Ready for a fulfilling role, not just an easy one?&nbsp; If all apply to you, and you want to play an impactful role in building the future, we want to hear from you.<br/></p><a href="#job-openings" className="dark-bt w-button">See Openings</a></div>
+        <p className="paragraph">Passionate about personal health and wellness? Inspired by new and complex challenges? Driven by the idea of disrupting the wellness industry? Determined to build the best experience possible for millions of users? Ready for a fulfilling role, not just an easy one?&nbsp; If all apply to you, and you want to play an impactful role in building the future, we want to hear from you.<br/></p>
+        <button onClick={() => scrollTo('#job-openings')} to="#"className="dark-bt w-button">See Openings</button></div>
     </div>
   </div>
   <div className="values">
@@ -76,7 +78,7 @@ class coronaPage extends Component {
   </div>
   <div className="we-are-vessel">
     <div className="container-27 w-container">
-      <h2 className="heading">We are Vessel</h2>
+      <h2 className="heading we_vessel">We are Vessel</h2>
       <div className="div-block-109 first">
         <div className="div-block-107"><img src={team} alt="" className="image-37"/></div>
         <div className="div-block-104 right we">
@@ -192,6 +194,7 @@ class coronaPage extends Component {
         <div className="div-block-35">
         <Link className="footer-link" to="/">Wellness Test Card</Link>
         <Link className="footer-link" to="/coronavirus">Coronavirus Test Card</Link>
+        <Link className="footer-link" to="/coronavirus-grouptesting">Corona Virus Group Testing</Link>
         <Link className="footer-link" to="/about">About</Link>
         <Link className="footer-link" to="/careers">Careers</Link>
         <Link className="footer-link" to="/partner">Partner</Link>
@@ -208,12 +211,6 @@ class coronaPage extends Component {
           <Link className="footer-link notice" to="/terms-of-service">Terms of Service</Link>
           <div className="footer-text notice patent">Patent Pending</div>
           <div className="footer-text notice disclaimer">* <strong>This product is intended only for maintaining and encouraging a healthy lifestyle and is unrelated to the diagnosis, cure, mitigation, prevention, or treatment of a disease or condition</strong>. &nbsp;Designed by Vessel in California.</div>
-        </div>
-      </div>
-      <div className="cookies-bar">
-        <div className="w-container">
-          <div className="cookies-notice">
-            <p className="paragraph-28 cookies">This site uses cookies to ensure you get the best experience on our website. <a href="privacy-policy.html">Learn more</a></p><a data-w-id="05ffb679-b0af-bac0-0223-ac07643b6b05" href="#" className="dark-bt cookies w-button">Got it</a></div>
         </div>
       </div>
     </div>

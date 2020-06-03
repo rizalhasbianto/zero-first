@@ -80,7 +80,6 @@ render() {
   else {
     headButton = <><Link className="dark-bt nav-bt w-button" to="/wellness-test-cards">Pre-order</Link>
     <Link className="dark-bt nav-bt mobile w-button" to="/wellness-test-cards">Pre-order</Link></>
-    console.log(path)
   }
   if ( path == '/') {
     topBar = 'notification-bar-wrapper';

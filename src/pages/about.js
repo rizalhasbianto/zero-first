@@ -471,6 +471,7 @@ class coronaPage extends Component {
         <div class="div-block-35">
         <Link className="footer-link" to="/">Wellness Test Card</Link>
         <Link className="footer-link" to="/coronavirus">Coronavirus Test Card</Link>
+        <Link className="footer-link" to="/coronavirus-grouptesting">Corona Virus Group Testing</Link>
         <Link className="footer-link" to="/about">About</Link>
         <Link className="footer-link" to="/careers">Careers</Link>
         <Link className="footer-link" to="/partner">Partner</Link>
@@ -487,12 +488,6 @@ class coronaPage extends Component {
           <Link className="footer-link notice" to="/terms-of-service">Terms of Service</Link>
           <div class="footer-text notice patent">Patent Pending</div>
           <div class="footer-text notice disclaimer">* <strong>This product is intended only for maintaining and encouraging a healthy lifestyle and is unrelated to the diagnosis, cure, mitigation, prevention, or treatment of a disease or condition</strong>. &nbsp;Designed by Vessel in California.</div>
-        </div>
-      </div>
-      <div class="cookies-bar">
-        <div class="w-container">
-          <div class="cookies-notice">
-            <p class="paragraph-28 cookies">This site uses cookies to ensure you get the best experience on our website. <a href="privacy-policy.html">Learn more</a></p><a data-w-id="05ffb679-b0af-bac0-0223-ac07643b6b05" href="#" class="dark-bt cookies w-button">Got it</a></div>
         </div>
       </div>
     </div>
