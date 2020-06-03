@@ -1917,6 +1917,7 @@ a {
 
 .find-your-better {
   padding-top: 150px;
+  background-image: url('../images/Find-your-better.png');
   background-position: 0px 0px;
   background-size: cover;
 }
@@ -2875,6 +2876,7 @@ a {
   top: 0px;
   right: 0px;
   bottom: 0px;
+  background-image: url('../images/Untitled-1.png');
   background-position: 0px 0px;
   background-size: 125px;
 }
@@ -11687,4 +11689,59 @@ a {
     width: 1px;
     background-color: #000;
   }
+}
+
+@font-face {
+  font-family: 'Noe Text Regular';
+  src: url('../fonts/NoeText-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Banana Grotesk Semibold';
+  src: url('../fonts/BananaGrotesk-Semibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Banana Grotesk Bold';
+  src: url('../fonts/BananaGrotesk-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Banana Grotesk Regular';
+  src: url('../fonts/BananaGrotesk-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Banana Grotesk Medium';
+  src: url('../fonts/BananaGrotesk-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Banana Grotesk Light';
+  src: url('../fonts/BananaGrotesk-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Noe Text Book';
+  src: url('../fonts/NoeText-Book.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Banana Grotesk Extra Light';
+  src: url('../fonts/BananaGrotesk-Extralight.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Noe Text Bold';
+  src: url('../fonts/NoeText-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
 }

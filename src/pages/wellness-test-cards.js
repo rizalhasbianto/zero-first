@@ -5,6 +5,9 @@ import $ from 'jquery'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import close from "../images/close.png"
+import white_logo from "../images/white-logo.png"
+
 class coronaPage extends Component {
   componentDidMount() {
     // ajax for subscription
@@ -228,7 +231,7 @@ numb();
     </div>
     <div className="footer-content">
       <div className="container-10 w-container">
-        <div className="div-block-36"><img src="images/white-logo.png" height="40" alt="" className="image-11"/></div>
+        <div className="div-block-36"><img src={white_logo} height="40" alt="" className="image-11"/></div>
         <div className="div-block-35">
           <div className="footer-text">Email: <a href="mailto:wegotyou@vesselhealth.com?subject=Vessel%20Health%20General%20Inquiry"><span className="footer-link">wegotyou@vesselhealth.com</span></a></div><a href="http://vesselhealth.zendesk.com/" target="_blank" className="footer-link">Help Center</a></div>
         <div className="div-block-35">

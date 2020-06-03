@@ -50,7 +50,7 @@ class coronaPage extends Component {
       window.setTimeout(function(){ hFour[0].classList.remove('down', 'active');hFive[0].classList.add('active'); }, 8000);
       window.setTimeout(function(){ hFive[0].classList.add('down'); }, 9000);
       window.setTimeout(function(){ hFive[0].classList.remove('down', 'active'); }, 10000);
-      window.setTimeout(function(){ window.requestAnimationFrame(step); }, 11000);
+      window.setTimeout(function(){ window.requestAnimationFrame(step); }, 10000);
     }
     window.requestAnimationFrame(step);
 

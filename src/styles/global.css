@@ -1,3 +1,12 @@
+.list-item {
+  list-style: disc;
+}
+.step-8, .learn {
+  height: 100%;
+}
+.heading.we_vessel {
+  margin-bottom:10px;
+}
   .sticky {
     position:sticky!important;
   }
@@ -50,6 +59,9 @@
   @media only screen and (max-width: 600px) {
     .slide-img {
           width: 75%;
+    }
+    body .food {
+      height: 102%;
     }
   }
 .tab-link-tab-1.w--current .text-block-19, .tab-link-tab-1:active .text-block-19 {
@@ -394,7 +406,7 @@ opacity: 0;
   transition: max-height 0.5s ease-in-out;
   }
   .w--active .p-qs {
-    max-height: 700px;
+    max-height: 2700px;
     -webkit-transition: max-height 0.5s ease-in-out;
   -moz-transition: max-height 0.5s ease-in-out;
   -ms-transition: max-height 0.5s ease-in-out;

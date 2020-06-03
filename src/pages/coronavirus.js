@@ -328,6 +328,15 @@ class coronaPage extends Component {
       slidesToScroll: 1,
       fade: !0
     };
+    const menutab = {
+      dots: false,
+      infinite: true,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      centerPadding: '10px',
+  focusOnSelect: true,
+  centerMode: false,
+    };
 	return (
     <>
     <Helmet>
@@ -337,7 +346,7 @@ class coronaPage extends Component {
     
     <SEO title="corona" />
     <div className="main-section covid">
-    <div className="top covid"><img src={Group_7} alt="" className="image mobile" />
+    <div className="top covid"><img src={Group_7} alt="" className="image mobile covid" />
       <div className="container-8 top w-container">
         <div className="div-block-2">
           <div className="div-block-3 covid19 w-clearfix">
@@ -349,26 +358,66 @@ class coronaPage extends Component {
       </div>
       <div className="div-block"><img src={Group_7}  alt="" className="image" /></div>
     </div>
-    <div className="overview first">
-      <div className="container-14 universal w-container">
-        <div className="div-block-79">
-          <h3>Affordable and Accurate</h3>
-          <p className="paragraph">Test kits and telemedicine services will be covered by insurance or sold at cost (around $20 for test kits). We will be donating 100% of profits to provide test kits for those in need. We’ve secured manufacturing for hundreds of thousands of test kits per day that are CFDA and CE certified, with sensitivity of 93.8% and specificity of 95.6%. We are working with the team at <a href="https://marsonlab.ucsf.edu/" target="_blank">University of California San Francisco</a> to validate the test cards. We’re working with <a href="http://doc.ai/" target="_blank">Doc.ai</a> on clinical trials to verify the accuracy of at-home testing in order to receive regulatory approval around the world. The study is scheduled to be completed by May 2020. We are also a member of the <a href="https://www.xprize.org/fight-covid19" target="_blank">XPRIZE Pandemic Alliance</a>, being led by <a href="https://www.anthem.com/" target="_blank">Anthem</a>.<br/></p>
-        </div>
-        <div className="div-block-135">
-          <div className="div-block-136"><img src={quote} alt="" className="image-33" /></div>
-          <div className="div-block-131">
-            <p className="paragraph drbrown">In the fight against COVID-19, Vessel&#x27;s at-home antibody test is a promising new tool to help us understand who is likely immune and can return back to work. </p>
-            <div className="div-block-132"><img src={drbrownstein} alt="" className="image-30"/>
-              <div className="div-block-134">
-                <h2 className="heading-4 drbrown">Dr. John Brownstein<br/></h2>
-                <p className="paragraph drbrown">Epidemiologist and Professor of Medicine Harvard Medical School<strong><br/></strong></p>
+    <div className="overview first covid">
+      <div className="div-block-153">
+        <div className="container-14 universal covid w-container">
+          <div className="div-block-79 covid">
+            <h3>Scalable</h3>
+            <p className="paragraph">Vessel’s mobile app will be free to download and compatible with any regulatory-approved serology test card. In addition, we have partnered with multiple approved test card manufacturers to secure hundreds of thousands of test kits per day that will be available for purchase at cost on our site (coming soon).<br/></p>
+            <h3>Accurate</h3>
+            <p className="paragraph">We are working with <a href="http://doc.ai/" target="_blank">Doc.ai</a> on clinical trials to verify the accuracy of at-home serology testing using Vessel’s app-based solution. Clinical trials are scheduled to be completed by May 2020. Furthermore, we are evaluating several serology test kit manufacturers with the help of the medical team at <a href="https://marsonlab.ucsf.edu/" target="_blank">University of California San Francisco.</a> We are also a member of the <a href="https://www.xprize.org/fight-covid19" target="_blank">XPRIZE Pandemic Alliance</a>, being led by <a href="https://www.anthem.com/" target="_blank">Anthem</a>.<br/></p>
+            <h3>Affordable </h3>
+            <p className="paragraph">Our complete solution will be provided at cost, and may be covered by insurance, although no insurance is required. <span className="text-span-11">A breakdown of pricing is below:</span><br/></p>
+          </div>
+          <div className="div-block-135 covid single">
+            <div className="div-block-136"><img src={quote} alt="" className="image-33"/></div>
+            <div className="div-block-131">
+              <p className="paragraph drbrown">In the fight against COVID-19, Vessel&#x27;s approach to at-home antibody testing is a promising new tool to help us understand who is likely immune and can return back to work.</p>
+              <div className="div-block-132"><img src={drbrownstein} alt="" className="image-30"/>
+                <div className="div-block-134">
+                  <h2 className="heading-4 drbrown">Dr. John Brownstein<br/></h2>
+                  <p className="paragraph drbrown">Epidemiologist and Professor of Medicine Harvard Medical School<strong><br/></strong></p>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <div className="container-31 w-container">
+          <div className="div-block-150">
+            <div>
+              <h2 className="heading-4 afford">Cost without insurance<br/></h2>
+              <div className="text-block-25">$</div>
+              <div className="text-block-26">35</div>
+              <div className="text-block-27">+ shipping</div>
+            </div>
+            <div className="div-block-151">
+              <div className="text-block-28">Vessel App Download<br/>Test Kit &amp; Instructions<br/>Doctor Consultation</div>
+              <div className="text-block-29">$0<br/>$10<br/>$25</div>
+            </div>
+            <div className="div-block-152">
+              <div className="text-block-28">Out of Pocket Cost<br/>Insurance </div>
+              <div className="text-block-29">$35 + shipping<br/>($35)<br/></div>
+            </div>
+          </div>
+          <div className="div-block-149">
+            <div>
+              <h2 className="heading-4 afford">Cost with insurance<br/></h2>
+              <div className="text-block-25">$</div>
+              <div className="text-block-26">0</div>
+              <div className="text-block-27"><span className="text-span-10">_</span></div>
+            </div>
+            <div className="div-block-151">
+              <div className="text-block-28">Vessel App Download<br/>Test Kit &amp; Instructions<br/>Doctor Consultation</div>
+              <div className="text-block-29">$0<br/>Likely covered<br/>Likely covered</div>
+            </div>
+            <div className="div-block-152">
+              <div className="text-block-28">Out of Pocket Cost<br/>Insurance </div>
+              <div className="text-block-29">Likely covered<br/>($35)<br/></div>
+            </div>
+          </div>
+        </div>
       </div><img src={unvi} alt="" className="image-20"/>
-      <div className="white-bg"></div>
+      <div className="white-bg covid single"></div>
       <div className="cream-bg covid"></div>
       <div className="rose-fpo universal"></div>
     </div>
@@ -927,16 +976,6 @@ class coronaPage extends Component {
       </div>
     </div>
   </div>
-  <div className="accessbility">
-    <div className="green-bg"></div><img src={Image_2} alt="" className="image-21"/>
-    <div className="container-15 w-container">
-      <h1>App<br/>Accessibility</h1>
-      <div className="div-block-85">
-        <p className="paragraph">The Vessel app will be offered for free on the Apple App Store and Google Play Store where we get government regulatory agency approval. We are working closely with regulatory agencies around the world to get approval as quickly as possible. We have started a clinical trial in partnership with Anthem and Doc.ai in an effort to validate that at-home COVID-19 antibody testing produces consistent results as accurate as in-clinic testing. The clinical trial will be complete before the end of April. Not all regulatory bodies require the clinical trial to be completed for approval, so we may have some approvals shortly.  If you work for a regulatory agency and would like to review Vessel for at-home antibody testing in your country please contact us <a href="mailto:regulatory@vesselhealth.com?subject=Regulatory%20agency%20review" className="link-7">here.</a></p>
-        <div className="div-block-86"><img src={appstore} alt="" className="image-22"/><img src={googleplay} alt="" className="image-23"/></div>
-      </div>
-    </div>
-  </div>
   <div className="test-kit">
     <div className="container-22 w-container">
       <h1>Test Kit<br/>Accessibility</h1>
@@ -960,7 +999,7 @@ class coronaPage extends Component {
           <p className="paragraph">Above is a plot showing a typical immune response to an infection. The Vessel app works by reading immunoassay test cards. These tests typically measure two different types of antibodies (IgM and IgG), which are immunoglobulins that your immune system generates in response to an infection. Antibodies are unique and specific to each pathogen, enabling us to specifically detect COVID-19 antibodies rather than antibodies against the flu virus or a common cold virus.<span className="cit-number">[1]</span></p>
           <div className="citation">1. <a href="https://www.ncbi.nlm.nih.gov/pubmed/32251798" target="_blank">https://www.ncbi.nlm.nih.gov/pubmed/32251798</a><br/></div>
         </div>
-      </div><img src={how_anti} className="image-20 how-anti"/></div>
+      </div><img src={how_anti} className="image-20 how-anti covsing"/></div>
   </div>
   <div className="antibody-list">
     <div className="cream-bg anti"></div>
@@ -1052,7 +1091,7 @@ class coronaPage extends Component {
         </div>
       </div>
       <div className="div-block-55">
-        <div className="slider-tabs covid">
+      <Slider {...menutab} className="slider-tabs covid" asNavFor={this.state.nav6} ref={slider => (this.slider5 = slider)}>
           <div className="tab-link-tab-1 covid">
             <div className="text-block-19">Only IgM antibodies</div>
           </div>
@@ -1068,8 +1107,8 @@ class coronaPage extends Component {
           <div className="tab-link-tab-1 covid">
             <div className="text-block-19">Invalid test<br/></div>
           </div>
-        </div>
-        <div className="slider-content covid">
+          </Slider>
+        <Slider {...textSlide} className="slider-content covid" asNavFor={this.state.nav5} ref={slider => (this.slider6 = slider)}>
           <div className="tab-pane-vitamin-b7">
             <div className="div-block-56 covid"><img src={result_igm} height="" alt="" className="image-29"/></div>
             <h2 className="heading-4 covid">Only IgM antibodies are detected</h2>
@@ -1095,7 +1134,7 @@ class coronaPage extends Component {
             <h2 className="heading-4 covid">Invalid test</h2>
             <p className="vessel covid">Invalid test. The test cards we work with also are able to determine if the sample was enough to make a valid test. If not, it will show a result suggesting an invalid result.</p>
           </div>
-        </div>
+          </Slider>
         <div className="div-block-46 covid"><img src={prev} height="50" alt="" className="image-14 prev"/><img src={next} height="50" alt="" className="next"/></div>
         <div className="w-embed w-script">
         </div>
@@ -1692,7 +1731,7 @@ class coronaPage extends Component {
             <input type="hidden" name="$list_fields" value="$consent"/>
             <div className="klaviyo_field_group">
               <input className="" type="email" name="email" id="k_id_email" placeholder="Enter Your Email Address"/>
-              <select id="consent-country" class="rounded" name="country">
+              <select id="consent-country" className="rounded" name="country">
                 <option value="">Select your country</option><option value="United States">United States</option><option value="Afghanistan">Afghanistan</option><option value="Åland Islands">Åland Islands</option><option value="Albania">Albania</option><option value="Algeria">Algeria</option><option value="American Samoa">American Samoa</option><option value="Andorra">Andorra</option><option value="Angola">AngolaAnguilla</option><option value="Antarctica">Antarctica</option><option value="Antigua and Barbuda">Antigua and Barbuda</option><option value="Argentina">Argentina</option><option value="Armenia">Armenia</option><option value="Aruba">Aruba</option><option value="Australia">Australia</option><option value="Austria">Austria</option><option value="Azerbaijan">Azerbaijan</option><option value="Bahamas">BahamasBahrain</option><option value="Bangladesh">Bangladesh</option><option value="Barbados">Barbados</option><option value="Belarus">Belarus</option><option value="Belgium">Belgium</option><option value="Belize">Belize</option><option value="Benin">Benin</option><option value="Bermuda">Bermuda</option><option value="Bhutan">Bhutan</option><option value="Bolivia">Bolivia</option><option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option><option value="Botswana">Botswana</option><option value="Bouvet Island">Bouvet Island</option><option value="Brazil">Brazil</option><option value="British Indian Ocean Territory">British Indian Ocean Territory</option><option value="Brunei Darussalam">Brunei Darussalam</option><option value="Bulgaria">Bulgaria</option><option value="Burkina Faso">Burkina Faso</option><option value="Burundi">Burundi</option><option value="Cambodia">CambodiaCameroon</option><option value="Canada">Canada</option><option value="Cape Verde">Cape Verde</option><option value="Cayman Islands">Cayman Islands</option><option value="Central African Republic">Central African Republic</option><option value="Chad">Chad</option><option value="Chile">Chile</option><option value="China">China</option><option value="Christmas Island">Christmas Island</option><option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option><option value="Colombia">Colombia</option><option value="Comoros">Comoros</option><option value="Congo">Congo</option><option value="Congo, The Democratic Republic of The">Congo, The Democratic Republic of The</option><option value="Cook Islands">Cook Islands</option><option value="Costa Rica">Costa Rica</option><option value="Cote D'ivoire">Cote D'ivoire</option><option value="Croatia">Croatia</option><option value="Cuba">Cuba</option><option value="Cyprus">Cyprus</option><option value="Czech Republic">Czech Republic</option><option value="Denmark">Denmark</option><option value="Djibouti">Djibouti</option><option value="Dominica">Dominica</option><option value="Dominican Republic">Dominican Republic</option><option value="Ecuador">Ecuador</option><option value="Egypt">Egypt</option><option value="El Salvador">El Salvador</option><option value="Equatorial Guinea">Equatorial Guinea</option><option value="Eritrea">Eritrea</option><option value="Estonia">Estonia</option><option value="Ethiopia">Ethiopia</option><option value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option><option value="Faroe Islands">Faroe Islands</option><option value="Fiji">Fiji</option><option value="Finland">Finland</option><option value="France">France</option><option value="French Guiana">French Guiana</option><option value="French Polynesia">French Polynesia</option><option value="French Southern Territories">French Southern Territories</option><option value="Gabon">Gabon</option><option value="Gambia">Gambia</option><option value="Georgia">Georgia</option><option value="Germany">Germany</option><option value="Ghana">Ghana</option><option value="Gibraltar">Gibraltar</option><option value="Greece">Greece</option><option value="Greenland">Greenland</option><option value="Grenada">Grenada</option><option value="Guadeloupe">Guadeloupe</option><option value="Guam">Guam</option><option value="Guatemala">Guatemala</option><option value="Guernsey">Guernsey</option><option value="Guinea">Guinea</option><option value="Guinea-bissau">Guinea-bissau</option><option value="Guyana">Guyana</option><option value="Haiti">Haiti</option><option value="Heard Island and Mcdonald Islands">Heard Island and Mcdonald Islands</option><option value="Holy See (Vatican City State)">Holy See (Vatican City State)</option><option value="Honduras">Honduras</option><option value="Hong Kong">Hong Kong</option><option value="Hungary">Hungary</option><option value="Iceland">Iceland</option><option value="India">India</option><option value="Indonesia">Indonesia</option><option value="Iran, Islamic Republic of">Iran, Islamic Republic of</option><option value="Iraq">Iraq</option><option value="Ireland">Ireland</option><option value="Isle of Man">Isle of Man</option><option value="Israel">Israel</option><option value="Italy">Italy</option><option value="Jamaica">Jamaica</option><option value="Japan">Japan</option><option value="Jersey">Jersey</option><option value="Jordan">Jordan</option><option value="Kazakhstan">Kazakhstan</option><option value="Kenya">Kenya</option><option value="Kiribati">Kiribati</option><option value="Korea, Democratic People's Republic of">Korea, Democratic People's Republic of</option><option value="Korea, Republic of">Korea, Republic of</option><option value="Kuwait">Kuwait</option><option value="Kyrgyzstan">Kyrgyzstan</option><option value="Lao People's Democratic Republic">Lao People's Democratic Republic</option> <option value="Latvia">Latvia</option> <option value="Lebanon">Lebanon</option> <option value="Lesotho">Lesotho</option> <option value="Liberia">Liberia</option> <option value="Libyan Arab Jamahiriya">Libyan Arab Jamahiriya</option> <option value="Liechtenstein">Liechtenstein</option> <option value="Lithuania">Lithuania</option> <option value="Luxembourg">Luxembourg</option> <option value="Macao">Macao</option> <option value="Macedonia, The Former Yugoslav Republic of">Macedonia, The Former Yugoslav Republic of</option> <option value="Madagascar">Madagascar</option> <option value="Malawi">Malawi</option> <option value="Malaysia">Malaysia</option> <option value="Maldives">Maldives</option> <option value="Mali">Mali</option> <option value="Malta">Malta</option> <option value="Marshall Islands">Marshall Islands</option> <option value="Martinique">Martinique</option> <option value="Mauritania">Mauritania</option> <option value="Mauritius">Mauritius</option> <option value="Mayotte">Mayotte</option> <option value="Mexico">Mexico</option> <option value="Micronesia, Federated States of">Micronesia, Federated States of</option> <option value="Moldova, Republic of">Moldova, Republic of</option> <option value="Monaco">Monaco</option> <option value="Mongolia">Mongolia</option> <option value="Montenegro">Montenegro</option> <option value="Montserrat">Montserrat</option> <option value="Morocco">Morocco</option> <option value="Mozambique">Mozambique</option> <option value="Myanmar">Myanmar</option> <option value="Namibia">Namibia</option> <option value="Nauru">Nauru</option> <option value="Nepal">Nepal</option> <option value="Netherlands">Netherlands</option> <option value="Netherlands Antilles">Netherlands Antilles</option> <option value="New Caledonia">New Caledonia</option> <option value="New Zealand">New Zealand</option> <option value="Nicaragua">Nicaragua</option> <option value="Niger">Niger</option> <option value="Nigeria">Nigeria</option> <option value="Niue">Niue</option> <option value="Norfolk Island">Norfolk Island</option> <option value="Northern Mariana Islands">Northern Mariana Islands</option> <option value="Norway">Norway</option> <option value="Oman">Oman</option> <option value="Pakistan">Pakistan</option> <option value="Palau">Palau</option> <option value="Palestinian Territory, Occupied">Palestinian Territory, Occupied</option> <option value="Panama">Panama</option> <option value="Papua New Guinea">Papua New Guinea</option> <option value="Paraguay">Paraguay</option> <option value="Peru">Peru</option> <option value="Philippines">Philippines</option> <option value="Pitcairn">Pitcairn</option> <option value="Poland">Poland</option> <option value="Portugal">Portugal</option> <option value="Puerto Rico">Puerto Rico</option> <option value="Qatar">Qatar</option> <option value="Reunion">Reunion</option> <option value="Romania">Romania</option> <option value="Russian Federation">Russian Federation</option> <option value="Rwanda">Rwanda</option> <option value="Saint Helena">Saint Helena</option> <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option> <option value="Saint Lucia">Saint Lucia</option> <option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option> <option value="Saint Vincent and The Grenadines">Saint Vincent and The Grenadines</option> <option value="Samoa">Samoa</option> <option value="San Marino">San Marino</option> <option value="Sao Tome and Principe">Sao Tome and Principe</option> <option value="Saudi Arabia">Saudi Arabia</option> <option value="Senegal">Senegal</option> <option value="Serbia">Serbia</option> <option value="Seychelles">Seychelles</option> <option value="Sierra Leone">Sierra Leone</option> <option value="Singapore">Singapore</option> <option value="Slovakia">Slovakia</option> <option value="Slovenia">Slovenia</option> <option value="Solomon Islands">Solomon Islands</option> <option value="Somalia">Somalia</option> <option value="South Africa">South Africa</option> <option value="South Georgia and The South Sandwich Islands">South Georgia and The South Sandwich Islands</option> <option value="Spain">Spain</option> <option value="Sri Lanka">Sri Lanka</option> <option value="Sudan">Sudan</option> <option value="Suriname">Suriname</option> <option value="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option> <option value="Swaziland">Swaziland</option> <option value="Sweden">Sweden</option> <option value="Switzerland">Switzerland</option> <option value="Syrian Arab Republic">Syrian Arab Republic</option> <option value="Taiwan, Province of China">Taiwan, Province of China</option> <option value="Tajikistan">Tajikistan</option> <option value="Tanzania, United Republic of">Tanzania, United Republic of</option> <option value="Thailand">Thailand</option> <option value="Timor-leste">Timor-leste</option> <option value="Togo">Togo</option> <option value="Tokelau">Tokelau</option> <option value="Tonga">Tonga</option> <option value="Trinidad and Tobago">Trinidad and Tobago</option> <option value="Tunisia">Tunisia</option> <option value="Turkey">Turkey</option> <option value="Turkmenistan">Turkmenistan</option> <option value="Turks and Caicos Islands">Turks and Caicos Islands</option> <option value="Tuvalu">Tuvalu</option> <option value="Uganda">Uganda</option> <option value="Ukraine">Ukraine</option> <option value="United Arab Emirates">United Arab Emirates</option> <option value="United Kingdom">United Kingdom</option> <option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option> <option value="Uruguay">Uruguay</option> <option value="Uzbekistan">Uzbekistan</option> <option value="Vanuatu">Vanuatu</option> <option value="Venezuela">Venezuela</option> <option value="Viet Nam">Viet Nam</option> <option value="Virgin Islands, British">Virgin Islands, British</option> <option value="Virgin Islands, U.S.">Virgin Islands, U.S.</option> <option value="Wallis and Futuna">Wallis and Futuna</option> <option value="Western Sahara">Western Sahara</option> <option value="Yemen">Yemen</option> <option value="Zambia">Zambia</option> <option value="Zimbabwe">Zimbabwe</option></select>
               <input type="number" id="consent-card" name="cards" min="1" className="rounded" placeholder="How many test kits would you like?"/>
               <div className="agee-check">
@@ -1741,131 +1780,131 @@ class coronaPage extends Component {
         <h2 className="heading">Questions</h2>
         <div className="qs-list">
           <div className="div-block-98">
-            <p className="paragraph-18 number">01</p>
             <div className="div-block-97">
               <div data-w-id="7bdee994-d2e3-da14-351f-66dc8d39cfca" className="accordion-trigger w-clearfix">
+              <p className="paragraph-18 number">01</p>
                 <h3 className="heading-46">How do I take the test?<br/></h3>
                 <img src={expand} alt="" className="expand-icon"/></div>
               <p className="p-qs paragraph">Simply follow these steps:<br/>• Step 1 - Download the Vessel app.<br/>• Step 2 - Complete the brief questionnaire. <br/>• Step 3 - Watch the one-minute video explaining how the test works.<br/>• Step 4 - Apply one (1) drop of blood to the test card. A lancet is provided to prick your finger.<br/>• Step 5 - Apply two (2) drops of buffer solution, which is provided in the test kit.<br/>• Step 6 - Wait 10 minutes; a timer is provided in the Vessel app.<br/>• Step 7 - Scan the test card with the Vessel app.<br/>• Step 8 - Once you scan the test card, you will be connected with a medical professional who will review your results and provide you with next steps via Vessel’s telehealth platform.</p>
             </div>
           </div>
           <div className="div-block-98">
-            <p className="paragraph-18 number">02</p>
             <div className="div-block-97">
               <div data-w-id="7949ae46-7442-91e4-03a4-61d9bd09c3ab" className="accordion-trigger w-clearfix">
+            <p className="paragraph-18 number">02</p>
                 <h3 className="heading-46">How does the antibody (serology) test work?<br/></h3>
                 <img src={expand} alt="" className="expand-icon"/></div>
               <p className="p-qs paragraph">Our test works by measuring two different types of antibodies (IgM and IgG), which are immunoglobulins (proteins) that your immune system creates in response to an infection. Antibodies are unique and specific to each pathogen, and they are able to bind to specific parts of the COVID-19 virus activating our immune system to neutralize and destroy the virus and infected cells.<br/>‍<br/>IgM antibodies are created first. They take about 7 days after infection to show up at detectable levels in your bloodstream, and they become undetectable about 2 weeks after symptoms resolve.  Because of this timing, they signify an acute (recent) infection, and healthcare professionals often use blood IgM levels to detect an acute infection.<br/>‍<br/>IgG antibodies are created later, with detectable levels about 3-6 weeks after infection,, and typically remain at detectable levels in your blood for years. IgG is typically the antibody signaling immunity from the associated pathogen. For example, after getting a vaccination, the body continues to make IgG antibodies for years to continue to protect us against that infectious disease. Furthermore, with repeat infections, IgG rather than IgM is the predominant antibody created by our immune system.<br/>‍<br/>The same type of immunity can be acquired through an actual infection. For example, after getting chickenpox, the immune system creates IgM antibodies during the acute infection, and then long term IgG antibodies to protect us against the varicella virus in the future.  There are also varicella vaccines that can also lead to long-term immunity through triggering the production of IgG antibodies. <br/>One way we measure immunity is by measuring blood titers of IgG antibody levels. However keep in mind that we don’t yet know for sure if IgG antibodies against COVID-19 signifies immunity. Initial research is promising, but more research is still needed to validate this assumption.<br/></p>
             </div>
           </div>
           <div className="div-block-98">
-            <p className="paragraph-18 number">03</p>
             <div className="div-block-97">
               <div data-w-id="d00ece62-cc1a-23a9-1351-94cd52442fb6" className="accordion-trigger w-clearfix">
+            <p className="paragraph-18 number">03</p>
                 <h3 className="heading-46">What are the different results I could get and what do they mean?<br/></h3><img src={expand} alt="" className="expand-icon"/></div>
               <p className="p-qs paragraph">On your test, there are several types of results you can get:<br/>• If only IgM antibodies are detected, this suggests a new infection from the virus in the past few weeks.<br/>•  If IgM and IgG antibodies are detected, this signifies both an acute infection from the virus in the past 3-6 weeks, and the development of IgG antibodies, the body’s form of long-term protection.<br/>• If IgM antibodies are not detected, and only IgG antibodies are detected, this signifies a previous infection more than four weeks ago and possible long-term immunity.<br/>• If no antibodies are detected, this signifies that you do probably have not had an infection with the virus, or that you were exposed recently and are in the incubation period of 1-2 weeks when you have the virus but have not yet produced antibodies, or that you may have a problem with your immune system producing antibodies.<br/></p>
             </div>
           </div>
           <div className="div-block-98">
-            <p className="paragraph-18 number">04</p>
             <div className="div-block-97">
               <div data-w-id="a706febf-3ec6-6da9-b4ae-030a6edee7cc" className="accordion-trigger w-clearfix">
+            <p className="paragraph-18 number">04</p>
                 <h3 className="heading-46">What supplies do I need to take this test?<br/></h3><img src={expand} alt="" className="expand-icon"/></div>
               <p className="p-qs paragraph">We provide everything you need to test from home. You clean your finger with an alcohol swab, prick it with a sterile lancet (just like diabetics do), and collect 1 - 2 drops of blood with the plastic pipette. You then 1 full drop of blood and 2 drops of buffer solution to the designated area of the test card, wait 10 minutes, scan the test card with the Vessel app, and get instant results and recommendations from one of our telehealth providers. The Vessel app has easy to follow step by step video and text instructions to help guide you through each step of the process.<br/></p>
             </div>
           </div>
           <div className="div-block-98">
-            <p className="paragraph-18 number">05</p>
             <div className="div-block-97">
               <div data-w-id="6c9fcfeb-1f8c-4846-c91f-2a3b83dec362" className="accordion-trigger w-clearfix">
+            <p className="paragraph-18 number">05</p>
                 <h3 className="heading-46">How quickly will I get my results?<br/></h3><img src={expand} alt="" className="expand-icon"/></div>
               <p className="p-qs paragraph">The test results will be ready in 10 minutes, however you may need to wait slightly longer before you are connected to one of our telehealth providers to go over your results.<br/></p>
             </div>
           </div>
           <div className="div-block-98">
-            <p className="paragraph-18 number">06</p>
             <div className="div-block-97">
               <div data-w-id="39906395-5593-2ad4-9458-f6394457021d" className="accordion-trigger w-clearfix">
+            <p className="paragraph-18 number">06</p>
                 <h3 className="heading-46">Can this test tell me if I am immune to Coronavirus?<br/></h3><img src={expand} alt="" className="expand-icon"/></div>
               <p className="p-qs paragraph">Likely. While this hasn’t been proven yet with COVID-19, the finding of detectable IgG antibodies and no detectable IgM antibodies is what clinicians use to detect immunity. For example, your doctor might check Hepatitis A IgG antibodies to confirm that you are immune to Hepatitis A from either a prior infection or prior vaccination. <br/>‍<br/>If you were to have a test result showing positive IgG antibodies and negative IgM antibodies, you are likely protected against re-infection. Again this has not yet been proven and more research is needed to fully answer this question.<br/>‍<br/>It is also possible that in the future COVID-19 could mutate (slightly change its structure) in such a way that the IgG antibodies your body created initially no longer work.<br/></p>
             </div>
           </div>
           <div className="div-block-98">
-            <p className="paragraph-18 number">07</p>
             <div className="div-block-97">
               <div data-w-id="fe53188d-5375-6460-0420-0202993f153b" className="accordion-trigger w-clearfix">
+            <p className="paragraph-18 number">07</p>
                 <h3 className="heading-46">If I test negative, can I go back to work?<br/></h3><img src={expand} alt="" className="expand-icon"/></div>
               <p className="p-qs paragraph">If you test negative, it means that you probably have not yet been exposed to the virus, were infected in the past 7 days, or that there is a problem with your immune system from a pre-existing disease process or medication.  Therefore if you test negative, it’s best to assume you are still at risk and should continue social isolation to protect yourself and others.<br/>‍<br/>If you test IgG positive, IgM negative you can likely ease up on social distancing and go back to work however we still need more research to confirm this (as explained above).  As always, follow the guidance of your healthcare professional who will stay up to date on CDC guidelines.<br/></p>
             </div>
           </div>
           <div className="div-block-98">
-            <p className="paragraph-18 number">08</p>
             <div className="div-block-97">
               <div data-w-id="b8431ea8-2a23-3795-1df8-5bef9cbf9a26" className="accordion-trigger w-clearfix">
+            <p className="paragraph-18 number">08</p>
                 <h3 className="heading-46">Is the test accurate compared to clinical lab testing?<br/></h3><img src={expand} alt="" className="expand-icon"/></div>
               <p className="p-qs paragraph">The accuracy of tests is described through the terms sensitivity and specificity. <br/>‍<br/>Sensitivity measures the proportion of actual positives that are correctly identified as such by the test in question (e.g. the percentage of COVID-19 infected people who are currently testing positive).<br/>‍<br/>Specificity measures the proportion of actual negatives that are correctly identified as such by the test in question (e.g., the percentage of healthy people who are correctly identified by the test result as not having COVID-19).<br/>‍<br/>Currently, RT-qPCR testing using a <a href="https://www.youtube.com/watch?v=DVJNWefmHjE" target="_blank">properly connected nasopharyngeal swab<span className="cit-number">[1]</span></a> is the gold standard, however the accuracy and predictive value of this type of testing has not been systematically evaluated, and the sensitivity of testing likely depends on the precise test being used as well as the type and quality of specimen obtained.  However until we have a more accurate way of detecting true positives and true negatives, we will use RT-qPCR testing as the “gold standard” to which to compare other tests.<br/>‍<br/>Now, onto the question of the accuracy of the newer serologic tests that can be read through the Vessel app.<br/>‍<br/>While each test card is slightly different, the test card that we ship directly to our users had a sensitivity of 93.8% and specificity of 95.6%, when tested at 2 Chinese hospitals in a total of 128 COVID19 positive patients, and 250 COVID19 negative patients (as detected by RT-qPCR).<br/>‍<br/>This means that 93.8% of the people who had a positive IgM antibody test result also had a positive RT-qPCR result), and that 95.6% of people who had a negative IgM antibody test also had a negative RT-qPCR test result.<br/><br/><span className="citation">1. https://www.youtube.com/watch?v=DVJNWefmHjE</span><br/><br/></p>
             </div>
           </div>
           <div className="div-block-98">
-            <p className="paragraph-18 number">09</p>
             <div className="div-block-97">
               <div data-w-id="f4563d7e-1749-14c9-2e87-2ac4a510988d" className="accordion-trigger w-clearfix">
+            <p className="paragraph-18 number">09</p>
                 <h3 className="heading-46">How much does the app and antibody test cost?<br/></h3><img src={expand} alt="" className="expand-icon"/></div>
               <p className="p-qs paragraph">The Vessel app is free. The test card will be sold at cost and most likely will be eligible for insurance reimbursement.  There is also a telemedicine service to review your results which is also most likely covered by your insurance.  When you create an account on our website or inside the app we will check that for you.  If your insurance does not cover it you will be billed directly from the telemedicine provider and shown the cash pay price upfront.<br/></p>
             </div>
           </div>
           <div className="div-block-98">
-            <p className="paragraph-18 number">10</p>
             <div className="div-block-97">
               <div data-w-id="6c89c47e-8a60-64f6-8ac0-85167777d35c" className="accordion-trigger w-clearfix">
+            <p className="paragraph-18 number">10</p>
                 <h3 className="heading-46">Who should take this test?<br/></h3><img src={expand} alt="" className="expand-icon"/></div>
               <p className="p-qs paragraph">We recommend you take this test if you:<br/>• Currently show any symptoms of COVID-19 such as a fever, cough, fatigue, muscle pains, or reduced appetite.<br/>• Previously had symptoms and think you may have had an infection with COVID-19 in the past.<br/>• Are curious to know if you&#x27;re one of the people who had a prior infection but no symptoms.<br/><br/>Because there are so many potential benefits of testing, perhaps a better way to phrase this question is who shouldn&#x27;t take this test.  If you’re experiencing severe symptoms such as difficulty breathing or light-headedness, skip this test and seek medical attention right away to evaluate if you need hospitalization.<br/></p>
             </div>
           </div>
           <div className="div-block-98">
-            <p className="paragraph-18 number">11</p>
             <div className="div-block-97">
               <div data-w-id="d9742a7a-84d6-168a-f4da-0f67bd875a39" className="accordion-trigger w-clearfix">
+            <p className="paragraph-18 number">11</p>
                 <h3 className="heading-46">I was in contact with someone who is now showing symptoms. Should I take this test?<br/></h3><img src={expand} alt="" className="expand-icon"/></div>
               <p className="p-qs paragraph">Yes, because the symptoms and severity of COVID-19 infection vary greatly ranging from no symptoms to severe symptoms, testing can help identify if you have been infected in the past.  Keep in mind that if your results are IgM and IgG negative, you may need to test again in 7-14 days as you may get a negative result if you are in the beginning of the incubation period (the period after infection but before you develop symptoms).<br/></p>
             </div>
           </div>
           <div className="div-block-98">
-            <p className="paragraph-18 number">12</p>
             <div className="div-block-97">
               <div data-w-id="e64ae21d-8444-02a9-73b4-d48e82ee582e" className="accordion-trigger w-clearfix">
+            <p className="paragraph-18 number">12</p>
                 <h3 className="heading-46">Who will have access to my test results?<br/></h3><img src={expand} alt="" className="expand-icon"/></div>
               <p className="p-qs paragraph">We are required to report positive cases to local, state, and federal public health agencies. We will not report to your insurance company or healthcare provider, aside from the independent telehealth doctor that will review your results.<br/>‍<br/>We adhere to an open standard to CDC/PHE/WHO in a universal effort to understand the sero-epidemiology of COVID-19. See our <a href="#data-policy">Data Policy</a> here.<br/></p>
             </div>
           </div>
           <div className="div-block-98">
-            <p className="paragraph-18 number">13</p>
             <div className="div-block-97">
               <div data-w-id="843efc21-9c85-3ec4-1e10-94fc16c3cbf4" className="accordion-trigger w-clearfix">
+            <p className="paragraph-18 number">13</p>
                 <h3 className="heading-46">How many tests are going to be available?<br/></h3><img src={expand} alt="" className="expand-icon"/></div>
               <p className="p-qs paragraph">This is a worldwide pandemic, which is why we’ve secured manufacturing for hundreds of thousands of test kits per day and are now seeking regulatory approval around the world. We have partnered with the xPrize Pandemic Alliance, Anthem Blue Cross Blue Shield, and Doc.ai on clinical trials to verify that antibody tests can be safely and accurately administered at home. We’re also working with UCSF to validate the accuracy of various different test cards, which should be completed by the end of April 2020. Once approved we will be offering test cards for sale on VesselHealth.com. To be notified when Vessel is available in your country <a href="#join-waitlist">join our waitlist here</a>.<br/></p>
             </div>
           </div>
           <div className="div-block-98">
-            <p className="paragraph-18 number">14</p>
             <div className="div-block-97">
               <div data-w-id="052cbc40-5d64-40fd-e43f-f98cacd1c2b7" className="accordion-trigger w-clearfix">
+            <p className="paragraph-18 number">14</p>
                 <h3 className="heading-46">Will this test be available in all 50 states?<br/></h3><img src={expand} alt="" className="expand-icon"/></div>
               <p className="p-qs paragraph">Once we receive the appropriate regulatory approvals we will update this information.<br/></p>
             </div>
           </div>
           <div className="div-block-98">
-            <p className="paragraph-18 number">15</p>
             <div className="div-block-97">
               <div data-w-id="b5c37e55-e4dd-2db4-11c8-2492d8f4e34b" className="accordion-trigger w-clearfix">
+            <p className="paragraph-18 number">15</p>
                 <h3 className="heading-46">Is the app available outside the US?<br/></h3><img src={expand} alt="" className="expand-icon"/></div>
               <p className="p-qs paragraph">Once we receive the appropriate regulatory approvals, yes.<br/></p>
             </div>
           </div>
           <div className="div-block-98">
-            <p className="paragraph-18 number">16</p>
             <div className="div-block-97">
               <div data-w-id="f84c907f-8f88-3df5-64a8-eaf0f0833322" className="accordion-trigger w-clearfix">
+            <p className="paragraph-18 number">16</p>
                 <h3 className="heading-46">Where can I find general COVID-19 (novel coronavirus) information?<br/></h3><img src={expand} alt="" className="expand-icon"/></div>
               <p className="p-qs paragraph">CDC webpages:<br/> <br/>General: <a href="https://www.cdc.gov/COVID19" target="_blank">https://www.cdc.gov/COVID19</a> <br/>Healthcare Professionals: <a href="https://www.cdc.gov/coronavirus/2019-nCoV/guidance-hcp.html" target="_blank">https://www.cdc.gov/coronavirus/2019-nCoV/guidance-hcp.html</a> <br/>Information for Laboratories: <a href="https://www.cdc.gov/coronavirus/2019-nCoV/guidance-laboratories.html" target="_blank">https://www.cdc.gov/coronavirus/2019- nCoV/guidance-laboratories.html</a> Laboratory Biosafety: <a href="https://www.cdc.gov/coronavirus/2019-nCoV/lab-biosafety-guidelines.html" target="_blank">https://www.cdc.gov/coronavirus/2019- nCoV/lab-biosafety-guidelines.html</a> <br/>Isolation Precautions in Healthcare Settings: <a href="https://www.cdc.gov/coronavirus/2019-ncov/infection-control/controlrecommendations.html" target="_blank">https://www.cdc.gov/coronavirus/2019-ncov/infection-control/controlrecommendations.html</a> <br/>Specimen Collection: <a href="https://www.cdc.gov/coronavirus/2019-nCoV/guidelines-clinical-specimens.html" target="_blank">https://www.cdc.gov/coronavirus/2019- nCoV/guidelines-clinical-specimens.html</a> Infection Control: <a href="https://www.cdc.gov/coronavirus/2019-ncov/infection-control/index.html" target="_blank">https://www.cdc.gov/coronavirus/2019- ncov/infection-control/index.html</a> <br/><br/>FDA webpages:<br/> <br/>General: <a href="http://www.fda.gov/novelcoronavirus" target="_blank">www.fda.gov/novelcoronavirus</a> <br/>EUAs: <a href="https://www.fda.gov/medical-devices/emergencysituations-medical-devices/emergency-use-authorizations" target="_blank">https://www.fda.gov/medical-devices/emergencysituations-medical-devices/emergency-use-authorizations</a><br/></p>
             </div>
